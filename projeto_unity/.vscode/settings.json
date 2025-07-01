@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "TCCteste.sln"
+    "dotnet.defaultSolution": "projeto_unity.sln"
 }

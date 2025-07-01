@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2217299031683723723}
   - component: {fileID: 2217299031683723720}
   - component: {fileID: 2217299031683723722}
+  - component: {fileID: 1335971698067063169}
   m_Layer: 0
   m_Name: PauBrasil
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2217299031683723721}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.00448, y: 32.078686, z: -0.49192482}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
@@ -111,3 +112,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6329268, y: 2.071084}
   m_EdgeRadius: 0
+--- !u!114 &1335971698067063169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2217299031683723721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2237ef2ec5bb98488ed97a6b72931bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tipoItem: 0
+  valorItem: 1
+  spritePadrao: {fileID: 21300000, guid: 25ec0ce9fe9be474f8210f88cbf26c5b, type: 3}
+  spriteDestacado: {fileID: 21300000, guid: dce88a05fb3574a4b9af16f414cffc89, type: 3}
