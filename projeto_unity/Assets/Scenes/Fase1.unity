@@ -1278,7 +1278,7 @@ Transform:
   m_GameObject: {fileID: 198466740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -40.7, y: 37.1, z: 0}
-  m_LocalScale: {x: 3.0742, y: 3.0742, z: 3.0742}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 562138938}
@@ -1475,7 +1475,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1d626f2ce6cb20c44a9ef38a9eaba0bc, type: 2}
+  - {fileID: 2100000, guid: a21c152168ed081469f74ec37d16ac9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -130624,7 +130624,7 @@ Transform:
   m_GameObject: {fileID: 379843701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -49.6, y: 27.32, z: 0}
-  m_LocalScale: {x: 3.0742, y: 3.0742, z: 3.0742}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 562138938}
@@ -143315,7 +143315,7 @@ Transform:
   m_GameObject: {fileID: 1429868390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -57.36, y: 37.8, z: 0}
-  m_LocalScale: {x: 3.0742, y: 3.0742, z: 3.0742}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 562138938}
@@ -143969,7 +143969,7 @@ Transform:
   m_GameObject: {fileID: 1677220233}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -57.85, y: 19.09, z: 0}
-  m_LocalScale: {x: 3.0742, y: 3.0742, z: 3.0742}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 562138938}
@@ -145872,7 +145872,7 @@ Transform:
   m_GameObject: {fileID: 2109109165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -65.5, y: 29.28, z: 0}
-  m_LocalScale: {x: 3.0742, y: 3.0742, z: 3.0742}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 562138938}
