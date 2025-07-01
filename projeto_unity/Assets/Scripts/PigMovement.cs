@@ -12,6 +12,8 @@ public class PigMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+     private Animator animator;
+
 
     void Start()
     {
@@ -23,12 +25,25 @@ public class PigMovement : MonoBehaviour
         if (spriteRenderer == null)
             spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
+
+        animator = GetComponent<Animator>();
+        if (animator == null)
+            animator = GetComponentInChildren<Animator>();
+
+
         ChooseNewDirection();
     }
 
-    void FixedUpdate()
+        void FixedUpdate()
     {
         rb.velocity = moveDirection * moveSpeed;
+
+        // Ativa animaÃ§Ã£o se estiver se movendo
+        if (animator != null)
+        {
+            bool isMoving = rb.velocity.magnitude > 0.1f;
+            animator.SetBool("isMoving", isMoving);
+        }
 
         directionTimer -= Time.fixedDeltaTime;
         if (directionTimer <= 0)
@@ -51,7 +66,6 @@ public class PigMovement : MonoBehaviour
         }
         else
         {
-            // Ao colidir com a parede do chiqueiro, muda de direção
             ChooseNewDirection();
         }
     }
