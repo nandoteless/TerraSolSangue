@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40642ea828e471a4980b6ee75390cf74, type: 3}
+  m_Name: DialogueData
+  m_EditorClassIdentifier: 
+  talkScript:
+  - name: Jacira
+    text: "Irapu\xE3!!! Voc\xEA n\xE3o imagina a saudade que eu estava..."
+  - name: "Irapu\xE3"
+    text: "Eu tamb\xE9m estava meu amor, como passou a aldeia nesse per\xEDodo? "
+  - name: Jacira
+    text: Muito bem mais como alguns homens foram junto estamos com algumas pendencias...
+  - name: Jacira
+    text: Seu pai quer muito te ver mais primeiro ajude nossa aldeia, pesque para
+      os moradores...
+  - name: Jacira
+    text: "E colete alguns Paus Brasil mais cuidado sem alguns de voc\xEAs as cobras
+      fizeram uma infesta\xE7\xE3o!"
+  - name: "Irapu\xE3"
+    text: Pode deixar farei de tudo e logo volto para conversarmos...

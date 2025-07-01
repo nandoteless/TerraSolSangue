@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
 
 public class PlayerMove : MonoBehaviour
 {
@@ -12,8 +14,15 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField] Animator anim;
 
-  
+    public Transform npc;
 
+    DialogueSystem dialogueSystem;
+
+
+    private void Awake ()
+    {
+        dialogueSystem = FindObjectOfType<DialogueSystem>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -25,6 +34,15 @@ public class PlayerMove : MonoBehaviour
         anim.SetFloat("Speed", mov.sqrMagnitude);
 
         mov.Normalize();
+
+
+         if(Mathf.Abs(transform.position.x - npc.position.x) < 2.0f) {
+            if(Input.GetKeyDown(KeyCode.E)) {
+                dialogueSystem.Next();
+            }
+
+           
+        }
     }
 
     void FixedUpdate()
