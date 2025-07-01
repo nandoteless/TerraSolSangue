@@ -26,18 +26,20 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mov.x = Input.GetAxisRaw("Horizontal");
-        mov.y = Input.GetAxisRaw("Vertical");
+        // mov.x = Input.GetAxisRaw("Horizontal");
+        // mov.y = Input.GetAxisRaw("Vertical");
+        mov.x = InputManager.movement.x;
+        mov.y = InputManager.movement.y;
 
         anim.SetFloat("Horizontal", mov.x);
         anim.SetFloat("Vertical", mov.y);
         anim.SetFloat("Speed", mov.sqrMagnitude);
 
-        mov.Normalize();
+        // mov.Normalize();
 
 
          if(Mathf.Abs(transform.position.x - npc.position.x) < 2.0f) {
-            if(Input.GetKeyDown(KeyCode.E)) {
+            if(InputManager.interact) {
                 dialogueSystem.Next();
             }
 
