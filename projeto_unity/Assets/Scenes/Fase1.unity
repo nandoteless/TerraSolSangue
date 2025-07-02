@@ -130520,7 +130520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400455768}
-  - component: {fileID: 400455767}
+  - component: {fileID: 400455770}
   - component: {fileID: 400455769}
   m_Layer: 0
   m_Name: DialogoManager
@@ -130529,21 +130529,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &400455767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400455766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3f092299ea477b4bb586721ecc6d1ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  typeDelay: 0.05
-  textObject: {fileID: 1130325702}
-  fullText: "Irapu\xE3!!! estava com tanta saudade"
 --- !u!4 &400455768
 Transform:
   m_ObjectHideFlags: 0
@@ -130572,6 +130557,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueData: {fileID: 11400000, guid: cca63bed9be0e1c4697853eafe8a6c2d, type: 2}
+--- !u!114 &400455770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400455766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3f092299ea477b4bb586721ecc6d1ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeDelay: 0.05
+  textObject: {fileID: 1130325702}
+  fullText: 
 --- !u!1 &404151616
 GameObject:
   m_ObjectHideFlags: 0
@@ -132833,7 +132833,7 @@ GameObject:
   - component: {fileID: 962288396}
   - component: {fileID: 962288397}
   m_Layer: 5
-  m_Name: Dialogue pANEL
+  m_Name: DialoguePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

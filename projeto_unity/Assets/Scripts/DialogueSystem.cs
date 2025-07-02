@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using TMPro;
-
 public enum STATE {
     DISABLED,
     WAITING,
@@ -99,6 +98,17 @@ public class DialogueSystem : MonoBehaviour {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

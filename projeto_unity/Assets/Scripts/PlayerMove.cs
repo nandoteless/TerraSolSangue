@@ -19,7 +19,7 @@ public class PlayerMove : MonoBehaviour
     DialogueSystem dialogueSystem;
 
 
-    private void Awake ()
+    private void Awake()
     {
         dialogueSystem = FindObjectOfType<DialogueSystem>();
     }
@@ -38,18 +38,21 @@ public class PlayerMove : MonoBehaviour
         // mov.Normalize();
 
 
-         if(Mathf.Abs(transform.position.x - npc.position.x) < 2.0f) {
-            if(InputManager.interact) {
+        if (Mathf.Abs(transform.position.x - npc.position.x) < 2.0f) {
+            if (Input.GetKeyDown(KeyCode.E)) {
                 dialogueSystem.Next();
             }
-
-           
         }
-    }
 
-    void FixedUpdate()
+
+    }
+         void FixedUpdate()
     {
         rb.MovePosition(rb.position + mov * speed * Time.fixedUnscaledDeltaTime);
     }
 
-}
+
+    }
+
+   
+
