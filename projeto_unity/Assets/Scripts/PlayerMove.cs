@@ -39,22 +39,24 @@ public class PlayerMove : MonoBehaviour
         // mov.Normalize();
 
 
-        if (Mathf.Abs(transform.position.x - npc.position.x) < 2.0f) {
+        if (Mathf.Abs(transform.position.x - npc.position.x) < 2.0f)
+        {
             // DMVS - removido para usar Input System if (Input.GetKeyDown(KeyCode.E)) {
-            if (InputManager.instancia.interact) {
+            if (InputManager.instancia.interact)
+            {
                 dialogueSystem.Next();
             }
         }
 
 
     }
-         void FixedUpdate()
+    void FixedUpdate()
     {
         rb.MovePosition(rb.position + mov * speed * Time.fixedUnscaledDeltaTime);
     }
 
 
-    }
+}
 
-   
+
 

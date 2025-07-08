@@ -144108,7 +144108,7 @@ MonoBehaviour:
   uiManager: {fileID: 483945160}
   itemGoals:
   - tipoItem: 0
-    total: 3
+    total: 4
 --- !u!4 &1545298605
 Transform:
   m_ObjectHideFlags: 0
