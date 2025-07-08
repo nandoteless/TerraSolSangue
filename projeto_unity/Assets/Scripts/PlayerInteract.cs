@@ -9,7 +9,7 @@ public class PlayerInteract : MonoBehaviour
     void Update()
     {
         // Verifica se possui um coletável próximo e se pressionou a tecla para realizar a coleta
-        if (nearestCollectible != null && InputManager.collect)
+        if (nearestCollectible != null && InputManager.instancia.collect)
         {
             // Chama o método para coletar o item, script adicionado ao item coletável
             nearestCollectible.Coleta();

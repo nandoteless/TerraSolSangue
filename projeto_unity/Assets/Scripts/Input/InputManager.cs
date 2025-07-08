@@ -10,7 +10,7 @@ public class InputManager : MonoBehaviour
     public bool interact;
     public bool cancelInteract;
 
-    public static bool collect;
+    public bool collect;
 
     void Awake()
     {
@@ -35,7 +35,7 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
             interact = true;
-        if (context.canceled)
+        else
             interact = false;
     }
 
@@ -43,7 +43,7 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
             cancelInteract = true;
-        if (context.canceled)
+        else
             cancelInteract = false;
     }
 
@@ -51,7 +51,7 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed)
             collect = true;
-        if (context.canceled)
+        else
             collect = false;
     }
 }
