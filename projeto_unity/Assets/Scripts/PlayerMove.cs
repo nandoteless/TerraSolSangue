@@ -26,10 +26,11 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // DMVS - removido para usar Input System
         // mov.x = Input.GetAxisRaw("Horizontal");
         // mov.y = Input.GetAxisRaw("Vertical");
-        mov.x = InputManager.movement.x;
-        mov.y = InputManager.movement.y;
+        mov.x = InputManager.instancia.movement.x;
+        mov.y = InputManager.instancia.movement.y;
 
         anim.SetFloat("Horizontal", mov.x);
         anim.SetFloat("Vertical", mov.y);
@@ -39,7 +40,8 @@ public class PlayerMove : MonoBehaviour
 
 
         if (Mathf.Abs(transform.position.x - npc.position.x) < 2.0f) {
-            if (Input.GetKeyDown(KeyCode.E)) {
+            // DMVS - removido para usar Input System if (Input.GetKeyDown(KeyCode.E)) {
+            if (InputManager.instancia.interact) {
                 dialogueSystem.Next();
             }
         }

@@ -5,25 +5,23 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     private ColetaItem nearestCollectible;
+
     void Update()
     {
-        // NOVO: Lógica de Interação (ex: "Pressione E para Coletar")
-        if (nearestCollectible != null && InputManager.interact)
+        // Verifica se possui um coletável próximo e se pressionou a tecla para realizar a coleta
+        if (nearestCollectible != null && InputManager.collect)
         {
-            // Chama o método para coletar no item
+            // Chama o método para coletar o item, script adicionado ao item coletável
             nearestCollectible.Coleta();
 
             nearestCollectible = null; // Limpa a referência após coletar
-
-            // Você também pode querer desativar um ícone de interação aqui
-            // UIManager.instance.ShowInteractionPrompt(false);
         }
     }
 
-    // NOVO: Métodos para detecção de proximidade (Trigger)
+    // Método para detecção de proximidade
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Certifique-se de que o Collider que entra na área de proximidade é de um item coletável
+        // Verifica se o Collider que entra na área de proximidade é de um item coletável
         ColetaItem item = other.GetComponent<ColetaItem>();
         if (item != null)
         {
@@ -36,14 +34,15 @@ public class PlayerInteract : MonoBehaviour
         }
     }
     
+    // Método para detectar que saiu da proximidade de um item coletável
     void OnTriggerExit2D(Collider2D other)
     {
-        // Certifique-se de que o Collider que entra na área de proximidade é de um item coletável
+        // Verifica se o Collider que saiu da área de proximidade é de um item coletável
         ColetaItem item = other.GetComponent<ColetaItem>();
         if (item != null)
         {
             item.ItemPadrao(); // tira o destaque do item
-            nearestCollectible = null; // Armazena a referência do item mais próximo
+            nearestCollectible = null; // Limpa a referência do item mais próximo
         }
     }
 }

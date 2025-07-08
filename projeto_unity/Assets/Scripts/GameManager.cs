@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instancia;
 
-    // public UIManager uiManager;
+    public UIManager uiManager;
 
     [System.Serializable] // Torna a struct visível no Inspector
     public struct ObjetivoItem
@@ -57,10 +57,10 @@ public class GameManager : MonoBehaviour
             itensColetados.Add(tipo, valor);
         }
 
-        // if (uiManager != null)
-        // {
-        //     uiManager.UpdateItemCounts(itensColetados, totalItensPorTipo);
-        // }
+        if (uiManager != null)
+        {
+            uiManager.UpdateItemCounts(itensColetados, totalItensPorTipo);
+        }
 
         if (totalItensPorTipo.ContainsKey(tipo) && itensColetados[tipo] >= totalItensPorTipo[tipo])
         {
