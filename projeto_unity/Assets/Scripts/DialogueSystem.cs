@@ -74,7 +74,7 @@ public class DialogueSystem : MonoBehaviour {
     void Waiting() {
 
         // DMVS - removido para usar Input System if(Input.GetKeyDown(KeyCode.Return)) {
-        if (InputManager.instancia.cancelInteract)
+        if (InputManager.instancia.GetCancelInteraction())
         {
             if (!finished)
             {
@@ -95,7 +95,7 @@ public class DialogueSystem : MonoBehaviour {
     void Typing() {
 
         // DMVS - removido para usar Input System if(Input.GetKeyDown(KeyCode.Return)) {
-        if (InputManager.instancia.cancelInteract)
+        if (InputManager.instancia.GetCancelInteraction())
         {
             typeText.Skip();
             state = STATE.WAITING;

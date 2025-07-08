@@ -144487,6 +144487,7 @@ MonoBehaviour:
   movement: {x: 0, y: 0}
   interact: 0
   cancelInteract: 0
+  collect: 0
 --- !u!4 &1707141645
 Transform:
   m_ObjectHideFlags: 0

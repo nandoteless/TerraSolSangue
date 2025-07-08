@@ -7,11 +7,12 @@ public class InputManager : MonoBehaviour
 {
     public static InputManager instancia;
     public Vector2 movement;
-    public bool interact;
-    public bool cancelInteract;
+    private bool interact;
+    private bool cancelInteract;
 
-    public bool collect;
+    private bool collect;
 
+    
     void Awake()
     {
         if (instancia == null)
@@ -23,6 +24,7 @@ public class InputManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
     }
 
 
@@ -54,4 +56,35 @@ public class InputManager : MonoBehaviour
         else
             collect = false;
     }
+
+    public bool GetInteract()
+    {
+        if (interact)
+        {
+            interact = false;
+            return true;
+        }
+        return false;
+    }
+    public bool GetCancelInteraction()
+    {
+        if (cancelInteract)
+        {
+            cancelInteract = false;
+            return true;
+        }
+        return false;
+    }
+
+    public bool GetCollect()
+    {
+        if (collect)
+        {
+            collect = false;
+            return true;
+        }
+        return false;
+    }
+
+
 }

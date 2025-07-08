@@ -17,7 +17,6 @@ public class PlayerMove : MonoBehaviour
     public Transform npc;
 
     DialogueSystem dialogueSystem;
-    int i = 0;
 
 
     private void Awake()
@@ -43,10 +42,9 @@ public class PlayerMove : MonoBehaviour
         if (Mathf.Abs(transform.position.x - npc.position.x) < 2.0f)
         {
             // DMVS - removido para usar Input System 
-            if (Input.GetKeyDown(KeyCode.E)) 
-            // if (InputManager.instancia.interact)
+            // if (Input.GetKeyDown(KeyCode.E)) 
+            if (InputManager.instancia.GetInteract())
             {
-                // Debug.Log($"Next {++i}");
                 dialogueSystem.Next();
             }
         }
