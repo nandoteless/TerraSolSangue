@@ -41,7 +41,16 @@ public class PlayerVida : MonoBehaviour
             ReiniciarCena(); // Chama a função para reiniciar
         }
     }
+    public void AumentarVida(float quantidade)
+{
+    vidaAtual += quantidade;
+    vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
 
+    if (vidaSlider != null)
+    {
+        vidaSlider.value = vidaAtual;
+    }
+}
     void ReiniciarCena()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -55,16 +64,13 @@ public class PlayerVida : MonoBehaviour
             ReduzirVida(25f); // Ajuste o valor conforme quiser
         }
     }
-
-    // Se estiver usando colisão normal em vez de trigger:
-    /*
     void OnCollisionEnter2D(Collision2D collision)
+{   if (collision.gameObject.CompareTag("guarana"))
     {
-        if (collision.gameObject.CompareTag("Cobra"))
-        {
-            Debug.Log("Colidiu com a cobra (Collision)!");
-            ReduzirVida(25f);
-        }
+        Debug.Log("Colidiu com o arbusto de guaraná!");
+        AumentarVida(25f); // valor de cura
+        Destroy(collision.gameObject); // se quiser remover o arbusto depois
     }
-    */
+}
+   
 }
