@@ -1,37 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro; // Importante para usar TextMeshProUGUI
-
+using TMPro;
 
 public class VaraDePesca : MonoBehaviour
 {
- public GameObject painelAviso; // Painel com a mensagem de "complete os objetivos"
-    public TextMeshProUGUI objetivo1Text; // TMP do primeiro objetivo
-    public TextMeshProUGUI objetivo2Text; // TMP do segundo objetivo
-    public string textoCompleto = "3/3"; // Texto alvo que indica que est� completo
+    [SerializeField] private string nomeDaCena = "PescaCena";  // Altere para o nome da sua cena
+    private bool cenaLiberada = false;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Start()
     {
-        if (other.CompareTag("Player"))
+        // Desativa a vara no início, se os objetivos ainda não foram concluídos
+        if (!GameManager.instancia.ObjetivosConcluidos())
         {
-            // Verifica se os dois TMPs est�o com o texto "3/3"
-            if (objetivo1Text.text == textoCompleto && objetivo2Text.text == textoCompleto)
-            {
-                SceneManager.LoadScene("Fase2"); // Troca para a pr�xima fase
-            }
-            else
-            {
-                // Mostra o painel de aviso
-                painelAviso.SetActive(true);
-                Invoke(nameof(EsconderPainel), 3f);
-            }
+            GetComponent<Collider2D>().enabled = false;
+        }
+        else
+        {
+            cenaLiberada = true;
         }
     }
 
-    void EsconderPainel()
+    private void Update()
     {
-        painelAviso.SetActive(false);
+        // Ativa a vara se os objetivos forem concluídos enquanto o jogo roda
+        if (!cenaLiberada && GameManager.instancia.ObjetivosConcluidos())
+        {
+            cenaLiberada = true;
+            GetComponent<Collider2D>().enabled = true;
+            Debug.Log("Vara desbloqueada! Pode passar para a próxima cena.");
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (cenaLiberada && collision.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(nomeDaCena);
+        }
     }
 }

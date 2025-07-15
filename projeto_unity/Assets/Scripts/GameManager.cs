@@ -1,22 +1,26 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager instancia;
 
     public UIManager uiManager;
 
-    [System.Serializable] // Torna a struct visível no Inspector
+    [System.Serializable]
     public struct ObjetivoItem
     {
         public ColetaItem.TipoItem tipoItem;
         public int total;
     }
-    public List<ObjetivoItem> itemGoals; 
+
+    public List<ObjetivoItem> itemGoals;
     public Dictionary<ColetaItem.TipoItem, int> itensColetados;
     public Dictionary<ColetaItem.TipoItem, int> totalItensPorTipo;
 
+    [Header("Referência da Vara (para desbloqueio)")]
+    public GameObject varaParaDesbloquear; // <<< arraste a vara aqui no inspector
 
     void Awake()
     {
@@ -65,10 +69,8 @@ public class GameManager : MonoBehaviour
         if (totalItensPorTipo.ContainsKey(tipo) && itensColetados[tipo] >= totalItensPorTipo[tipo])
         {
             Debug.Log(tipo.ToString() + " totalmente coletado!");
-            // Adicione lógica específica para este item, se necessário
         }
 
-        // Opcional: Lógica para verificar se *todos* os tipos de itens foram totalmente coletados
         bool objetivosConcluidos = true;
         foreach (var objetivo in totalItensPorTipo)
         {
@@ -79,14 +81,22 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (objetivosConcluidos && totalItensPorTipo.Any(objetivo => objetivo.Value > 0)) // Garante que há metas para cumprir
+        if (objetivosConcluidos && totalItensPorTipo.Any(objetivo => objetivo.Value > 0))
         {
             Debug.Log("Todos os objetivos de coleta alcançados! Vitória!");
-            // Adicione aqui lógica para mudar de cena, exibir mensagem de vitória, etc.
+
+            // 🔓 Desbloqueia a vara
+            if (varaParaDesbloquear != null)
+            {
+                varaParaDesbloquear.SetActive(true);
+
+                Collider2D col = varaParaDesbloquear.GetComponent<Collider2D>();
+                if (col != null)
+                    col.enabled = true;
+            }
         }
     }
 
-    // Método para obter a contagem de um tipo específico, se necessário
     public int GetItemCount(ColetaItem.TipoItem tipo)
     {
         if (itensColetados.ContainsKey(tipo))
@@ -112,6 +122,17 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
+    // ✅ Método usado pela Vara para verificar se já pode trocar de cena
+    public bool ObjetivosConcluidos()
+    {
+        foreach (var objetivo in totalItensPorTipo)
+        {
+            if (itensColetados[objetivo.Key] < objetivo.Value)
+            {
+                return false;
+            }
+        }
 
-    
+        return totalItensPorTipo.Any(objetivo => objetivo.Value > 0);
+    }
 }
