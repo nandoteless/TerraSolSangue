@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{e1733394-d4e0-41cd-b6be-a70462b59a77}">
+		<property name="assetPath">
+			<value>Interação.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.16671201814058956</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a05394a8-999e-4b4f-b71d-099a658787d9}</destination>
+		</relationship>
+	</object>
+</objects>

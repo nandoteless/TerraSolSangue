@@ -13,6 +13,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] Vector2 mov;
 
     [SerializeField] Animator anim;
+    [SerializeField] private PlayerSounds playerSounds;
 
     public Transform npc;
 
@@ -54,6 +55,10 @@ public class PlayerMove : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + mov * speed * Time.fixedUnscaledDeltaTime);
+    }
+    private void PlayFootstep()
+    {
+        playerSounds.PlayFootsteps();
     }
 
 
