@@ -686,7 +686,32 @@ PrefabInstance:
     - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
       propertyPath: m_Name
-      value: Onca
+      value: Oncaa
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: onca
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.690998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.1791058
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.15450096
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.09380245
       objectReference: {fileID: 0}
     - target: {fileID: 8127935179260655332, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
@@ -1078,6 +1103,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Onca (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: onca
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.249565
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.2232456
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.033107758
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.08276844
       objectReference: {fileID: 0}
     - target: {fileID: 8127935179260655332, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
@@ -131599,6 +131649,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Onca (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: onca
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.2716436
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.145997
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.11035776
+      objectReference: {fileID: 0}
     - target: {fileID: 8127935179260655332, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
       propertyPath: player
@@ -131762,6 +131837,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Onca (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: onca
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.370964
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.2563515
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0055179596
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.14346504
       objectReference: {fileID: 0}
     - target: {fileID: 8127935179260655332, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
@@ -132543,7 +132643,7 @@ PrefabInstance:
     - target: {fileID: 301316859089644483, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.206601
+      value: 14.95
       objectReference: {fileID: 0}
     - target: {fileID: 301316859089644483, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
@@ -132589,6 +132689,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Onca (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: onca
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.33786
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.2011776
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0110321045
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.12691021
       objectReference: {fileID: 0}
     - target: {fileID: 8127935179260655332, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
@@ -134306,6 +134431,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Onca (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: onca
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.3157883
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.1791077
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.011035919
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.07173157
       objectReference: {fileID: 0}
     - target: {fileID: 8127935179260655332, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
@@ -144468,6 +144618,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Onca (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: onca
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.238535
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.2453203
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.016552925
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.08276796
+      objectReference: {fileID: 0}
     - target: {fileID: 8127935179260655332, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
       propertyPath: player
@@ -145112,6 +145287,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Onca (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: onca
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.6468573
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.1791058
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.17657137
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.08276844
+      objectReference: {fileID: 0}
     - target: {fileID: 8127935179260655332, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
       propertyPath: player
@@ -145537,12 +145737,12 @@ PrefabInstance:
     - target: {fileID: 301316859089644483, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.09
+      value: 8.47
       objectReference: {fileID: 0}
     - target: {fileID: 301316859089644483, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.51
+      value: -26.51
       objectReference: {fileID: 0}
     - target: {fileID: 301316859089644483, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
@@ -145588,6 +145788,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Onca (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: onca
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.3492756
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.251175
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.020335197
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.10167503
       objectReference: {fileID: 0}
     - target: {fileID: 8127935179260655332, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
@@ -146312,7 +146537,7 @@ PrefabInstance:
     - target: {fileID: 301316859089644483, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.8
+      value: -16.79
       objectReference: {fileID: 0}
     - target: {fileID: 301316859089644483, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
@@ -146359,6 +146584,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Onca
       objectReference: {fileID: 0}
+    - target: {fileID: 2451124272554691985, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: onca
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 4.2716427
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3.2042122
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.022070885
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597397255778144144, guid: cf047dab9503595479d6111ce8b140fa,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.09228706
+      objectReference: {fileID: 0}
     - target: {fileID: 8127935179260655332, guid: cf047dab9503595479d6111ce8b140fa,
         type: 3}
       propertyPath: player
@@ -146389,6 +146639,11 @@ PrefabInstance:
       propertyPath: textoInimigos
       value: 
       objectReference: {fileID: 586224956}
+    - target: {fileID: 5179502288752069673, guid: a41f3d689a396014ba3616ce2ad7fb4f,
+        type: 3}
+      propertyPath: totalInimigos
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5179502288752069680, guid: a41f3d689a396014ba3616ce2ad7fb4f,
         type: 3}
       propertyPath: npc

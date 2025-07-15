@@ -11,6 +11,7 @@ TagManager:
   - Vara
   - Barril
   - Mirror
+  - onca
   layers:
   - Default
   - TransparentFX
