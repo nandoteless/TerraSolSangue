@@ -131425,7 +131425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 114.61, y: -1.0167}
+  m_AnchoredPosition: {x: 112.9, y: -8.8}
   m_SizeDelta: {x: 167.6122, y: 38.569}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &586224956
@@ -131672,6 +131672,7 @@ MonoBehaviour:
   rb: {fileID: 657210952}
   mov: {x: 0, y: 0}
   anim: {fileID: 657210956}
+  playerSounds: {fileID: 0}
   npc: {fileID: 2020396828}
 --- !u!212 &657210954
 SpriteRenderer:
@@ -131819,6 +131820,20 @@ MonoBehaviour:
   textoInimigos: {fileID: 586224956}
   inimigosDerrotados: 0
   totalInimigos: 3
+  somCarregar:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  somAtirar:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!61 &657210961
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -133140,7 +133155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1053420268
 RectTransform:
   m_ObjectHideFlags: 0
@@ -144295,7 +144310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125, y: -14}
+  m_AnchoredPosition: {x: 125.8, y: -14}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1665185288
@@ -145614,7 +145629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 108.1, y: -5.3}
+  m_AnchoredPosition: {x: 134, y: -29.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1907524686
