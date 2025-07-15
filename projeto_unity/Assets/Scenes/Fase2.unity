@@ -310,7 +310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308712494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.43, y: -16.03, z: 0}
+  m_LocalPosition: {x: 4.09, y: -16.03, z: 0}
   m_LocalScale: {x: 0.2967, y: 0.3059, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -708,7 +708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 757, y: 352}
+  m_AnchoredPosition: {x: 730, y: 352}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &956155250
@@ -721,12 +721,12 @@ GameObject:
   m_Component:
   - component: {fileID: 956155254}
   - component: {fileID: 956155253}
-  - component: {fileID: 956155251}
   - component: {fileID: 956155255}
   - component: {fileID: 956155256}
   - component: {fileID: 956155257}
   - component: {fileID: 956155258}
   - component: {fileID: 956155259}
+  - component: {fileID: 956155260}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -734,19 +734,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &956155251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956155250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01840aa1d625cac4e8d86ec709d3a242, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!212 &956155253
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -898,6 +885,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &956155260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956155250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01840aa1d625cac4e8d86ec709d3a242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rb: {fileID: 956155255}
+  anim: {fileID: 956155259}
+  playerSounds: {fileID: 0}
 --- !u!1 &1025090420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,7 +1610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 722, y: 356}
+  m_AnchoredPosition: {x: 704, y: 356}
   m_SizeDelta: {x: 60.64, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598223745
