@@ -9,6 +9,8 @@ TagManager:
   - Anzol
   - Peixe
   - Vara
+  - Barril
+  - Mirror
   layers:
   - Default
   - TransparentFX
