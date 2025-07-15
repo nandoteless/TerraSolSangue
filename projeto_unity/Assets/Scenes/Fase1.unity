@@ -886,6 +886,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1184905fed2373a4db4bc73575bf26ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  som:
+    Guid:
+      Data1: 706396353
+      Data2: 1156958257
+      Data3: 218786470
+      Data4: 1384400137
+    Path: event:/Cobra
 --- !u!1 &87683604
 GameObject:
   m_ObjectHideFlags: 0
@@ -145070,6 +145077,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1184905fed2373a4db4bc73575bf26ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  som:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1472685729
 GameObject:
   m_ObjectHideFlags: 0
@@ -145224,6 +145238,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1184905fed2373a4db4bc73575bf26ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  som:
+    Guid:
+      Data1: 706396353
+      Data2: 1156958257
+      Data3: 218786470
+      Data4: 1384400137
+    Path: event:/Cobra
 --- !u!1 &1495921623
 GameObject:
   m_ObjectHideFlags: 0
@@ -147998,6 +148019,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1184905fed2373a4db4bc73575bf26ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  som:
+    Guid:
+      Data1: 706396353
+      Data2: 1156958257
+      Data3: 218786470
+      Data4: 1384400137
+    Path: event:/Cobra
 --- !u!1 &2053876006
 GameObject:
   m_ObjectHideFlags: 0

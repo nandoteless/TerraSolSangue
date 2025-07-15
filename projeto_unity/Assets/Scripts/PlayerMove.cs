@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using FMODUnity;
 
 
 public class PlayerMove : MonoBehaviour
 {
+    [Header("FMOD")]
+    [SerializeField] private EventReference som;
     [SerializeField] float speed;
 
     [SerializeField] Rigidbody2D rb;
@@ -44,8 +47,10 @@ public class PlayerMove : MonoBehaviour
         {
             // DMVS - removido para usar Input System 
             // if (Input.GetKeyDown(KeyCode.E)) 
+
             if (InputManager.instancia.GetInteract())
             {
+                RuntimeManager.PlayOneShot(som, transform.position);
                 dialogueSystem.Next();
             }
         }
