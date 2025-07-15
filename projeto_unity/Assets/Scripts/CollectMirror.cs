@@ -20,7 +20,7 @@ public class CollectMirror : MonoBehaviour
     {
         if (mirrorCount >= mirrorsNeeded && Input.GetKeyDown(KeyCode.F))
         {
-            SceneManager.LoadScene("Fase2pt3"); // substitua pelo nome da próxima cena
+            SceneManager.LoadScene("Fase2pt2"); // substitua pelo nome da próxima cena
         }
     }
 

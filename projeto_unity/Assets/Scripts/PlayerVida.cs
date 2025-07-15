@@ -1,14 +1,22 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro; // ‚Üê Importante para usar TextMeshProUGUI
+
 
 public class PlayerVida : MonoBehaviour
 {
-    public Slider vidaSlider;
+    
+     public Slider vidaSlider;
     public float vidaMaxima = 100f;
     private float vidaAtual;
+
+    [Header("Guaran√°")]
+    public TextMeshProUGUI guaranaTMP;
+    private int guaranaContagem = 0;
+    private int guaranaTotal = 5;
 
     void Start()
     {
@@ -21,8 +29,10 @@ public class PlayerVida : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Slider de vida n„o atribuÌdo!");
+            Debug.LogWarning("Slider de vida n√£o atribu√≠do!");
         }
+
+        AtualizarTextoGuarana();
     }
 
     public void ReduzirVida(float quantidade)
@@ -38,19 +48,21 @@ public class PlayerVida : MonoBehaviour
         if (vidaAtual <= 0)
         {
             Debug.Log("GAME OVER");
-            ReiniciarCena(); // Chama a funÁ„o para reiniciar
+            ReiniciarCena();
         }
     }
-    public void AumentarVida(float quantidade)
-{
-    vidaAtual += quantidade;
-    vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
 
-    if (vidaSlider != null)
+    public void AumentarVida(float quantidade)
     {
-        vidaSlider.value = vidaAtual;
+        vidaAtual += quantidade;
+        vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
+
+        if (vidaSlider != null)
+        {
+            vidaSlider.value = vidaAtual;
+        }
     }
-}
+
     void ReiniciarCena()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -61,16 +73,35 @@ public class PlayerVida : MonoBehaviour
         if (other.CompareTag("cobra"))
         {
             Debug.Log("Colidiu com a cobra (Trigger)!");
-            ReduzirVida(25f); // Ajuste o valor conforme quiser
+            ReduzirVida(25f);
         }
     }
+
     void OnCollisionEnter2D(Collision2D collision)
-{   if (collision.gameObject.CompareTag("guarana"))
     {
-        Debug.Log("Colidiu com o arbusto de guaran·!");
-        AumentarVida(25f); // valor de cura
-        Destroy(collision.gameObject); // se quiser remover o arbusto depois
+        if (collision.gameObject.CompareTag("guarana"))
+        {
+            Debug.Log("Colidiu com o arbusto de guaran√°!");
+            AumentarVida(25f);
+            AdicionarGuarana();
+            Destroy(collision.gameObject);
+        }
     }
-}
-   
+
+    void AdicionarGuarana()
+    {
+        if (guaranaContagem < guaranaTotal)
+        {
+            guaranaContagem++;
+            AtualizarTextoGuarana();
+        }
+    }
+
+    void AtualizarTextoGuarana()
+    {
+        if (guaranaTMP != null)
+        {
+            guaranaTMP.text = guaranaContagem + " / " + guaranaTotal + " ";
+        }
+    }
 }
