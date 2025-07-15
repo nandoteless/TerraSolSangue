@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{740d7f80-aa78-42b7-8822-21f06c1daf68}">
 		<property name="name">
-			<value>madeira</value>
+			<value>QuebrarMadeira</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{ca0fa97b-78e6-4cde-a81d-f1c765b6a995}</destination>
+			<destination>{7d4c74c7-9314-4e0b-9e3b-cf81be0925db}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{2b326b87-6506-49fd-875c-d33484555775}</destination>
