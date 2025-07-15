@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FishingLine : MonoBehaviour
 {
-  public GameObject anzol;  // Arraste o objeto "Anzol" aqui no Unity Inspector
+   public GameObject anzol;  // Arraste o objeto "Anzol" aqui no Unity Inspector
     private LineRenderer lineRenderer;
+
+      // Contador de peixes pescados
+    private int peixesPescados = 0;
+    public int totalPeixesParaFase2 = 3;  // Quantos peixes são necessários para passar para a fase 2
 
     void Start()
     {
@@ -13,32 +18,46 @@ public class FishingLine : MonoBehaviour
         Cursor.visible = false;
 
         lineRenderer = GetComponent<LineRenderer>();
-        lineRenderer.positionCount = 2; // Linha com dois pontos
-        lineRenderer.SetPosition(0, transform.position); // Base da vara
+     lineRenderer = GetComponent<LineRenderer>();
+        lineRenderer.positionCount = 2;  // Linha com dois pontos
 
-        // Definindo a cor da linha para preta
-        lineRenderer.startColor = Color.black;
-        lineRenderer.endColor = Color.black;
+       
 
         // Caso queira mudar a largura da linha
         lineRenderer.startWidth = 0.05f;
         lineRenderer.endWidth = 0.05f;
     }
 
-    void Update()
+  void Update()
     {
-        // A posição do mouse segue a movimentação dele
+        // Atualiza a posição do anzol
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = 0f;  // Garantindo que a coordenada Z fique em 0, para não distorcer a linha
+        mousePosition.z = 0f;
 
-        // Movendo o anzol
         anzol.transform.position = mousePosition;
         lineRenderer.SetPosition(1, mousePosition);
-    }
 
-    // Quando a aplicação for fechada, mostrar novamente o cursor
-    private void OnApplicationQuit()
-    {
-        Cursor.visible = true;
+        // Verifica se o botão 'E' foi pressionado e o cursor está sobre o peixe
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
+
+            // Se o Raycast atingir um objeto com a tag "Peixe"
+            if (hit.collider != null && hit.collider.CompareTag("Peixe"))
+            {
+                // Destrói o peixe
+                Destroy(hit.collider.gameObject);
+
+                // Atualiza a contagem de peixes pescados
+                peixesPescados++;
+                Debug.Log("Peixes pescados: " + peixesPescados);
+
+                // Se o jogador pescar 3 peixes, troca para a fase 2
+                if (peixesPescados >= totalPeixesParaFase2)
+                {
+                    SceneManager.LoadScene("Fase2");  // Troca para a cena da fase 2
+                }
+            }
+        }
     }
 }

@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PescaCena.unity
     guid: 68aea4cca9637264e9c7deb122b83807
+  - enabled: 1
+    path: Assets/Scenes/Fase2.unity
+    guid: 30bb295886f8fc545b59cab6847011c1
   m_configObjects: {}
