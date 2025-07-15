@@ -131543,7 +131543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447221306}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -22.9, y: -24.2, z: 0}
+  m_LocalPosition: {x: -22.9, y: -31.4, z: 0}
   m_LocalScale: {x: 1.6533002, y: 39.091602, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -134718,10 +134718,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 508ffe32c81b7b34a8277be9f748fee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetivo1Text: {fileID: 586224956}
-  objetivo2Text: {fileID: 1053420269}
-  vara: {fileID: 1193851667}
-  localDeTeleport: {fileID: 599366933}
   nomeDaCena: PescaCena
 --- !u!61 &1193851671
 BoxCollider2D:
@@ -144977,6 +144973,7 @@ MonoBehaviour:
   itemGoals:
   - tipoItem: 0
     total: 4
+  varaParaDesbloquear: {fileID: 0}
 --- !u!4 &1545298605
 Transform:
   m_ObjectHideFlags: 0
