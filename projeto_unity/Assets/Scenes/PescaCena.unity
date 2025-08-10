@@ -291,11 +291,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: peixe azul
       objectReference: {fileID: 0}
-    - target: {fileID: 9193327311580854840, guid: 316cb27ac1da5674fac344e27320c524,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 316cb27ac1da5674fac344e27320c524, type: 3}
 --- !u!1 &425673734
@@ -409,24 +404,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 1.1}
   m_EdgeRadius: 0
---- !u!1 &510812720 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3050263589443588849, guid: 09398f69336af0b4ba287820bd42490f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1214190886}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &510812725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510812720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7feda43c847d6f3469414edc448b5a86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &694295955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -489,15 +466,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4048749296276277705, guid: 0e9f0c8ebc08a6c41a4d42e32b23b6c2,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5326750813705641681, guid: 0e9f0c8ebc08a6c41a4d42e32b23b6c2,
         type: 3}
       propertyPath: m_Name
       value: peixevermelho
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795674088123149955, guid: 0e9f0c8ebc08a6c41a4d42e32b23b6c2,
+        type: 3}
+      propertyPath: EventStopTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e9f0c8ebc08a6c41a4d42e32b23b6c2, type: 3}
@@ -563,20 +540,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4048749296276277705, guid: 0e9f0c8ebc08a6c41a4d42e32b23b6c2,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5326750813705641681, guid: 0e9f0c8ebc08a6c41a4d42e32b23b6c2,
         type: 3}
       propertyPath: m_Name
       value: peixevermelho (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7732354544373660828, guid: 0e9f0c8ebc08a6c41a4d42e32b23b6c2,
-        type: 3}
-      propertyPath: speed
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e9f0c8ebc08a6c41a4d42e32b23b6c2, type: 3}
@@ -736,11 +703,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: peixe dourado (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 3928001928619216010, guid: 09398f69336af0b4ba287820bd42490f,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6365966094341820776, guid: 09398f69336af0b4ba287820bd42490f,
         type: 3}
       propertyPath: m_RootOrder
@@ -798,50 +760,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09398f69336af0b4ba287820bd42490f, type: 3}
---- !u!1 &1242033065 stripped
+--- !u!1 &1294168911
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3050263589443588849, guid: 09398f69336af0b4ba287820bd42490f,
-    type: 3}
-  m_PrefabInstance: {fileID: 3445869924014223677}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1242033069
-BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242033065}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.58, y: 2.56}
-    newSize: {x: 2.58, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.58, y: 2.56}
-  m_EdgeRadius: 0
---- !u!114 &1242033070
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1294168913}
+  - component: {fileID: 1294168912}
+  m_Layer: 0
+  m_Name: Som Ambiente
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1294168912
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1242033065}
+  m_GameObject: {fileID: 1294168911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7feda43c847d6f3469414edc448b5a86, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1019632002
+      Data2: 1236349953
+      Data3: 1531444151
+      Data4: -1615305196
+    Path: event:/BG/UnderWater
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &1294168913
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294168911}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.017818412, y: 0.121708766, z: -0.03331682}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1422047715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -909,16 +890,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: peixe azul (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6674074696910626690, guid: 316cb27ac1da5674fac344e27320c524,
-        type: 3}
-      propertyPath: speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9193327311580854840, guid: 316cb27ac1da5674fac344e27320c524,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 316cb27ac1da5674fac344e27320c524, type: 3}
 --- !u!1 &1563226760
@@ -931,7 +902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1563226763}
   - component: {fileID: 1563226762}
-  - component: {fileID: 1563226761}
+  - component: {fileID: 1563226764}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -939,14 +910,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1563226761
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1563226760}
-  m_Enabled: 1
 --- !u!20 &1563226762
 Camera:
   m_ObjectHideFlags: 0
@@ -1005,6 +968,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1563226764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563226760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1603734431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,50 +1174,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1695938575 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3050263589443588849, guid: 09398f69336af0b4ba287820bd42490f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1920530484}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1695938579
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695938575}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.58, y: 2.56}
-    newSize: {x: 2.58, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.58, y: 2.56}
-  m_EdgeRadius: 0
---- !u!114 &1695938584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695938575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7feda43c847d6f3469414edc448b5a86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1920530484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1248,20 +1181,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -9134022141550239101, guid: 09398f69336af0b4ba287820bd42490f,
-        type: 3}
-      propertyPath: speed
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 3050263589443588849, guid: 09398f69336af0b4ba287820bd42490f,
         type: 3}
       propertyPath: m_Name
       value: peixe dourado (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928001928619216010, guid: 09398f69336af0b4ba287820bd42490f,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6365966094341820776, guid: 09398f69336af0b4ba287820bd42490f,
         type: 3}
@@ -1327,25 +1250,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -9134022141550239101, guid: 09398f69336af0b4ba287820bd42490f,
-        type: 3}
-      propertyPath: speed
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 3050263589443588849, guid: 09398f69336af0b4ba287820bd42490f,
         type: 3}
       propertyPath: m_Name
       value: peixe dourado
-      objectReference: {fileID: 0}
-    - target: {fileID: 3050263589443588849, guid: 09398f69336af0b4ba287820bd42490f,
-        type: 3}
-      propertyPath: m_TagString
-      value: Peixe
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928001928619216010, guid: 09398f69336af0b4ba287820bd42490f,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6365966094341820776, guid: 09398f69336af0b4ba287820bd42490f,
         type: 3}
@@ -1402,6 +1310,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4287426729968705683, guid: 09398f69336af0b4ba287820bd42490f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09398f69336af0b4ba287820bd42490f, type: 3}

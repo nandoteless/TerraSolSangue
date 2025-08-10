@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2190201149307928925}
   - component: {fileID: 7732354544373660828}
   - component: {fileID: 8499378867923446004}
-  - component: {fileID: -6223857905500860017}
+  - component: {fileID: 5795674088123149955}
   m_Layer: 0
   m_Name: peixevermelho
   m_TagString: Peixe
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3eb8dca3ce122d64d9ea343a4a75aca6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.77, y: 2.56}
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c190fc0588b83e245be3f11e6558f198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 4
 --- !u!61 &8499378867923446004
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -139,17 +139,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.77, y: 2.56}
   m_EdgeRadius: 0
---- !u!114 &-6223857905500860017
+--- !u!114 &5795674088123149955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5326750813705641681}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71f14bfaef2d390438c0de40138e7c62, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishPrefab: {fileID: 5326750813705641681}
-  spawnRate: 2
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1100447332
+      Data2: 1182116963
+      Data3: -1138644812
+      Data4: -53892437
+    Path: event:/SFX/Splash
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

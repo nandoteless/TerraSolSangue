@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BartolomeuMovement : MonoBehaviour
 {
@@ -14,13 +15,17 @@ public class BartolomeuMovement : MonoBehaviour
 {
     if (InputManager.instancia == null) return;
 
-    mov.x = InputManager.instancia.movement.x;
-    mov.y = InputManager.instancia.movement.y;
+    mov = InputManager.instancia.movement;
+     Debug.Log("MOV: " + mov);
+
+    if (mov != Vector2.zero)
+        Debug.Log("Movendo: " + mov); // Veja isso no Console
 
     anim.SetFloat("Horizontal", mov.x);
     anim.SetFloat("Vertical", mov.y);
     anim.SetFloat("Speed", mov.sqrMagnitude);
 }
+
 
 
     void FixedUpdate()
