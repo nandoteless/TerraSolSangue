@@ -12,6 +12,7 @@ TagManager:
   - Barril
   - Mirror
   - onca
+  - sapo
   layers:
   - Default
   - TransparentFX

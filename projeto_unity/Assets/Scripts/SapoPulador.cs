@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity; 
 
 public class SapoPulador : MonoBehaviour
 {
-     public Vector2[] posicoesDePulo; // Adicione no Inspector as posições para onde o sapo pode ir
+    public Vector2[] posicoesDePulo; 
     private int indiceAtual = 0;
+
+    [EventRef]
+    public string eventoSomPulo;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Checa se quem colidiu foi o player (certifique-se de colocar a Tag "Player" no seu jogador)
+        // Checa se quem colidiu foi o player
         if (collision.gameObject.CompareTag("Player"))
         {
             PularParaProximaPosicao();
@@ -20,10 +24,16 @@ public class SapoPulador : MonoBehaviour
     {
         if (posicoesDePulo.Length == 0) return;
 
-        // Define a nova posição
+        // Define a nova posiÃ§Ã£o
         transform.position = posicoesDePulo[indiceAtual];
 
-        // Avança para a próxima posição (loop infinito)
+        // Toca o som de pulo do sapo
+        if (!string.IsNullOrEmpty(eventoSomPulo))
+        {
+            RuntimeManager.PlayOneShot(eventoSomPulo, transform.position);
+        }
+
+        // AvanÃ§a para a prÃ³xima posiÃ§Ã£o (loop infinito)
         indiceAtual = (indiceAtual + 1) % posicoesDePulo.Length;
     }
 }
