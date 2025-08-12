@@ -334,7 +334,7 @@ MonoBehaviour:
   Path: ../projeto_fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638905049971815131
+  lastModified: 638906075496250637
   FileSizes:
   - Name: Desktop
     Value: 2054
@@ -381,7 +381,7 @@ MonoBehaviour:
   Path: ../projeto_fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638905049971795200
+  lastModified: 638906075496250637
   FileSizes:
   - Name: Desktop
     Value: 2300128
@@ -651,7 +651,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -3958550773355988751}
   cacheVersion: 131848
-  cacheTime: 638905049971815131
+  cacheTime: 638906075496250637
   SerializableEventsDict:
   - key: event:/Footsteps/Footsteps
     index: 0
@@ -695,16 +695,18 @@ MonoBehaviour:
     index: 19
   - key: event:/SFX/Wood 3
     index: 20
-  - key: event:/SFX/Wood 2
-    index: 21
   - key: event:/SFX/splash
-    index: 22
+    index: 21
   - key: event:/SFX/Wood
-    index: 23
+    index: 22
   - key: event:/BG/MarGaivotas
-    index: 24
+    index: 23
   - key: event:/SFX/sliding-chair-47711_DLgPlXOY
+    index: 24
+  - key: event:/SFX/zapsplat_leisure_fishing_road_set_down_wood_jetty_002_24608
     index: 25
+  - key: event:/SFX/sapo
+    index: 26
 --- !u!114 &1315663733863040519
 MonoBehaviour:
   m_ObjectHideFlags: 0
