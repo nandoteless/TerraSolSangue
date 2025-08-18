@@ -317,6 +317,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &973317287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 973317289}
+  - component: {fileID: 973317290}
+  m_Layer: 0
+  m_Name: "m\xFAsica"
+  m_TagString: musica
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &973317289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973317287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5005206, y: 0.055998348, z: 0.045704722}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &973317290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973317287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5309b455b487545a36ceb68804565a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicaEvent:
+    Guid:
+      Data1: -900236582
+      Data2: 1129130913
+      Data3: 1741652893
+      Data4: 1546698061
+    Path: "event:/BG/M\xFAsica"
 --- !u!1 &1080545496
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,7 +588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1396414240}
   - component: {fileID: 1396414239}
-  - component: {fileID: 1396414238}
+  - component: {fileID: 1396414241}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -545,14 +596,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1396414238
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396414237}
-  m_Enabled: 1
 --- !u!20 &1396414239
 Camera:
   m_ObjectHideFlags: 0
@@ -611,6 +654,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1396414241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396414237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1699630632
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,11 +786,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   som:
     Guid:
-      Data1: 165674214
-      Data2: 1136143437
-      Data3: -1108029519
-      Data4: 307499234
-    Path: event:/SFX/Select_Menu
+      Data1: 1433831455
+      Data2: 1196066977
+      Data3: 1624453262
+      Data4: -2077377349
+    Path: event:/SFX/menu-select
   botaoIniciar: {fileID: 1111995258}
   botaoJogar: {fileID: 0}
   botaoHistoria: {fileID: 0}

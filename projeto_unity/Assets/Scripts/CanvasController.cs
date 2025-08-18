@@ -41,10 +41,19 @@ public class CanvasController : MonoBehaviour
     }
 
     public void CarregarFase1()
+{
+    RuntimeManager.PlayOneShot(som, transform.position);
+
+    // Achar o objeto da música e parar sem destruir
+    MusicaController musica = FindObjectOfType<MusicaController>();
+    if (musica != null)
     {
-        RuntimeManager.PlayOneShot(som, transform.position);
-        SceneManager.LoadScene("Cuts1");
+        musica.PararMusica();
     }
+
+    SceneManager.LoadScene("Cuts1");
+}
+
 
     public void CarregarHistoria()
     {
