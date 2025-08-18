@@ -891,7 +891,6 @@ GameObject:
   - component: {fileID: 956155258}
   - component: {fileID: 956155259}
   - component: {fileID: 956155260}
-  - component: {fileID: 956155261}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -945,7 +944,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 10.8, y: 13.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1073,21 +1072,6 @@ MonoBehaviour:
   rb: {fileID: 956155255}
   anim: {fileID: 956155259}
   playerSounds: {fileID: 0}
---- !u!111 &956155261
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956155250}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &1025090420
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,8 @@ public class BartolomeuMovement : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private PlayerSounds playerSounds;
     private Vector2 mov;
+    private int HorizontalHash  = Animator.StringToHash("Horizontal");
+    private int VerticalHash  = Animator.StringToHash("Vertical");
 
     void Update()
 {
@@ -21,8 +23,8 @@ public class BartolomeuMovement : MonoBehaviour
     if (mov != Vector2.zero)
         Debug.Log("Movendo: " + mov); // Veja isso no Console
 
-    anim.SetFloat("Horizontal", mov.x);
-    anim.SetFloat("Vertical", mov.y);
+    anim.SetFloat(HorizontalHash, mov.x);
+    anim.SetFloat(VerticalHash, mov.y);
     anim.SetFloat("Speed", mov.sqrMagnitude);
 }
 
@@ -38,5 +40,7 @@ public class BartolomeuMovement : MonoBehaviour
     {
         playerSounds.PlayFootsteps(); // Certifique-se de que esse método está configurado corretamente
     }
+
+    
 }
 
