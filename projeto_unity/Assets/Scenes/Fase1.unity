@@ -133263,7 +133263,7 @@ MonoBehaviour:
       Data2: 1285651843
       Data3: 1415191435
       Data4: 386677560
-    Path: event:/porco
+    Path: event:/SFX/porco
   Event: 
   EventPlayTrigger: 15
   EventStopTrigger: 0
@@ -146389,7 +146389,7 @@ MonoBehaviour:
       Data2: 1285651843
       Data3: 1415191435
       Data4: 386677560
-    Path: event:/porco
+    Path: event:/SFX/porco
   Event: 
   EventPlayTrigger: 15
   EventStopTrigger: 0

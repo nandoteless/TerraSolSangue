@@ -136,33 +136,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-5269384675676212522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/zapsplat_leisure_fishing_road_set_down_wood_jetty_002_24608
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/zapsplat_leisure_fishing_road_set_down_wood_jetty_002_24608
-  Guid:
-    Data1: 149414435
-    Data2: 1192987830
-    Data3: 1514671516
-    Data4: 538929967
-  Banks:
-  - {fileID: -3176307225314155774}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-5129594494835781356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,10 +307,14 @@ MonoBehaviour:
   Path: ../projeto_fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< HEAD
   lastModified: 638911039773611952
+=======
+  lastModified: 638911121584476507
+>>>>>>> 8134178bff335dac6cbcf8cd09e8895f74f7fc16
   FileSizes:
   - Name: Desktop
-    Value: 2054
+    Value: 2066
   Exists: 1
 --- !u!114 &-3631964448380398887
 MonoBehaviour:
@@ -381,10 +358,14 @@ MonoBehaviour:
   Path: ../projeto_fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< HEAD
   lastModified: 638911039773611952
+=======
+  lastModified: 638911121584446602
+>>>>>>> 8134178bff335dac6cbcf8cd09e8895f74f7fc16
   FileSizes:
   - Name: Desktop
-    Value: 2300128
+    Value: 3551872
   Exists: 1
 --- !u!114 &-2695067105720291460
 MonoBehaviour:
@@ -423,9 +404,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Murmurro
+  m_Name: event:/SFX/murmurro
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Murmurro
+  Path: event:/SFX/murmurro
   Guid:
     Data1: -605010486
     Data2: 1195058658
@@ -602,6 +583,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1152
+--- !u!114 &-23163478453223462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/BG/M\xFAsica"
+  m_EditorClassIdentifier: 
+  Path: "event:/BG/M\xFAsica"
+  Guid:
+    Data1: -900236582
+    Data2: 1129130913
+    Data3: 1741652893
+    Data4: 1546698061
+  Banks:
+  - {fileID: -3176307225314155774}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 93204
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,15 +651,20 @@ MonoBehaviour:
   - {fileID: 2334462653553400434}
   - {fileID: -7680777407248538923}
   - {fileID: 4314345725782644613}
-  - {fileID: -5269384675676212522}
   - {fileID: 3830830264403682147}
+  - {fileID: -23163478453223462}
+  - {fileID: 4928342187484198522}
   EditorParameters: []
   MasterBanks:
   - {fileID: -3176307225314155774}
   StringsBanks:
   - {fileID: -3958550773355988751}
   cacheVersion: 131848
+<<<<<<< HEAD
   cacheTime: 638911039773611952
+=======
+  cacheTime: 638911121584476507
+>>>>>>> 8134178bff335dac6cbcf8cd09e8895f74f7fc16
   SerializableEventsDict:
   - key: event:/Footsteps/Footsteps
     index: 0
@@ -681,7 +694,7 @@ MonoBehaviour:
     index: 12
   - key: event:/SFX/select_Menu
     index: 13
-  - key: event:/SFX/Murmurro
+  - key: event:/SFX/murmurro
     index: 14
   - key: event:/SFX/Cobra
     index: 15
@@ -703,10 +716,12 @@ MonoBehaviour:
     index: 23
   - key: event:/SFX/sliding-chair-47711_DLgPlXOY
     index: 24
-  - key: event:/SFX/zapsplat_leisure_fishing_road_set_down_wood_jetty_002_24608
-    index: 25
   - key: event:/SFX/sapo
+    index: 25
+  - key: "event:/BG/M\xFAsica"
     index: 26
+  - key: event:/SFX/menu-select
+    index: 27
 --- !u!114 &1315663733863040519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,6 +877,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 39136
   Exists: 1
+--- !u!114 &4928342187484198522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/menu-select
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/menu-select
+  Guid:
+    Data1: 1433831455
+    Data2: 1196066977
+    Data3: 1624453262
+    Data4: -2077377349
+  Banks:
+  - {fileID: -3176307225314155774}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 576
 --- !u!114 &6539716432562154361
 MonoBehaviour:
   m_ObjectHideFlags: 0

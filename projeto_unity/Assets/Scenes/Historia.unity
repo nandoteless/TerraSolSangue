@@ -240,11 +240,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   som:
     Guid:
-      Data1: 165674214
-      Data2: 1136143437
-      Data3: -1108029519
-      Data4: 307499234
-    Path: event:/SFX/Select_Menu
+      Data1: 1433831455
+      Data2: 1196066977
+      Data3: 1624453262
+      Data4: -2077377349
+    Path: event:/SFX/menu-select
   botaoIniciar: {fileID: 0}
   botaoJogar: {fileID: 0}
   botaoHistoria: {fileID: 0}
