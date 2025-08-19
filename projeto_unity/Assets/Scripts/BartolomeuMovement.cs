@@ -23,9 +23,12 @@ public class BartolomeuMovement : MonoBehaviour
     if (mov != Vector2.zero)
         Debug.Log("Movendo: " + mov); // Veja isso no Console
 
+     float speedValue = mov.sqrMagnitude;
+    if (speedValue < 0.01f) speedValue = 0f;
+
     anim.SetFloat(HorizontalHash, mov.x);
     anim.SetFloat(VerticalHash, mov.y);
-    anim.SetFloat("Speed", mov.sqrMagnitude);
+    anim.SetFloat("Speed", speedValue);
 }
 
 
