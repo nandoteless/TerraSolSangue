@@ -37,6 +37,11 @@ public class FishingLine : MonoBehaviour
         // Troca de fase
         if (peixesPescados >= totalPeixesParaFase2)
         {
+            MusicaController musica = FindObjectOfType<MusicaController>();
+            if (musica != null)
+            {
+                musica.PararMusica();
+            }
             SceneManager.LoadScene("Fase2");
         }
 

@@ -14,7 +14,7 @@ public class GameManePesca : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // mantém o GameManager entre cenas
+            DontDestroyOnLoad(gameObject); // mantï¿½m o GameManager entre cenas
         }
         else
         {
@@ -29,6 +29,11 @@ public class GameManePesca : MonoBehaviour
 
         if (peixesPescados >= totalPeixes)
         {
+            GameObject musica = GameObject.FindGameObjectWithTag("Musica");
+        if (musica != null)
+        {
+            Destroy(musica);
+        }
             SceneManager.LoadScene("Fase2"); // troca de fase
         }
     }

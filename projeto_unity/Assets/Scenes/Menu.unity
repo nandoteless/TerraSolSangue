@@ -285,7 +285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 387317079}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 633425833}
+        m_TargetAssemblyTypeName: CanvasController, Assembly-CSharp
+        m_MethodName: CarregarHistoria
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &387317079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,7 +779,7 @@ MonoBehaviour:
       Data3: 1624453262
       Data4: -2077377349
     Path: event:/SFX/menu-select
-  botaoIniciar: {fileID: 2109313961}
+  botaoIniciar: {fileID: 0}
   botaoJogar: {fileID: 2109313961}
   botaoHistoria: {fileID: 387317078}
   botaoMenu: {fileID: 0}
@@ -1013,7 +1025,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1229256321}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 633425833}
+        m_TargetAssemblyTypeName: CanvasController, Assembly-CSharp
+        m_MethodName: CarregarInstrucao
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1229256321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1258,7 +1282,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1722439525}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 633425828}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1722439525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,7 +1416,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2109313962}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 633425833}
+        m_TargetAssemblyTypeName: CanvasController, Assembly-CSharp
+        m_MethodName: CarregarFase1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2109313962
 MonoBehaviour:
   m_ObjectHideFlags: 0

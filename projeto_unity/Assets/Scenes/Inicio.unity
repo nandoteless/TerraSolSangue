@@ -528,9 +528,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1699630632}
+      - m_Target: {fileID: 1699630637}
         m_TargetAssemblyTypeName: CanvasController, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: CarregarMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -769,45 +769,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1294168913}
-  - component: {fileID: 1294168912}
+  - component: {fileID: 1294168914}
   m_Layer: 0
-  m_Name: Som Ambiente
-  m_TagString: Untagged
+  m_Name: "m\xFAsica"
+  m_TagString: musica
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1294168912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294168911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1019632002
-      Data2: 1236349953
-      Data3: 1531444151
-      Data4: -1615305196
-    Path: event:/BG/UnderWater
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!4 &1294168913
 Transform:
   m_ObjectHideFlags: 0
@@ -823,6 +792,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1294168914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294168911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5309b455b487545a36ceb68804565a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicaEvent:
+    Guid:
+      Data1: 1019632002
+      Data2: 1236349953
+      Data3: 1531444151
+      Data4: -1615305196
+    Path: event:/BG/UnderWater
 --- !u!1001 &1422047715
 PrefabInstance:
   m_ObjectHideFlags: 0
