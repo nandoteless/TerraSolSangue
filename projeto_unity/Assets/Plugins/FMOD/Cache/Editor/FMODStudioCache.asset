@@ -1,6 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &-8694589399345545597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +141,9 @@ MonoBehaviour:
 =======
 --- !u!114 &-8714685666601888327
 >>>>>>> Stashed changes
+=======
+--- !u!114 &-8714685666601888327
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,7 +163,11 @@ MonoBehaviour:
     Data4: 1383237310
   Banks:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 3049638290094702375}
+=======
+  - {fileID: 661042163796713469}
+>>>>>>> Stashed changes
 =======
   - {fileID: 661042163796713469}
 >>>>>>> Stashed changes
@@ -171,8 +179,11 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 3562
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &-5610674289014707457
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!114 &-7233154944298929786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,6 +348,9 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 2403
 --- !u!114 &-3651809738680178899
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,7 +371,11 @@ MonoBehaviour:
     Data4: 1681579991
   Banks:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 3049638290094702375}
+=======
+  - {fileID: 661042163796713469}
+>>>>>>> Stashed changes
 =======
   - {fileID: 661042163796713469}
 >>>>>>> Stashed changes
@@ -369,7 +387,11 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 242
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &-5140824978205655772
+=======
+--- !u!114 &-3577748955314851945
+>>>>>>> Stashed changes
 =======
 --- !u!114 &-3577748955314851945
 >>>>>>> Stashed changes
@@ -382,6 +404,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_Name: event:/SFX/QuebrarMadeira
   m_EditorClassIdentifier: 
@@ -405,6 +428,18 @@ MonoBehaviour:
   Banks:
   - {fileID: 661042163796713469}
 >>>>>>> Stashed changes
+=======
+  m_Name: event:/SFX/murmurro
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/murmurro
+  Guid:
+    Data1: -605010486
+    Data2: 1195058658
+    Data3: 379048617
+    Data4: 371729371
+  Banks:
+  - {fileID: 661042163796713469}
+>>>>>>> Stashed changes
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -412,9 +447,12 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   Length: 1152
 --- !u!114 &-4642614690116185357
 =======
+=======
+>>>>>>> Stashed changes
   Length: 705
 --- !u!114 &-1269585311993417942
 MonoBehaviour:
@@ -444,6 +482,9 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 1152
 --- !u!114 &-1063442319695852400
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,6 +495,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_Name: event:/SFX/sliding-chair-47711_DLgPlXOY
   m_EditorClassIdentifier: 
@@ -595,6 +637,8 @@ MonoBehaviour:
   Banks:
   - {fileID: 3049638290094702375}
 =======
+=======
+>>>>>>> Stashed changes
   m_Name: "event:/BG/Floresta_P\xE1ssaros"
   m_EditorClassIdentifier: 
   Path: "event:/BG/Floresta_P\xE1ssaros"
@@ -605,6 +649,9 @@ MonoBehaviour:
     Data4: -525750586
   Banks:
   - {fileID: 661042163796713469}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   IsStream: 1
   Is3D: 0
@@ -613,9 +660,12 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   Length: 0
 --- !u!114 &-1251010755200081849
 =======
+=======
+>>>>>>> Stashed changes
   Length: 52506
 --- !u!114 &-478374919569964225
 MonoBehaviour:
@@ -645,6 +695,9 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 9247
 --- !u!114 &-150026332652379438
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,7 +718,11 @@ MonoBehaviour:
     Data4: -1615305196
   Banks:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 3049638290094702375}
+=======
+  - {fileID: 661042163796713469}
+>>>>>>> Stashed changes
 =======
   - {fileID: 661042163796713469}
 >>>>>>> Stashed changes
@@ -676,6 +733,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 --- !u!114 &-1180226974449811070
 MonoBehaviour:
@@ -733,6 +791,8 @@ MonoBehaviour:
   Length: 679
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,6 +806,7 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   - {fileID: -2324734219883929561}
   - {fileID: 3049638290094702375}
@@ -786,6 +847,8 @@ MonoBehaviour:
   cacheVersion: 131848
   cacheTime: 638912125111269850
 =======
+=======
+>>>>>>> Stashed changes
   - {fileID: 4434232739677303902}
   - {fileID: 661042163796713469}
   EditorEvents:
@@ -824,6 +887,9 @@ MonoBehaviour:
   - {fileID: 4434232739677303902}
   cacheVersion: 131848
   cacheTime: 638912126065738954
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   SerializableEventsDict:
   - key: event:/SFX/Wood 3
@@ -883,8 +949,11 @@ MonoBehaviour:
   - key: event:/SFX/AtirarArco
     index: 27
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &1344833744833965409
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!114 &661042163796713469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,6 +1056,9 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 4000
 --- !u!114 &3166938854233575138
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1007,7 +1079,11 @@ MonoBehaviour:
     Data4: -691736951
   Banks:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 3049638290094702375}
+=======
+  - {fileID: 661042163796713469}
+>>>>>>> Stashed changes
 =======
   - {fileID: 661042163796713469}
 >>>>>>> Stashed changes
@@ -1018,6 +1094,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3160
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 --- !u!114 &1603985224431645199
 MonoBehaviour:
@@ -1259,6 +1336,9 @@ MonoBehaviour:
 =======
 --- !u!114 &3175311438144971740
 >>>>>>> Stashed changes
+=======
+--- !u!114 &3175311438144971740
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1278,7 +1358,11 @@ MonoBehaviour:
     Data4: -53892437
   Banks:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 3049638290094702375}
+=======
+  - {fileID: 661042163796713469}
+>>>>>>> Stashed changes
 =======
   - {fileID: 661042163796713469}
 >>>>>>> Stashed changes
@@ -1290,7 +1374,11 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &7765690276029143332
+=======
+--- !u!114 &3237142142201208704
+>>>>>>> Stashed changes
 =======
 --- !u!114 &3237142142201208704
 >>>>>>> Stashed changes
@@ -1304,6 +1392,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Name: event:/SFX/CarregarArco
   m_EditorClassIdentifier: 
   Path: event:/SFX/CarregarArco
@@ -1315,6 +1404,8 @@ MonoBehaviour:
   Banks:
   - {fileID: 3049638290094702375}
 =======
+=======
+>>>>>>> Stashed changes
   m_Name: event:/SFX/sliding-chair-47711_DLgPlXOY
   m_EditorClassIdentifier: 
   Path: event:/SFX/sliding-chair-47711_DLgPlXOY
@@ -1325,6 +1416,9 @@ MonoBehaviour:
     Data4: 1434772164
   Banks:
   - {fileID: 661042163796713469}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   IsStream: 0
   Is3D: 0
@@ -1333,8 +1427,13 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   Length: 2403
 --- !u!114 &7966231081928258132
+=======
+  Length: 0
+--- !u!114 &3372661490833222989
+>>>>>>> Stashed changes
 =======
   Length: 0
 --- !u!114 &3372661490833222989
@@ -1348,6 +1447,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_Name: "event:/BG/Floresta_P\xE1ssaros"
   m_EditorClassIdentifier: 
@@ -1368,6 +1468,8 @@ MonoBehaviour:
   Length: 52506
 --- !u!114 &8169441727835381120
 =======
+=======
+>>>>>>> Stashed changes
   m_Name: event:/SFX/sapo
   m_EditorClassIdentifier: 
   Path: event:/SFX/sapo
@@ -1386,6 +1488,9 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 679
 --- !u!114 &3518660395594551404
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1406,8 +1511,11 @@ MonoBehaviour:
     Data4: -1877399027
   Banks:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 3049638290094702375}
 =======
+=======
+>>>>>>> Stashed changes
   - {fileID: 661042163796713469}
   IsStream: 0
   Is3D: 0
@@ -1645,6 +1753,9 @@ MonoBehaviour:
     Data4: -1918305478
   Banks:
   - {fileID: 661042163796713469}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   IsStream: 0
   Is3D: 0
