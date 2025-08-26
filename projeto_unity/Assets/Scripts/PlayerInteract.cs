@@ -6,7 +6,7 @@ public class PlayerInteract : MonoBehaviour
 {
     private ColetaItem nearestCollectible;
 
-    void Update()
+    void CollectEvent()
     {
         // Verifica se possui um coletável próximo e se pressionou a tecla para realizar a coleta
         if (nearestCollectible != null && InputManager.instancia.GetCollect())

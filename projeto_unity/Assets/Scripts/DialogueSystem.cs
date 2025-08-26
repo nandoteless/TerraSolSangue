@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using System;
 using TMPro;
-public enum STATE {
+public enum STATE
+{
     DISABLED,
     WAITING,
     TYPING
 }
 
-public class DialogueSystem : MonoBehaviour {
+public class DialogueSystem : MonoBehaviour
+{
 
     public DialogueData dialogueData;
 
@@ -22,7 +25,8 @@ public class DialogueSystem : MonoBehaviour {
 
     STATE state;
 
-    void Awake() {
+    void Awake()
+    {
 
         typeText = FindObjectOfType<TypeTextAnimation>();
         dialogueUI = FindObjectOfType<DialogueUI>();
@@ -31,78 +35,85 @@ public class DialogueSystem : MonoBehaviour {
 
     }
 
-    void Start() {
+    void Start()
+    {
         state = STATE.DISABLED;
     }
 
-    void Update() {
 
-        if(state == STATE.DISABLED) return;
-
-        switch(state) {
-            case STATE.WAITING:
-                Waiting();
-                break;
-            case STATE.TYPING:
-                Typing();
-                break;
-        }
-
-    }
-
-    public void Next() {
-
-        if(currentText == 0) {
+    public void StartDialogue()
+    {
+        if (state == STATE.DISABLED)
+        {
             dialogueUI.Enable();
+            Next();
         }
-
-        dialogueUI.SetName(dialogueData.talkScript[currentText].name);
-
-        typeText.fullText = dialogueData.talkScript[currentText++].text;
-
-        if(currentText == dialogueData.talkScript.Count) finished = true;
-
-        typeText.StartTyping();
-        state = STATE.TYPING;
-
     }
 
-    void OnTypeFinishe() {
+    public void Next()
+    {
+
+        if (state != STATE.TYPING)
+        {
+
+            dialogueUI.SetName(dialogueData.talkScript[currentText].name);
+            typeText.fullText = dialogueData.talkScript[currentText].text;
+            currentText++;
+            typeText.StartTyping();
+            state = STATE.TYPING;
+            if (currentText == dialogueData.talkScript.Count) {
+                finished = true;
+            }
+            
+        }
+    }
+
+    void OnTypeFinishe()
+    {
         state = STATE.WAITING;
     }
 
-    void Waiting() {
-
-        // DMVS - removido para usar Input System if(Input.GetKeyDown(KeyCode.Return)) {
-        if (InputManager.instancia.GetCancelInteraction())
+    void Waiting()
+    {
+        if (!finished)
         {
-            if (!finished)
-            {
-                Next();
-            }
-            else
-            {
-                dialogueUI.Disable();
-                state = STATE.DISABLED;
-                currentText = 0;
-                finished = false;
-            }
-
+            Next();
         }
+        else
+        {
+            dialogueUI.Disable();
+            state = STATE.DISABLED;
+            currentText = dialogueData.talkScript.Count - 1;
+            finished = false;
+        }
+
+
 
     }
 
-    void Typing() {
-
-        // DMVS - removido para usar Input System if(Input.GetKeyDown(KeyCode.Return)) {
-        if (InputManager.instancia.GetCancelInteraction())
-        {
-            typeText.Skip();
-            state = STATE.WAITING;
-        }
-
+    void Typing()
+    {
+        typeText.Skip();
+        state = STATE.WAITING;
     }
 
+    public void CancelInteractEventEvent(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if (state == STATE.DISABLED) return;
+
+            switch (state)
+            {
+                case STATE.WAITING:
+                    Waiting();
+                    break;
+                case STATE.TYPING:
+                    Typing();
+                    break;
+            }
+        }
+    }
 }
 
 

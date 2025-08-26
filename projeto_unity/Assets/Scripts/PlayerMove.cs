@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.InputSystem;
 using FMODUnity;
 
 
@@ -30,32 +31,9 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // DMVS - removido para usar Input System
-        // mov.x = Input.GetAxisRaw("Horizontal");
-        // mov.y = Input.GetAxisRaw("Vertical");
-        mov.x = InputManager.instancia.movement.x;
-        mov.y = InputManager.instancia.movement.y;
-
         anim.SetFloat("Horizontal", mov.x);
         anim.SetFloat("Vertical", mov.y);
         anim.SetFloat("Speed", mov.sqrMagnitude);
-
-        // mov.Normalize();
-
-
-        if (Mathf.Abs(transform.position.x - npc.position.x) < 2.0f)
-        {
-            // DMVS - removido para usar Input System 
-            // if (Input.GetKeyDown(KeyCode.E)) 
-
-            if (InputManager.instancia.GetInteract())
-            {
-                RuntimeManager.PlayOneShot(som, transform.position);
-                dialogueSystem.Next();
-            }
-        }
-
-
     }
     void FixedUpdate()
     {
@@ -65,8 +43,20 @@ public class PlayerMove : MonoBehaviour
     {
         playerSounds.PlayFootsteps();
     }
-
-
+    public void MoveEvent(InputAction.CallbackContext context)
+    {
+        mov = context.ReadValue<Vector2>();
+    }
+    public void InteractEvent(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if(Mathf.Abs(transform.position.x - npc.position.x) < 2.0f)
+            {
+                dialogueSystem.StartDialogue();
+            }
+        }
+    }
 }
 
 

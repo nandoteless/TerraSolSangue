@@ -10,26 +10,19 @@ public class BartolomeuMovement : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private PlayerSounds playerSounds;
     private Vector2 mov;
-    private int HorizontalHash  = Animator.StringToHash("Horizontal");
-    private int VerticalHash  = Animator.StringToHash("Vertical");
+    private int HorizontalHash = Animator.StringToHash("Horizontal");
+    private int VerticalHash = Animator.StringToHash("Vertical");
 
     void Update()
-{
-    if (InputManager.instancia == null) return;
+    {
 
-    mov = InputManager.instancia.movement;
-     Debug.Log("MOV: " + mov);
+        float speedValue = mov.sqrMagnitude;
+        if (speedValue < 0.01f) speedValue = 0f;
 
-    if (mov != Vector2.zero)
-        Debug.Log("Movendo: " + mov); // Veja isso no Console
-
-     float speedValue = mov.sqrMagnitude;
-    if (speedValue < 0.01f) speedValue = 0f;
-
-    anim.SetFloat(HorizontalHash, mov.x);
-    anim.SetFloat(VerticalHash, mov.y);
-    anim.SetFloat("Speed", speedValue);
-}
+        anim.SetFloat(HorizontalHash, mov.x);
+        anim.SetFloat(VerticalHash, mov.y);
+        anim.SetFloat("Speed", speedValue);
+    }
 
 
 
@@ -43,7 +36,10 @@ public class BartolomeuMovement : MonoBehaviour
     {
         playerSounds.PlayFootsteps(); // Certifique-se de que esse método está configurado corretamente
     }
+    public void MoveEvent(InputAction.CallbackContext context)
+    {
+        mov = context.ReadValue<Vector2>();
+    }
 
-    
 }
 
