@@ -131773,7 +131773,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.7, y: -17.92, z: -10}
+  m_LocalPosition: {x: -8.6, y: -12.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -132289,7 +132289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657210951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.7, y: -17.92, z: 0}
+  m_LocalPosition: {x: -8.6, y: -12.9, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -133590,6 +133590,7 @@ GameObject:
   - component: {fileID: 951767557}
   - component: {fileID: 951767556}
   - component: {fileID: 951767559}
+  - component: {fileID: 951767560}
   m_Layer: 0
   m_Name: Guarana
   m_TagString: guarana
@@ -133705,11 +133706,42 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1698135008
-      Data2: 1169885345
-      Data3: -522057818
-      Data4: 1681579991
-    Path: event:/SFX/Item
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 9
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &951767560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951767555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1864937241
+      Data2: 1271689554
+      Data3: 148369085
+      Data4: 1507127591
+    Path: event:/SFX/bush-cut-103503
   Event: 
   EventPlayTrigger: 9
   EventStopTrigger: 0
@@ -133786,6 +133818,7 @@ GameObject:
   - component: {fileID: 978229878}
   - component: {fileID: 978229877}
   - component: {fileID: 978229881}
+  - component: {fileID: 978229882}
   m_Layer: 0
   m_Name: Guarana
   m_TagString: guarana
@@ -133901,11 +133934,42 @@ MonoBehaviour:
   CollisionTag: Player
   EventReference:
     Guid:
-      Data1: 1698135008
-      Data2: 1169885345
-      Data3: -522057818
-      Data4: 1681579991
-    Path: event:/SFX/Item
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 9
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &978229882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978229876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1864937241
+      Data2: 1271689554
+      Data3: 148369085
+      Data4: 1507127591
+    Path: event:/SFX/bush-cut-103503
   Event: 
   EventPlayTrigger: 9
   EventStopTrigger: 0
@@ -146948,6 +147012,7 @@ GameObject:
   - component: {fileID: 1840708541}
   - component: {fileID: 1840708540}
   - component: {fileID: 1840708543}
+  - component: {fileID: 1840708544}
   m_Layer: 0
   m_Name: Guarana
   m_TagString: guarana
@@ -147063,11 +147128,42 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1698135008
-      Data2: 1169885345
-      Data3: -522057818
-      Data4: 1681579991
-    Path: event:/SFX/Item
+      Data1: 1864937241
+      Data2: 1271689554
+      Data3: 148369085
+      Data4: 1507127591
+    Path: event:/SFX/bush-cut-103503
+  Event: 
+  EventPlayTrigger: 9
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1840708544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840708539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
   EventPlayTrigger: 9
   EventStopTrigger: 0
@@ -147553,7 +147649,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927483998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.7, y: -17.92, z: -10}
+  m_LocalPosition: {x: -8.6, y: -12.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -147809,6 +147905,7 @@ GameObject:
   - component: {fileID: 1987456101}
   - component: {fileID: 1987456100}
   - component: {fileID: 1987456103}
+  - component: {fileID: 1987456104}
   m_Layer: 0
   m_Name: Guarana
   m_TagString: guarana
@@ -147924,11 +148021,42 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1698135008
-      Data2: 1169885345
-      Data3: -522057818
-      Data4: 1681579991
-    Path: event:/SFX/Item
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 9
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1987456104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987456099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1864937241
+      Data2: 1271689554
+      Data3: 148369085
+      Data4: 1507127591
+    Path: event:/SFX/bush-cut-103503
   Event: 
   EventPlayTrigger: 9
   EventStopTrigger: 0
