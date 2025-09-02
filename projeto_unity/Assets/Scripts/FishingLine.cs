@@ -8,11 +8,10 @@ public class FishingLine : MonoBehaviour
 {
     public GameObject anzol;  
     private LineRenderer lineRenderer;
-
+    public float speed = 5f;
     private int peixesPescados = 0;
     public int totalPeixesParaFase2 = 3;
-
-    private Vector3 mousePosition; // Agora é global para ser usada em qualquer função
+    private Vector3 touchPosition;
 
     void Start()
     {
@@ -26,13 +25,22 @@ public class FishingLine : MonoBehaviour
 
     void Update()
     {
-        // Pega posição do mouse pelo novo Input System
-        Vector2 mousePos = Mouse.current.position.ReadValue();
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePos);
-        mousePosition.z = 0f;
+        // --- Captura toque na tela (Mobile) ---
+        if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
+        {
+            Vector2 touchPos = Touchscreen.current.primaryTouch.position.ReadValue();
+            touchPosition = Camera.main.ScreenToWorldPoint(touchPos);
+            touchPosition.z = 0f;
 
-        anzol.transform.position = mousePosition;
-        lineRenderer.SetPosition(1, mousePosition);
+                // move o anzol até o ponto tocado
+                anzol.transform.position = Vector3.MoveTowards(
+                anzol.transform.position,
+                touchPosition,
+                speed * Time.deltaTime
+            );
+
+            lineRenderer.SetPosition(1, anzol.transform.position);
+        }
 
         // Troca de fase
         if (peixesPescados >= totalPeixesParaFase2)
@@ -45,8 +53,9 @@ public class FishingLine : MonoBehaviour
             SceneManager.LoadScene("Fase2");
         }
 
-        // Botão de pescar
-        if (Keyboard.current.eKey.wasPressedThisFrame)
+        // Botão de pescar (tecla E no PC ou toque na tela)
+        if (Keyboard.current.eKey.wasPressedThisFrame ||
+            (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasReleasedThisFrame))
         {
             OnPress();
         }
@@ -54,7 +63,7 @@ public class FishingLine : MonoBehaviour
 
     void OnPress()
     {
-        RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
+        RaycastHit2D hit = Physics2D.Raycast(touchPosition, Vector2.zero);
 
         if (hit.collider != null && hit.collider.CompareTag("Peixe"))
         {
