@@ -468,7 +468,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &45525556
 RectTransform:
   m_ObjectHideFlags: 0
@@ -130240,7 +130240,7 @@ MonoBehaviour:
       Data2: 1119332984
       Data3: -266263928
       Data4: 1756306796
-    Path: event:/madeira
+    Path: event:/SFX/QuebrarMadeira
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -131773,7 +131773,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.6, y: -12.9, z: -10}
+  m_LocalPosition: {x: -30.12, y: 33.78, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -132290,7 +132290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657210951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.6, y: -12.9, z: 0}
+  m_LocalPosition: {x: -30.12, y: 33.78, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -132508,7 +132508,19 @@ MonoBehaviour:
     m_ActionId: 392345ad-77be-42d4-9226-78dadec52f82
     m_ActionName: Player/Collect[/Keyboard/f]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 657210962}
+        m_TargetAssemblyTypeName: PlayerInteract, Assembly-CSharp
+        m_MethodName: CollectEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: c5cd8703-0d46-4e3d-89a5-44ca2ce4e99a
     m_ActionName: Player/Machado
   m_NeverAutoSwitchControlSchemes: 0
@@ -132796,7 +132808,7 @@ MonoBehaviour:
       Data2: 1119332984
       Data3: -266263928
       Data4: 1756306796
-    Path: event:/madeira
+    Path: event:/SFX/QuebrarMadeira
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -133435,7 +133447,7 @@ MonoBehaviour:
       Data2: 1119332984
       Data3: -266263928
       Data4: 1756306796
-    Path: event:/madeira
+    Path: event:/SFX/QuebrarMadeira
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -135506,7 +135518,7 @@ PrefabInstance:
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -28
+      value: -27.999998
       objectReference: {fileID: 0}
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
@@ -135521,7 +135533,7 @@ PrefabInstance:
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9999887
       objectReference: {fileID: 0}
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
@@ -135536,7 +135548,7 @@ PrefabInstance:
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.0047716694
       objectReference: {fileID: 0}
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
@@ -135551,7 +135563,7 @@ PrefabInstance:
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 0.547
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1925603db2f1a214f86ae65a5be0829c, type: 3}
@@ -135580,7 +135592,7 @@ MonoBehaviour:
       Data2: 1119332984
       Data3: -266263928
       Data4: 1756306796
-    Path: event:/madeira
+    Path: event:/SFX/QuebrarMadeira
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -145732,7 +145744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ControlPath: <Gamepad>/buttonNorth
+  m_ControlPath: <Gamepad>/buttonEast
 --- !u!1 &1558366386
 GameObject:
   m_ObjectHideFlags: 0
@@ -146197,7 +146209,7 @@ PrefabInstance:
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12
+      value: -11.999998
       objectReference: {fileID: 0}
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
@@ -146212,7 +146224,7 @@ PrefabInstance:
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99999946
       objectReference: {fileID: 0}
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
@@ -146227,7 +146239,7 @@ PrefabInstance:
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.0010357928
       objectReference: {fileID: 0}
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
@@ -146242,7 +146254,7 @@ PrefabInstance:
     - target: {fileID: 2217299031683723723, guid: 1925603db2f1a214f86ae65a5be0829c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -0.119
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1925603db2f1a214f86ae65a5be0829c, type: 3}
@@ -146271,7 +146283,7 @@ MonoBehaviour:
       Data2: 1119332984
       Data3: -266263928
       Data4: 1756306796
-    Path: event:/madeira
+    Path: event:/SFX/QuebrarMadeira
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -147737,7 +147749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927483998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.6, y: -12.9, z: -10}
+  m_LocalPosition: {x: -30.12, y: 33.78, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -148537,8 +148549,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: InputManager
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6845361352486832294, guid: de32a4e8f0ac62a41a10320ee3329331, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de32a4e8f0ac62a41a10320ee3329331, type: 3}
 --- !u!1001 &7299644391884361337
 PrefabInstance:

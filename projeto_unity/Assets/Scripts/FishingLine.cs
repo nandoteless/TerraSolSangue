@@ -11,36 +11,48 @@ public class FishingLine : MonoBehaviour
     public float speed = 5f;
     private int peixesPescados = 0;
     public int totalPeixesParaFase2 = 3;
-    private Vector3 touchPosition;
+    private Vector3 targetPosition; // posição alvo (mouse ou toque)
 
     void Start()
     {
-        Cursor.visible = false;
+        Cursor.visible = true; // mostra o cursor no PC
 
         lineRenderer = GetComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
         lineRenderer.startWidth = 0.05f;
         lineRenderer.endWidth = 0.05f;
+
+        targetPosition = anzol.transform.position;
     }
 
     void Update()
     {
-        // --- Captura toque na tela (Mobile) ---
+        // --- Movimento com mouse (PC) ---
+        if (Mouse.current != null)
+        {
+            Vector2 mousePos = Mouse.current.position.ReadValue();
+            targetPosition = Camera.main.ScreenToWorldPoint(mousePos);
+            targetPosition.z = 0f;
+        }
+
+        // --- Movimento com toque (Mobile) ---
         if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
         {
             Vector2 touchPos = Touchscreen.current.primaryTouch.position.ReadValue();
-            touchPosition = Camera.main.ScreenToWorldPoint(touchPos);
-            touchPosition.z = 0f;
-
-                // move o anzol até o ponto tocado
-                anzol.transform.position = Vector3.MoveTowards(
-                anzol.transform.position,
-                touchPosition,
-                speed * Time.deltaTime
-            );
-
-            lineRenderer.SetPosition(1, anzol.transform.position);
+            targetPosition = Camera.main.ScreenToWorldPoint(touchPos);
+            targetPosition.z = 0f;
         }
+
+        // Move o anzol até a posição alvo
+        anzol.transform.position = Vector3.MoveTowards(
+            anzol.transform.position,
+            targetPosition,
+            speed * Time.deltaTime
+        );
+
+        // Atualiza a linha
+        lineRenderer.SetPosition(0, transform.position);
+        lineRenderer.SetPosition(1, anzol.transform.position);
 
         // Troca de fase
         if (peixesPescados >= totalPeixesParaFase2)
@@ -53,8 +65,8 @@ public class FishingLine : MonoBehaviour
             SceneManager.LoadScene("Fase2");
         }
 
-        // Botão de pescar (tecla E no PC ou toque na tela)
-        if (Keyboard.current.eKey.wasPressedThisFrame ||
+        // --- PESCAR (clique do mouse ou toque na tela) ---
+        if ((Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame) ||
             (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.wasReleasedThisFrame))
         {
             OnPress();
@@ -63,7 +75,7 @@ public class FishingLine : MonoBehaviour
 
     void OnPress()
     {
-        RaycastHit2D hit = Physics2D.Raycast(touchPosition, Vector2.zero);
+        RaycastHit2D hit = Physics2D.Raycast(anzol.transform.position, Vector2.zero);
 
         if (hit.collider != null && hit.collider.CompareTag("Peixe"))
         {
