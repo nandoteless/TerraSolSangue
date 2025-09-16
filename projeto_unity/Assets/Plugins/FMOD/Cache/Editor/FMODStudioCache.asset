@@ -189,6 +189,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7295620678789741247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps/Footsteps 2
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps/Footsteps 2
+  Guid:
+    Data1: 1162472379
+    Data2: 1188656888
+    Data3: 2085171644
+    Data4: -1117207993
+  Banks:
+  - {fileID: -6613010756048551396}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6184350883729994591}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6613010756048551396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,10 +232,10 @@ MonoBehaviour:
   Path: ../projeto_fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638935239171243960
+  lastModified: 638936390823288756
   FileSizes:
   - Name: Desktop
-    Value: 3557088
+    Value: 3593600
   Exists: 1
 --- !u!114 &-6550328389969003326
 MonoBehaviour:
@@ -386,39 +414,11 @@ MonoBehaviour:
   Path: ../projeto_fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638935239171243960
+  lastModified: 638936390823318658
   FileSizes:
   - Name: Desktop
-    Value: 2112
+    Value: 2156
   Exists: 1
---- !u!114 &-2764344946468645436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Footsteps/Footsteps
-  m_EditorClassIdentifier: 
-  Path: event:/Footsteps/Footsteps
-  Guid:
-    Data1: -1243087815
-    Data2: 1175762510
-    Data3: 539640982
-    Data4: 1906983463
-  Banks:
-  - {fileID: -6613010756048551396}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 8844239212409402113}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-2571882457887849765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,7 +522,6 @@ MonoBehaviour:
   - {fileID: -9173445336319615547}
   - {fileID: 8115046552518380502}
   - {fileID: -2464402071388495018}
-  - {fileID: -2764344946468645436}
   - {fileID: 9026167307416116136}
   - {fileID: -5002513514445854087}
   - {fileID: 6691721226408155178}
@@ -545,13 +544,15 @@ MonoBehaviour:
   - {fileID: 5604974699876076245}
   - {fileID: 4771564457197867986}
   - {fileID: -8367151331886504648}
+  - {fileID: 8715927473647626259}
+  - {fileID: -7295620678789741247}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6613010756048551396}
   StringsBanks:
   - {fileID: -3879569254628234079}
   cacheVersion: 131848
-  cacheTime: 638935239171243960
+  cacheTime: 638936390823318658
   SerializableEventsDict:
   - key: event:/SFX/Wood 3
     index: 0
@@ -565,52 +566,81 @@ MonoBehaviour:
     index: 4
   - key: event:/BG/UnderWater2
     index: 5
-  - key: event:/Footsteps/Footsteps
-    index: 6
   - key: "event:/SFX/Intera\xE7\xE3o"
-    index: 7
+    index: 6
   - key: event:/BG/MarGaivotas
-    index: 8
+    index: 7
   - key: event:/SFX/CarregarArco
-    index: 9
+    index: 8
   - key: event:/SFX/QuebrarMadeira
-    index: 10
+    index: 9
   - key: event:/BG/UnderWater
-    index: 11
+    index: 10
   - key: "event:/BG/Floresta_P\xE1ssaros"
-    index: 12
+    index: 11
   - key: event:/SFX/splash
-    index: 13
+    index: 12
   - key: event:/SFX/CaptureFish
-    index: 14
+    index: 13
   - key: event:/SFX/Carretel
-    index: 15
+    index: 14
   - key: event:/SFX/Dano
-    index: 16
+    index: 15
   - key: event:/SFX/sapo
-    index: 17
+    index: 16
   - key: event:/SFX/Cobra
-    index: 18
+    index: 17
   - key: event:/SFX/murmurro
-    index: 19
+    index: 18
   - key: "event:/BG/M\xFAsica"
-    index: 20
+    index: 19
   - key: "event:/SFX/Lan\xE7a"
-    index: 21
+    index: 20
   - key: event:/SFX/Item
-    index: 22
+    index: 21
   - key: event:/SFX/Wood
-    index: 23
+    index: 22
   - key: event:/SFX/select_Menu
-    index: 24
+    index: 23
   - key: event:/SFX/ColetaItemImportante
-    index: 25
+    index: 24
   - key: event:/SFX/Arco
-    index: 26
+    index: 25
   - key: event:/SFX/Rugido
-    index: 27
+    index: 26
   - key: event:/SFX/AtirarArco
+    index: 27
+  - key: event:/Footsteps/Footsteps
     index: 28
+  - key: event:/Footsteps/Footsteps 2
+    index: 29
+--- !u!114 &484143188190752303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Name: Footsteps
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3584324173
+    data2: 3619836162
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Grass
+  - Wood
+  - Sand
+  Exists: 1
 --- !u!114 &2100962872533768404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,6 +776,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 115
+--- !u!114 &6184350883729994591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps 2/Footsteps
+  m_EditorClassIdentifier: 
+  Name: Footsteps
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3584324173
+    data2: 3619836162
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Grass
+  - Wood
+  - Sand
+  Exists: 1
 --- !u!114 &6691721226408155178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,7 +938,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 705
---- !u!114 &8844239212409402113
+--- !u!114 &8715927473647626259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -890,24 +947,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/Footsteps
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps/Footsteps
   m_EditorClassIdentifier: 
-  Name: Footsteps
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 3584324173
-    data2: 3619836162
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Grass
-  - Wood
-  - Sand
-  Exists: 1
+  Path: event:/Footsteps/Footsteps
+  Guid:
+    Data1: -1243087815
+    Data2: 1175762510
+    Data3: 539640982
+    Data4: 1906983463
+  Banks:
+  - {fileID: -6613010756048551396}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 484143188190752303}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &8879019677652584203
 MonoBehaviour:
   m_ObjectHideFlags: 0

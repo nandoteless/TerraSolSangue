@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{d8c0d6ab-4d58-44a0-9f50-452a6279aaf4}">
+		<property name="assetPath">
+			<value>Footstep/Wood/Andar_Tábua_step_8.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.2310204081632653</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a05394a8-999e-4b4f-b71d-099a658787d9}</destination>
+		</relationship>
+	</object>
+</objects>
