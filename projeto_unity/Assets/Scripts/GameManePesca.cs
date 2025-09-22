@@ -34,7 +34,7 @@ public class GameManePesca : MonoBehaviour
         {
             Destroy(musica);
         }
-            SceneManager.LoadScene("Fase2"); // troca de fase
+            SceneManager.LoadScene("Cuts2"); // troca de fase
         }
     }
 }
