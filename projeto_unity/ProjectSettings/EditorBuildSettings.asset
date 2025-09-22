@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cuts2.unity
     guid: 8c0b1ee9330431f41b46616b77b52099
+  - enabled: 1
+    path: Assets/Scenes/irapuaindovila.unity
+    guid: 52411d439bf63704f9f0ee8292106251
+  - enabled: 1
+    path: Assets/Scenes/Cuts3.unity
+    guid: b0820ddc02ade7a46835a32dd67cab4b
+  - enabled: 1
+    path: Assets/Scenes/Cuts4.unity
+    guid: 967689f570b291743a8477f5bd8bf7d1
   m_configObjects: {}

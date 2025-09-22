@@ -62,7 +62,7 @@ public class FishingLine : MonoBehaviour
             {
                 musica.PararMusica();
             }
-            SceneManager.LoadScene("Fase2");
+            SceneManager.LoadScene("Cuts2");
         }
 
         // --- PESCAR (clique do mouse ou toque na tela) ---
