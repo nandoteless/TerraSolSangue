@@ -2,28 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine;
 
 public class AnimacaoDano : MonoBehaviour
 {
-    public Animator animator;         // Animator do Player
-    public string parametroAnim = "RecebeuDano"; // Nome do bool no Animator
-    public float duracaoAnim = 0.5f;  // tempo que a animação fica ativa
+    [Header("Objeto da animação de dano")]
+    public GameObject efeitoDano; // arraste aqui o objeto com a animação (fica desativado na cena)
 
-    // Chame esta função sempre que o Player receber dano
+    public float duracao = 0.5f; // tempo que fica ativo
+
     public void AcionarAnimacao()
     {
-        if (animator != null)
+        if (efeitoDano != null)
         {
-            animator.SetBool(parametroAnim, true);
-            Invoke(nameof(PararAnimacao), duracaoAnim);
+            efeitoDano.SetActive(true);
+            CancelInvoke(nameof(DesativarEfeito));
+            Invoke(nameof(DesativarEfeito), duracao);
+        }
+        else
+        {
+            Debug.LogWarning("Efeito de dano não atribuído no Inspector!");
         }
     }
 
-    private void PararAnimacao()
+    void DesativarEfeito()
     {
-        if (animator != null)
-        {
-            animator.SetBool(parametroAnim, false);
-        }
+        if (efeitoDano != null)
+            efeitoDano.SetActive(false);
     }
 }

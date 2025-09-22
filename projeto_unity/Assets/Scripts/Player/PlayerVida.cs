@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 using TMPro; // ← Importante para usar TextMeshProUGUI
 
 
+
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerVida : MonoBehaviour
 {
@@ -22,8 +24,9 @@ public class PlayerVida : MonoBehaviour
     private int guaranaContagem = 0;
     private int guaranaTotal = 5;
 
-    [Header("Animação de Dano")]
-    public AnimacaoDano animDano; // arraste o script no Inspector
+    [Header("Feedback de Dano")]
+    public GameObject efeitoDano;   // arraste o GameObject que será ativado (ex: tela vermelha, sprite, etc)
+    public float tempoAtivo = 0.5f; // tempo que o efeito fica ativo
 
     void Start()
     {
@@ -40,6 +43,10 @@ public class PlayerVida : MonoBehaviour
         }
 
         AtualizarTextoGuarana();
+
+        // Garante que o efeito começa desativado
+        if (efeitoDano != null)
+            efeitoDano.SetActive(false);
     }
 
     public void ReduzirVida(float quantidade)
@@ -50,15 +57,25 @@ public class PlayerVida : MonoBehaviour
         if (vidaSlider != null)
             vidaSlider.value = vidaAtual;
 
-        // Aciona animação de dano
-        if (animDano != null)
-            animDano.AcionarAnimacao();
+        // Ativa o feedback de dano
+        if (efeitoDano != null)
+        {
+            StopAllCoroutines(); // evita bug se tomar vários danos seguidos
+            StartCoroutine(AtivarEfeitoDano());
+        }
 
         if (vidaAtual <= 0)
         {
             Debug.Log("GAME OVER");
             ReiniciarCena();
         }
+    }
+
+    private IEnumerator AtivarEfeitoDano()
+    {
+        efeitoDano.SetActive(true);
+        yield return new WaitForSeconds(tempoAtivo);
+        efeitoDano.SetActive(false);
     }
 
     public void AumentarVida(float quantidade)
@@ -77,9 +94,9 @@ public class PlayerVida : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("cobra"))
+        if (other.CompareTag("cobra") || other.CompareTag("onca"))
         {
-            Debug.Log("Colidiu com a cobra (Trigger)!");
+            Debug.Log("Player levou dano de: " + other.tag);
             ReduzirVida(25f);
         }
     }
@@ -108,7 +125,7 @@ public class PlayerVida : MonoBehaviour
     {
         if (guaranaTMP != null)
         {
-            guaranaTMP.text = guaranaContagem + " / " + guaranaTotal + " ";
+            guaranaTMP.text = guaranaContagem + " / " + guaranaTotal;
         }
     }
 }
