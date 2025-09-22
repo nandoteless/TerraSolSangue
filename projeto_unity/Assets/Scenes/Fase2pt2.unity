@@ -2406,7 +2406,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198231262}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -89426,12 +89426,12 @@ PrefabInstance:
     - target: {fileID: 5940547583861727655, guid: 317797b586be0fe47845f62864dcc2d1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31
+      value: 30.37
       objectReference: {fileID: 0}
     - target: {fileID: 5940547583861727655, guid: 317797b586be0fe47845f62864dcc2d1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.54
+      value: -15.91
       objectReference: {fileID: 0}
     - target: {fileID: 5940547583861727655, guid: 317797b586be0fe47845f62864dcc2d1,
         type: 3}
@@ -104763,7 +104763,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413507358}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -106066,7 +106066,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646970824}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
