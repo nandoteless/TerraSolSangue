@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6659255719690951569}
   - component: {fileID: 1016543884324960831}
   - component: {fileID: 1016543884324960830}
-  - component: {fileID: 2736095554205369501}
   m_Layer: 0
   m_Name: Onca
   m_TagString: onca
@@ -149,22 +148,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanciaMaxima: 5
   velocidade: 2
---- !u!114 &2736095554205369501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659255719690951572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1184905fed2373a4db4bc73575bf26ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  som:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
