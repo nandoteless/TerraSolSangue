@@ -37,24 +37,6 @@ public class DialogueUI : MonoBehaviour
             background.fillAmount = Mathf.Lerp(background.fillAmount, 0, speed * Time.deltaTime);
         }
 
-
-        // DMVS - revejam se precisa, pois está dando erro após ser destruído
-        // caso precise deve ser adaptado ao input system
-         if (Input.GetKey(KeyCode.F))
-        {
-             Destroy(background); // Destroys gameobject when user presses 'Space' key.
-         }
-
-         if (Input.GetKey(KeyCode.F))
-         {
-             Destroy(nameText); // Destroys gameobject when user presses 'Space' key.
-        }
-
-         if (Input.GetKey(KeyCode.F))
-        {
-             Destroy(talkText); // Destroys gameobject when user presses 'Space' key.
-         }
-
     }
 
     public void SetName(string name)

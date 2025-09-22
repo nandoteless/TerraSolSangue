@@ -1,21 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInteract : MonoBehaviour
 {
     private ColetaItem nearestCollectible;
 
-    public void CollectEvent()
+    public void CollectEvent(InputAction.CallbackContext context)
     {
-        // Verifica se possui um coletável próximo e se pressionou a tecla para realizar a coleta
-        if (nearestCollectible != null && InputManager.instancia.GetCollect())
+        if (context.performed)
         {
-            // Chama o método para coletar o item, script adicionado ao item coletável
-            nearestCollectible.Coleta();
+            // Verifica se possui um coletável próximo e se pressionou a tecla para realizar a coleta
+            if (nearestCollectible != null)
+            {
+                // Chama o método para coletar o item, script adicionado ao item coletável
+                nearestCollectible.Coleta();
 
-            nearestCollectible = null; // Limpa a referência após coletar
+                nearestCollectible = null; // Limpa a referência após coletar
+            }
         }
+        
     }
 
     // Método para detecção de proximidade
