@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 using TMPro; // ← Importante para usar TextMeshProUGUI
 
 
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
+
 public class PlayerVida : MonoBehaviour
 {
-    
-     public Slider vidaSlider;
+    public Slider vidaSlider;
     public float vidaMaxima = 100f;
     private float vidaAtual;
 
@@ -17,6 +21,9 @@ public class PlayerVida : MonoBehaviour
     public TextMeshProUGUI guaranaTMP;
     private int guaranaContagem = 0;
     private int guaranaTotal = 5;
+
+    [Header("Animação de Dano")]
+    public AnimacaoDano animDano; // arraste o script no Inspector
 
     void Start()
     {
@@ -41,9 +48,11 @@ public class PlayerVida : MonoBehaviour
         vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
 
         if (vidaSlider != null)
-        {
             vidaSlider.value = vidaAtual;
-        }
+
+        // Aciona animação de dano
+        if (animDano != null)
+            animDano.AcionarAnimacao();
 
         if (vidaAtual <= 0)
         {
@@ -58,9 +67,7 @@ public class PlayerVida : MonoBehaviour
         vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
 
         if (vidaSlider != null)
-        {
             vidaSlider.value = vidaAtual;
-        }
     }
 
     void ReiniciarCena()
