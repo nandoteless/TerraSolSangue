@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using UnityEngine.InputSystem; // Novo Input System
 
 public class PullObject : MonoBehaviour
 {
@@ -21,32 +22,61 @@ public class PullObject : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(pullKey) && objectToPull != null)
+        // --- CONTROLE PELO TECLADO ---
+        if (Input.GetKeyDown(pullKey))
         {
-            if (!isPulling)
-            {
-                isPulling = true;
-                StartDraggingSound();
-            }
+            StartPull();
         }
-        else
+        else if (Input.GetKeyUp(pullKey))
         {
-            if (isPulling)
-            {
-                isPulling = false;
-                StopDraggingSound();
-            }
+            StopPull();
         }
 
+        // Se estiver puxando
         if (isPulling && objectToPull != null)
         {
             PullTheObject();
         }
     }
 
-    public void PullTheObject()
+    // --- CONTROLE PELO INPUT SYSTEM ---
+    public void OnPullInput(InputAction.CallbackContext context)
     {
-        objectToPull.transform.position = Vector3.Lerp(objectToPull.transform.position, transform.position, Time.deltaTime * 5f);
+        if (context.performed)   // botão/controle pressionado
+        {
+            StartPull();
+        }
+        else if (context.canceled) // botão/controle solto
+        {
+            StopPull();
+        }
+    }
+
+    public void StartPull()
+    {
+        if (objectToPull != null && !isPulling)
+        {
+            isPulling = true;
+            StartDraggingSound();
+        }
+    }
+
+    public void StopPull()
+    {
+        if (isPulling)
+        {
+            isPulling = false;
+            StopDraggingSound();
+        }
+    }
+
+    private void PullTheObject()
+    {
+        objectToPull.transform.position = Vector3.Lerp(
+            objectToPull.transform.position,
+            transform.position,
+            Time.deltaTime * 5f
+        );
     }
 
     void OnCollisionStay2D(Collision2D collision)
@@ -62,7 +92,7 @@ public class PullObject : MonoBehaviour
         if (collision.gameObject.CompareTag("Barril"))
         {
             objectToPull = null;
-            StopDraggingSound();
+            StopPull();
         }
     }
 

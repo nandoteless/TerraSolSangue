@@ -1,36 +1,66 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using TMPro;
 using UnityEngine.SceneManagement;
-using TMPro; // IMPORTANTE para usar TMP
 
 public class CollectMirror : MonoBehaviour
 {
-   public TextMeshProUGUI mirrorCountTMP; // Refer�ncia ao TMP Text
+    public TextMeshProUGUI mirrorCountTMP;
     private int mirrorCount = 0;
     private int mirrorsNeeded = 3;
+
+    private bool canCollect = false; // se o player está colidindo com o espelho
+    private GameObject mirrorToCollect;
 
     void Start()
     {
         UpdateMirrorCountText();
     }
 
-    void Update()
+    public void OnCollect(InputAction.CallbackContext context)
     {
-        if (mirrorCount >= mirrorsNeeded && Input.GetKeyDown(KeyCode.F))
+        if (context.performed && canCollect && mirrorToCollect != null)
         {
-            SceneManager.LoadScene("Fase2pt2"); // substitua pelo nome da pr�xima cena
+            Destroy(mirrorToCollect);
+            mirrorCount++;
+            UpdateMirrorCountText();
+        }
+
+        if (context.performed && mirrorCount >= mirrorsNeeded)
+        {
+            SceneManager.LoadScene("Fase2pt2");
+        }
+    }
+    public void CollectFromUIButton()
+{
+    if (canCollect && mirrorToCollect != null)
+    {
+        Destroy(mirrorToCollect);
+        mirrorCount++;
+        UpdateMirrorCountText();
+    }
+
+    if (mirrorCount >= mirrorsNeeded)
+    {
+        SceneManager.LoadScene("Fase2pt2");
+    }
+}
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Mirror"))
+        {
+            canCollect = true;
+            mirrorToCollect = collision.gameObject;
         }
     }
 
-    public void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Mirror") && Input.GetKeyDown(KeyCode.F))
+        if (collision.gameObject.CompareTag("Mirror"))
         {
-            Destroy(collision.gameObject);
-            mirrorCount++;
-            UpdateMirrorCountText();
+            canCollect = false;
+            mirrorToCollect = null;
         }
     }
 
