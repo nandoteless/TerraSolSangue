@@ -5,7 +5,7 @@
 			<value>Wood</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{7d4c74c7-9314-4e0b-9e3b-cf81be0925db}</destination>
@@ -82,11 +82,7 @@
 			<destination>{295ac1c4-0fd5-4051-a1a4-80a9e3125fb0}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{8c830006-093b-4e5e-bea0-66aae7790f5d}">
-		<relationship name="sounds">
-			<destination>{380ea365-de4d-48b7-b3dc-479f41fb1fc2}</destination>
-		</relationship>
-	</object>
+	<object class="MultiSound" id="{8c830006-093b-4e5e-bea0-66aae7790f5d}" />
 	<object class="MixerBusEffectChain" id="{a629f7cf-40b4-4dfc-9641-e7c17030c2e3}">
 		<relationship name="effects">
 			<destination>{8c69035e-476b-46d7-9e28-846c5c7a1721}</destination>
@@ -99,11 +95,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{0efd74e6-a127-49f4-abb4-2d6c9cf6fe5c}" />
-	<object class="SingleSound" id="{380ea365-de4d-48b7-b3dc-479f41fb1fc2}">
-		<relationship name="audioFile">
-			<destination>{ea92654c-3268-4726-ac1a-5003b09221e4}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusFader" id="{8c69035e-476b-46d7-9e28-846c5c7a1721}" />
 	<object class="MixerBusFader" id="{c0911f35-eed3-4172-9a17-bfef18f06dc9}" />
 </objects>

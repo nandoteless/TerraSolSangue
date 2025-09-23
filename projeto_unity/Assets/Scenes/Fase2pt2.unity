@@ -828,6 +828,7 @@ GameObject:
   - component: {fileID: 73305260}
   - component: {fileID: 73305262}
   - component: {fileID: 73305263}
+  - component: {fileID: 73305264}
   m_Layer: 0
   m_Name: arbusto morango (3)
   m_TagString: Untagged
@@ -940,6 +941,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &73305264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73305259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &87417168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,6 +2205,7 @@ GameObject:
   - component: {fileID: 175939596}
   - component: {fileID: 175939598}
   - component: {fileID: 175939599}
+  - component: {fileID: 175939600}
   m_Layer: 0
   m_Name: arbusto morango (4)
   m_TagString: Untagged
@@ -2285,6 +2318,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &175939600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175939595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &198231262
 GameObject:
   m_ObjectHideFlags: 0
@@ -88059,6 +88123,7 @@ GameObject:
   - component: {fileID: 289217262}
   - component: {fileID: 289217264}
   - component: {fileID: 289217265}
+  - component: {fileID: 289217266}
   m_Layer: 0
   m_Name: Crops_37
   m_TagString: Untagged
@@ -88171,6 +88236,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &289217266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289217261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &289336266
 GameObject:
   m_ObjectHideFlags: 0
@@ -89624,6 +89720,7 @@ GameObject:
   - component: {fileID: 461405195}
   - component: {fileID: 461405197}
   - component: {fileID: 461405196}
+  - component: {fileID: 461405198}
   m_Layer: 0
   m_Name: Guarana (2)
   m_TagString: guarana
@@ -89724,6 +89821,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &461405198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461405194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1864937241
+      Data2: 1271689554
+      Data3: 148369085
+      Data4: 1507127591
+    Path: event:/SFX/Arbusto
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &483945159
 GameObject:
   m_ObjectHideFlags: 0
@@ -90075,8 +90203,8 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
-  - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -90084,14 +90212,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -90184,6 +90304,20 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &530660152
 GameObject:
   m_ObjectHideFlags: 0
@@ -90903,6 +91037,7 @@ GameObject:
   - component: {fileID: 601955466}
   - component: {fileID: 601955468}
   - component: {fileID: 601955469}
+  - component: {fileID: 601955470}
   m_Layer: 0
   m_Name: arbusto morango
   m_TagString: Untagged
@@ -91015,6 +91150,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &601955470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601955465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &616016350
 GameObject:
   m_ObjectHideFlags: 0
@@ -92203,6 +92369,7 @@ GameObject:
   - component: {fileID: 900161919}
   - component: {fileID: 900161922}
   - component: {fileID: 900161923}
+  - component: {fileID: 900161924}
   m_Layer: 0
   m_Name: arbusto morango (7)
   m_TagString: Untagged
@@ -92315,6 +92482,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &900161924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900161918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &903197701
 GameObject:
   m_ObjectHideFlags: 0
@@ -92438,6 +92636,7 @@ GameObject:
   - component: {fileID: 909366242}
   - component: {fileID: 909366244}
   - component: {fileID: 909366245}
+  - component: {fileID: 909366246}
   m_Layer: 0
   m_Name: arbusto morango (5)
   m_TagString: Untagged
@@ -92550,6 +92749,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &909366246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909366241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &921681625
 GameObject:
   m_ObjectHideFlags: 0
@@ -92646,6 +92876,7 @@ GameObject:
   - component: {fileID: 926285429}
   - component: {fileID: 926285431}
   - component: {fileID: 926285432}
+  - component: {fileID: 926285433}
   m_Layer: 0
   m_Name: Crops_80
   m_TagString: Untagged
@@ -92758,6 +92989,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &926285433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926285428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &940902601
 GameObject:
   m_ObjectHideFlags: 0
@@ -93055,6 +93317,7 @@ GameObject:
   - component: {fileID: 951767558}
   - component: {fileID: 951767557}
   - component: {fileID: 951767556}
+  - component: {fileID: 951767559}
   m_Layer: 0
   m_Name: Guarana
   m_TagString: guarana
@@ -93155,6 +93418,37 @@ Transform:
   m_Father: {fileID: 747314277}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &951767559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951767555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1864937241
+      Data2: 1271689554
+      Data3: 148369085
+      Data4: 1507127591
+    Path: event:/SFX/Arbusto
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &955025761
 GameObject:
   m_ObjectHideFlags: 0
@@ -93348,6 +93642,7 @@ GameObject:
   - component: {fileID: 978229879}
   - component: {fileID: 978229878}
   - component: {fileID: 978229877}
+  - component: {fileID: 978229880}
   m_Layer: 0
   m_Name: Guarana
   m_TagString: guarana
@@ -93448,6 +93743,37 @@ Transform:
   m_Father: {fileID: 747314277}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978229880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978229876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1864937241
+      Data2: 1271689554
+      Data3: 148369085
+      Data4: 1507127591
+    Path: event:/SFX/Arbusto
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &986590151
 GameObject:
   m_ObjectHideFlags: 0
@@ -93460,6 +93786,7 @@ GameObject:
   - component: {fileID: 986590152}
   - component: {fileID: 986590154}
   - component: {fileID: 986590155}
+  - component: {fileID: 986590156}
   m_Layer: 0
   m_Name: Crops_60 (2)
   m_TagString: Untagged
@@ -93572,6 +93899,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &986590156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986590151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &992751420
 GameObject:
   m_ObjectHideFlags: 0
@@ -95331,6 +95689,7 @@ GameObject:
   - component: {fileID: 1196970710}
   - component: {fileID: 1196970712}
   - component: {fileID: 1196970711}
+  - component: {fileID: 1196970713}
   m_Layer: 0
   m_Name: Guarana (3)
   m_TagString: guarana
@@ -95431,6 +95790,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1196970713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196970709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1208212256
 GameObject:
   m_ObjectHideFlags: 0
@@ -104630,6 +105020,7 @@ GameObject:
   - component: {fileID: 1511909566}
   - component: {fileID: 1511909568}
   - component: {fileID: 1511909569}
+  - component: {fileID: 1511909570}
   m_Layer: 0
   m_Name: arbusto morango (1)
   m_TagString: Untagged
@@ -104742,6 +105133,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1511909570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511909565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1516599865
 GameObject:
   m_ObjectHideFlags: 0
@@ -106681,7 +107103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e27620b50eb09a84697a34a37a279355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {x: 0, y: 0}
 --- !u!4 &1707141645
 Transform:
   m_ObjectHideFlags: 0
@@ -108125,9 +108546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9336078c21fbcd846a640bb42930dda7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1828206267}
-  parametroAnim: RecebeuDano
-  duracaoAnim: 0.5
 --- !u!1 &1840708539
 GameObject:
   m_ObjectHideFlags: 0
@@ -108139,6 +108557,7 @@ GameObject:
   - component: {fileID: 1840708542}
   - component: {fileID: 1840708541}
   - component: {fileID: 1840708540}
+  - component: {fileID: 1840708543}
   m_Layer: 0
   m_Name: Guarana
   m_TagString: guarana
@@ -108239,6 +108658,37 @@ Transform:
   m_Father: {fileID: 747314277}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1840708543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840708539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1864937241
+      Data2: 1271689554
+      Data3: 148369085
+      Data4: 1507127591
+    Path: event:/SFX/Arbusto
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1841594729
 GameObject:
   m_ObjectHideFlags: 0
@@ -108419,6 +108869,7 @@ GameObject:
   - component: {fileID: 1842572377}
   - component: {fileID: 1842572379}
   - component: {fileID: 1842572380}
+  - component: {fileID: 1842572381}
   m_Layer: 0
   m_Name: arbusto morango (6)
   m_TagString: Untagged
@@ -108531,6 +108982,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1842572381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842572376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1844552601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109035,6 +109517,7 @@ GameObject:
   - component: {fileID: 1922666965}
   - component: {fileID: 1922666967}
   - component: {fileID: 1922666968}
+  - component: {fileID: 1922666969}
   m_Layer: 0
   m_Name: arbusto morango (2)
   m_TagString: Untagged
@@ -109147,6 +109630,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0600fb43a7246f54dad0961e3278e8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1922666969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922666964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1927483998
 GameObject:
   m_ObjectHideFlags: 0
@@ -109869,6 +110383,69 @@ Transform:
   - {fileID: 890136335}
   m_Father: {fileID: 0}
   m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2023826313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023826315}
+  - component: {fileID: 2023826314}
+  m_Layer: 0
+  m_Name: SomAmbiente
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2023826314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023826313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 22856592
+      Data2: 1180716612
+      Data3: 1136663441
+      Data4: -525750586
+    Path: "event:/BG/Floresta_P\xE1ssaros"
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!4 &2023826315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023826313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.35037, y: -20.445114, z: -0.017289655}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2034268837
 PrefabInstance:

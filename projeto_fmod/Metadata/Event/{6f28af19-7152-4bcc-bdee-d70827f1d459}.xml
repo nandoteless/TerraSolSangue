@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{6f28af19-7152-4bcc-bdee-d70827f1d459}">
 		<property name="name">
-			<value>bush-cut-103503</value>
+			<value>Arbusto</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
@@ -59,18 +59,11 @@
 	<object class="EventAutomatableProperties" id="{abc6200f-7034-4692-8333-f060078e9121}" />
 	<object class="MarkerTrack" id="{5a29c494-b38c-4df1-892d-92fccfbc1914}" />
 	<object class="GroupTrack" id="{ba206d58-cbeb-4cbe-82ea-46a650626235}">
-		<relationship name="modules">
-			<destination>{d9664ad7-fe8d-4a7f-bf27-3610e1e148f7}</destination>
-		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{cc94c172-4aae-4a87-85e8-88c5f4011239}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{d42d6fc5-25f0-4acd-b2ac-2bbbf5498fe8}">
-		<relationship name="modules">
-			<destination>{d9664ad7-fe8d-4a7f-bf27-3610e1e148f7}</destination>
-		</relationship>
-	</object>
+	<object class="Timeline" id="{d42d6fc5-25f0-4acd-b2ac-2bbbf5498fe8}" />
 	<object class="EventMixerMaster" id="{23ad98d8-2e02-41bc-a193-53abb909ec83}">
 		<relationship name="effectChain">
 			<destination>{292d1d90-565d-4786-9bde-88c5186eb341}</destination>
@@ -88,14 +81,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d6c48576-727d-47f8-8c08-c16f738305b0}" />
-	<object class="SingleSound" id="{d9664ad7-fe8d-4a7f-bf27-3610e1e148f7}">
-		<property name="length">
-			<value>0.52244897959183678</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{67fa1c6c-b8e2-49da-aa06-87ed26875e78}</destination>
-		</relationship>
-	</object>
 	<object class="EventMixerGroup" id="{cc94c172-4aae-4a87-85e8-88c5f4011239}">
 		<property name="volume">
 			<value>6.5</value>

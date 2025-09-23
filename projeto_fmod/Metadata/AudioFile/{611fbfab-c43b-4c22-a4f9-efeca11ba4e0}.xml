@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{67fa1c6c-b8e2-49da-aa06-87ed26875e78}">
+	<object class="AudioFile" id="{611fbfab-c43b-4c22-a4f9-efeca11ba4e0}">
 		<property name="assetPath">
-			<value>bush-cut-103503.mp3</value>
+			<value>sliding-chair-47711-dlgplxoy_T52Fmyyb.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>44.0999985</value>
+			<value>24</value>
 		</property>
 		<property name="channelCount">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.52244897959183678</value>
+			<value>1.6080000000000001</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{a05394a8-999e-4b4f-b71d-099a658787d9}</destination>
