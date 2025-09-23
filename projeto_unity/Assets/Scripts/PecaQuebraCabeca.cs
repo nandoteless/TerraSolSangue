@@ -1,54 +1,58 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using UnityEngine.EventSystems;
+
 
 public class PecaQuebraCabeca : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
+    public Transform posicaoCorreta;
+    public float distanciaEncaixe = 0.5f;
+
     private Vector3 posicaoInicial;
     private Vector3 offset;
-
-    public Transform posicaoCorreta; // onde a peça deve ficar
-
     private bool encaixada = false;
+    private Camera cam;
+
+    public bool Encaixada => encaixada;
 
     void Start()
     {
         posicaoInicial = transform.position;
+        cam = Camera.main;
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         if (encaixada) return;
-        offset = transform.position - Camera.main.ScreenToWorldPoint(eventData.position);
-        offset.z = 0;
+
+        Vector3 mousePos = eventData.position;
+        mousePos.z = cam.WorldToScreenPoint(transform.position).z;
+        offset = transform.position - cam.ScreenToWorldPoint(mousePos);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         if (encaixada) return;
-        Vector3 pos = Camera.main.ScreenToWorldPoint(eventData.position) + offset;
-        pos.z = 0;
-        transform.position = pos;
+
+        Vector3 mousePos = eventData.position;
+        mousePos.z = cam.WorldToScreenPoint(transform.position).z;
+        Vector3 worldPos = cam.ScreenToWorldPoint(mousePos);
+        transform.position = worldPos + offset;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         if (encaixada) return;
 
-        // Verifica se está perto da posição correta
-        if (Vector3.Distance(transform.position, posicaoCorreta.position) < 0.5f)
+        if (Vector3.Distance(transform.position, posicaoCorreta.position) < distanciaEncaixe)
         {
             transform.position = posicaoCorreta.position;
             encaixada = true;
-            Debug.Log("Peça encaixada!");
-            
             PuzzleQuebraCabeca.Instance.VerificarTodasPecas();
         }
         else
         {
-            // Volta para posição inicial se não encaixou
             transform.position = posicaoInicial;
         }
     }

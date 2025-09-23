@@ -44,4 +44,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cuts4.unity
     guid: 967689f570b291743a8477f5bd8bf7d1
+  - enabled: 1
+    path: Assets/Scenes/fase3.unity
+    guid: ef41e4a7bbfec364b845fd4eeabe5671
+  - enabled: 1
+    path: Assets/Scenes/Oca.unity
+    guid: 03157dcc8bd5b374c9824aa41a5e46be
+  - enabled: 1
+    path: Assets/Scenes/Quebracabeca.unity
+    guid: 9039bb722260db543b56e5c70ca18c78
   m_configObjects: {}
