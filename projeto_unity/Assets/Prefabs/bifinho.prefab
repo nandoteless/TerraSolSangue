@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3668186234592411930}
   - component: {fileID: -4216206388665495751}
   - component: {fileID: -1371743251727631035}
+  - component: {fileID: 2034566948567287375}
   m_Layer: 0
   m_Name: bifinho
   m_TagString: Untagged
@@ -100,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mensagemColeta: "On\xE7a coletada!"
   pontos: 10
+  delayColeta: 0.5
 --- !u!61 &-1371743251727631035
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126,3 +128,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 3.6737647}
   m_EdgeRadius: 0
+--- !u!114 &2034566948567287375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3668186234592411929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

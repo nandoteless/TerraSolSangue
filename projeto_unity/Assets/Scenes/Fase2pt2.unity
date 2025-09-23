@@ -357,7 +357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &45525556
 RectTransform:
   m_ObjectHideFlags: 0
@@ -88203,6 +88203,7 @@ GameObject:
   - component: {fileID: 289217264}
   - component: {fileID: 289217265}
   - component: {fileID: 289217266}
+  - component: {fileID: 289217267}
   m_Layer: 0
   m_Name: Crops_37
   m_TagString: Untagged
@@ -88336,6 +88337,37 @@ MonoBehaviour:
       Data3: -476472150
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &289217267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289217261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 202792197
+      Data2: 1121833645
+      Data3: 163752624
+      Data4: 1533009460
+    Path: event:/SFX/Arbusto
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -89917,11 +89949,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1864937241
-      Data2: 1271689554
-      Data3: 148369085
-      Data4: 1507127591
-    Path: event:/SFX/Arbusto
+      Data1: 1485253085
+      Data2: 1308520546
+      Data3: -262970209
+      Data4: 696138228
+    Path: event:/SFX/Arbusto 2
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -91648,7 +91680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 51d57079bfe622a469780078e662e764, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4d9deae04761f7540913930803621b1e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -93038,6 +93070,7 @@ GameObject:
   - component: {fileID: 926285431}
   - component: {fileID: 926285432}
   - component: {fileID: 926285433}
+  - component: {fileID: 926285434}
   m_Layer: 0
   m_Name: Crops_80
   m_TagString: Untagged
@@ -93171,6 +93204,37 @@ MonoBehaviour:
       Data3: -476472150
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &926285434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926285428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 202792197
+      Data2: 1121833645
+      Data3: 163752624
+      Data4: 1533009460
+    Path: event:/SFX/Arbusto
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -93595,11 +93659,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1864937241
-      Data2: 1271689554
-      Data3: 148369085
-      Data4: 1507127591
-    Path: event:/SFX/Arbusto
+      Data1: 1485253085
+      Data2: 1308520546
+      Data3: -262970209
+      Data4: 696138228
+    Path: event:/SFX/Arbusto 2
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -93920,11 +93984,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1864937241
-      Data2: 1271689554
-      Data3: 148369085
-      Data4: 1507127591
-    Path: event:/SFX/Arbusto
+      Data1: 1485253085
+      Data2: 1308520546
+      Data3: -262970209
+      Data4: 696138228
+    Path: event:/SFX/Arbusto 2
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -93949,6 +94013,7 @@ GameObject:
   - component: {fileID: 986590154}
   - component: {fileID: 986590155}
   - component: {fileID: 986590156}
+  - component: {fileID: 986590157}
   m_Layer: 0
   m_Name: Crops_60 (2)
   m_TagString: Untagged
@@ -94082,6 +94147,37 @@ MonoBehaviour:
       Data3: -476472150
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &986590157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986590151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 202792197
+      Data2: 1121833645
+      Data3: 163752624
+      Data4: 1533009460
+    Path: event:/SFX/Arbusto
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -94770,7 +94866,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4d9deae04761f7540913930803621b1e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 51d57079bfe622a469780078e662e764, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -95968,11 +96064,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 876970315
-      Data2: 1188863040
-      Data3: -476472150
-      Data4: 1401479247
-    Path: "event:/SFX/Intera\xE7\xE3o"
+      Data1: 1485253085
+      Data2: 1308520546
+      Data3: -262970209
+      Data4: 696138228
+    Path: event:/SFX/Arbusto 2
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -105759,7 +105855,6 @@ MonoBehaviour:
   onca: {fileID: 1888842127}
   objetoSubstituto: {fileID: 3668186234592411929, guid: 174bb8d48d730d24da4f35dfa7cae6c9,
     type: 3}
-  tecla: 102
   distanciaMaxima: 3
 --- !u!1 &1552892963
 GameObject:
@@ -108436,7 +108531,6 @@ GameObject:
   - component: {fileID: 1828206263}
   - component: {fileID: 1828206262}
   - component: {fileID: 1828206273}
-  - component: {fileID: 1828206274}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -108538,6 +108632,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: c5cd8703-0d46-4e3d-89a5-44ca2ce4e99a
     m_ActionName: Player/Machado
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1888842128}
+        m_TargetAssemblyTypeName: MatarOncaPorTecla, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a139da78-7c10-4378-aade-66da68e6e99b
+    m_ActionName: Player/Atacar
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -108777,18 +108887,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dano: 10
   intervaloDano: 5
---- !u!114 &1828206274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828206261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9336078c21fbcd846a640bb42930dda7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1840708539
 GameObject:
   m_ObjectHideFlags: 0
@@ -108916,11 +109014,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1864937241
-      Data2: 1271689554
-      Data3: 148369085
-      Data4: 1507127591
-    Path: event:/SFX/Arbusto
+      Data1: 1485253085
+      Data2: 1308520546
+      Data3: -262970209
+      Data4: 696138228
+    Path: event:/SFX/Arbusto 2
   Event: 
   EventPlayTrigger: 2
   EventStopTrigger: 0
@@ -109701,6 +109799,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1844552601}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1888842128 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3408517339289608343, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1844552601}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888842127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413fae8dcba71914f9450452e2da5114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1902143654
 GameObject:
   m_ObjectHideFlags: 0
