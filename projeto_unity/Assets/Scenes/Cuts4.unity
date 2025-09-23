@@ -230,7 +230,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326800076}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: aa4630610e70a2945b4ef12dff54d524, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: beba87be5163828418a2686ea0716eb6, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1286795110}
@@ -243,12 +243,14 @@ VideoPlayer:
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
   m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 0
@@ -300,7 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.05
-  fullText: "eles se encontraram na praia e combinaram de conhecer a vila, os portugueses
+  fullText: "Eles se encontraram na praia e combinaram de conhecer a vila, os portugueses
     pareciam amig\xE1veis..."
   textComponent: {fileID: 1387871300}
 --- !u!4 &1130587384

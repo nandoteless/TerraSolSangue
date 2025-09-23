@@ -7,7 +7,7 @@ using TMPro; // IMPORTANTE para usar TMP
 
 public class CollectMirror : MonoBehaviour
 {
-   public TextMeshProUGUI mirrorCountTMP; // Referência ao TMP Text
+   public TextMeshProUGUI mirrorCountTMP; // Referï¿½ncia ao TMP Text
     private int mirrorCount = 0;
     private int mirrorsNeeded = 3;
 
@@ -20,11 +20,11 @@ public class CollectMirror : MonoBehaviour
     {
         if (mirrorCount >= mirrorsNeeded && Input.GetKeyDown(KeyCode.F))
         {
-            SceneManager.LoadScene("Fase2pt2"); // substitua pelo nome da próxima cena
+            SceneManager.LoadScene("Fase2pt2"); // substitua pelo nome da prï¿½xima cena
         }
     }
 
-    void OnCollisionStay2D(Collision2D collision)
+    public void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Mirror") && Input.GetKeyDown(KeyCode.F))
         {

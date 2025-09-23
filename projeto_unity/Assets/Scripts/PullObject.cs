@@ -44,7 +44,7 @@ public class PullObject : MonoBehaviour
         }
     }
 
-    void PullTheObject()
+    public void PullTheObject()
     {
         objectToPull.transform.position = Vector3.Lerp(objectToPull.transform.position, transform.position, Time.deltaTime * 5f);
     }
