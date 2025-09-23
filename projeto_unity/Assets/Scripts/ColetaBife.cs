@@ -2,50 +2,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 using UnityEngine;
 
-public class ColetaComida : MonoBehaviour
+public class ColetaBife : MonoBehaviour
 {
-    private HUD_Coleta hud;
-    private DesbloqueioDeFase desbloqueio;
-    public float delayColeta = 0.3f; // tempo antes de poder coletar
+    public string mensagemColeta = "Onça coletada!";
+    public int pontos = 10;
+    public float delayColeta = 0.5f;
 
     private bool podeColetar = false;
+    private HUD_Coleta hud;
+    private DesbloqueioDeFase desbloqueio;
 
     void Start()
     {
         hud = FindObjectOfType<HUD_Coleta>();
         desbloqueio = FindObjectOfType<DesbloqueioDeFase>();
+
         Invoke(nameof(HabilitarColeta), delayColeta);
     }
 
     void HabilitarColeta() => podeColetar = true;
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (!podeColetar) return;
 
         if (other.CompareTag("Player"))
         {
+            Debug.Log(mensagemColeta);
+
             // Atualiza HUD
             if (hud != null)
             {
-                hud.comidaColetada++;
+                hud.oncaColetada++;
                 hud.AtualizarHUD();
             }
 
             // Atualiza desbloqueio de fase
             if (desbloqueio != null)
             {
-                desbloqueio.AdicionarComida();
+                desbloqueio.AdicionarInimigoDerrotado(); // ou criar AdicionarOncaColetada()
             }
 
-            // Remove o objeto
             Destroy(gameObject);
         }
     }
 }
-
-

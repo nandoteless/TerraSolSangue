@@ -3,18 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using TMPro; // ← Importante para usar TextMeshProUGUI
-
-
-
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using UnityEngine.SceneManagement;
 using System.Collections;
+using TMPro;
 
 public class PlayerVida : MonoBehaviour
 {
+    [Header("Vida")]
     public Slider vidaSlider;
     public float vidaMaxima = 100f;
     private float vidaAtual;
@@ -22,53 +16,42 @@ public class PlayerVida : MonoBehaviour
     [Header("Guaraná")]
     public TextMeshProUGUI guaranaTMP;
     private int guaranaContagem = 0;
-    private int guaranaTotal = 5;
+    public int guaranaTotal = 5;
 
     [Header("Feedback de Dano")]
-    public GameObject efeitoDano;   // arraste o GameObject que será ativado (ex: tela vermelha, sprite, etc)
-    public float tempoAtivo = 0.5f; // tempo que o efeito fica ativo
+    public GameObject efeitoDano;   
+    public float tempoAtivo = 0.5f;
+
+    private HUD_Coleta hud;
+    private DesbloqueioDeFase desbloqueio;
 
     void Start()
     {
         vidaAtual = vidaMaxima;
+        if (vidaSlider != null) vidaSlider.maxValue = vidaMaxima;
+        if (vidaSlider != null) vidaSlider.value = vidaAtual;
 
-        if (vidaSlider != null)
-        {
-            vidaSlider.maxValue = vidaMaxima;
-            vidaSlider.value = vidaAtual;
-        }
-        else
-        {
-            Debug.LogWarning("Slider de vida não atribuído!");
-        }
-
+        if (efeitoDano != null) efeitoDano.SetActive(false);
         AtualizarTextoGuarana();
 
-        // Garante que o efeito começa desativado
-        if (efeitoDano != null)
-            efeitoDano.SetActive(false);
+        // Referências
+        hud = FindObjectOfType<HUD_Coleta>();
+        desbloqueio = FindObjectOfType<DesbloqueioDeFase>();
     }
 
     public void ReduzirVida(float quantidade)
     {
         vidaAtual -= quantidade;
         vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
+        if (vidaSlider != null) vidaSlider.value = vidaAtual;
 
-        if (vidaSlider != null)
-            vidaSlider.value = vidaAtual;
-
-        // Ativa o feedback de dano
         if (efeitoDano != null)
         {
-            StopAllCoroutines(); // evita bug se tomar vários danos seguidos
+            StopAllCoroutines();
             StartCoroutine(AtivarEfeitoDano());
         }
 
-        if (vidaAtual <= 0)
-        {
-            Debug.Log("GAME OVER");
-            ReiniciarCena();
-        }
+        if (vidaAtual <= 0) ReiniciarCena();
     }
 
     private IEnumerator AtivarEfeitoDano()
@@ -82,9 +65,7 @@ public class PlayerVida : MonoBehaviour
     {
         vidaAtual += quantidade;
         vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
-
-        if (vidaSlider != null)
-            vidaSlider.value = vidaAtual;
+        if (vidaSlider != null) vidaSlider.value = vidaAtual;
     }
 
     void ReiniciarCena()
@@ -96,7 +77,6 @@ public class PlayerVida : MonoBehaviour
     {
         if (other.CompareTag("cobra") || other.CompareTag("onca"))
         {
-            Debug.Log("Player levou dano de: " + other.tag);
             ReduzirVida(25f);
         }
     }
@@ -105,9 +85,12 @@ public class PlayerVida : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("guarana"))
         {
-            Debug.Log("Colidiu com o arbusto de guaraná!");
             AumentarVida(25f);
             AdicionarGuarana();
+
+            // Atualiza desbloqueio de fase
+            if (desbloqueio != null) desbloqueio.AdicionarGuarana();
+
             Destroy(collision.gameObject);
         }
     }
@@ -118,14 +101,19 @@ public class PlayerVida : MonoBehaviour
         {
             guaranaContagem++;
             AtualizarTextoGuarana();
+
+            // Atualiza HUD
+            if (hud != null)
+            {
+                hud.guaranaColetado = guaranaContagem;
+                hud.AtualizarHUD();
+            }
         }
     }
 
     void AtualizarTextoGuarana()
     {
         if (guaranaTMP != null)
-        {
             guaranaTMP.text = guaranaContagem + " / " + guaranaTotal;
-        }
     }
 }

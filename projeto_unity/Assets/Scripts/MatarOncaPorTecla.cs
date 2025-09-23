@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-
 using UnityEngine;
 
 public class MatarOncaPorTecla : MonoBehaviour
@@ -11,12 +10,34 @@ public class MatarOncaPorTecla : MonoBehaviour
 
     [Header("Configuração")]
     public KeyCode tecla = KeyCode.F;    // Tecla para "matar" a onça
+    public float distanciaMaxima = 3f;   // Distância máxima para acionar
+
+    private Transform player;
+
+    void Start()
+    {
+        // Acha o player pela tag
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+        }
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(tecla))
+        if (Input.GetKeyDown(tecla) && player != null && onca != null)
         {
-            Substituir();
+            float distancia = Vector2.Distance(player.position, onca.transform.position);
+
+            if (distancia <= distanciaMaxima)
+            {
+                Substituir();
+            }
+            else
+            {
+                Debug.Log("Muito longe da onça para atacar!");
+            }
         }
     }
 
@@ -24,7 +45,14 @@ public class MatarOncaPorTecla : MonoBehaviour
     {
         if (onca != null)
         {
-            // Guarda a posição e rotação originais
+            // Para o script de seguir, se existir
+            OncaSegue scriptSegue = onca.GetComponent<OncaSegue>();
+            if (scriptSegue != null)
+            {
+                scriptSegue.PararSeguir();
+            }
+
+            // Guarda a posição e rotação
             Vector3 posicao = onca.transform.position;
             Quaternion rotacao = onca.transform.rotation;
 
@@ -38,10 +66,6 @@ public class MatarOncaPorTecla : MonoBehaviour
             }
 
             Debug.Log("Onça eliminada e substituída!");
-        }
-        else
-        {
-            Debug.LogWarning("Onça não atribuída no Inspector!");
         }
     }
 }
