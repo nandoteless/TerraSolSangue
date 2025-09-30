@@ -1733,6 +1733,11 @@ PrefabInstance:
       propertyPath: onca
       value: 
       objectReference: {fileID: 1227391415}
+    - target: {fileID: 3408517339289608343, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: distanciaMaxima
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951572, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_Name
@@ -1904,6 +1909,7 @@ GameObject:
   - component: {fileID: 161109684}
   - component: {fileID: 161109683}
   - component: {fileID: 161109682}
+  - component: {fileID: 161109685}
   m_Layer: 0
   m_Name: Chicken_05_0
   m_TagString: Untagged
@@ -1999,6 +2005,32 @@ Transform:
   m_Father: {fileID: 365174051}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &161109685
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161109681}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.033359528, y: -0.011120796}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6433182, y: 0.5988369}
+  m_EdgeRadius: 0
 --- !u!1 &165491439
 GameObject:
   m_ObjectHideFlags: 0
@@ -88389,6 +88421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 289336268}
   - component: {fileID: 289336267}
+  - component: {fileID: 289336269}
   m_Layer: 0
   m_Name: Outdoor_Decor_40
   m_TagString: Untagged
@@ -88463,6 +88496,32 @@ Transform:
   m_Father: {fileID: 2020396828}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &289336269
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289336266}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08857489, y: 0.03543043}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 1}
+    newSize: {x: 2, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1851101, y: 0.5748396}
+  m_EdgeRadius: 0
 --- !u!1 &295036979
 GameObject:
   m_ObjectHideFlags: 0
@@ -95015,6 +95074,11 @@ PrefabInstance:
       propertyPath: onca
       value: 
       objectReference: {fileID: 268902495}
+    - target: {fileID: 3408517339289608343, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: distanciaMaxima
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951572, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_Name
@@ -95028,12 +95092,12 @@ PrefabInstance:
     - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.869534
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.414241
+      value: 12.39
       objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
@@ -95658,7 +95722,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104688276}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.455956, y: -28.177246, z: 0.33605438}
+  m_LocalPosition: {x: -31.746, y: -27.95, z: 0.33605438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97092,8 +97156,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.71087265, y: 0.6219082, z: 0.2}
+  m_Center: {x: -0.033361435, y: 0.033361435, z: 0}
 --- !u!212 &1355179964
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105424,7 +105488,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511909565}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12, y: -1, z: 0}
+  m_LocalPosition: {x: 8.22, y: -2.15, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106420,7 +106484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633959460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.144043, y: 4.322754, z: 0.33605438}
+  m_LocalPosition: {x: 18.53, y: -5.15, z: 0.33605438}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109367,6 +109431,11 @@ PrefabInstance:
       propertyPath: onca
       value: 
       objectReference: {fileID: 1888842127}
+    - target: {fileID: 3408517339289608343, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: distanciaMaxima
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951572, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_Name
@@ -109380,12 +109449,12 @@ PrefabInstance:
     - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.279408
+      value: 15.26
       objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.6232915
+      value: -7.2
       objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
@@ -111255,6 +111324,11 @@ PrefabInstance:
       propertyPath: onca
       value: 
       objectReference: {fileID: 726581953}
+    - target: {fileID: 3408517339289608343, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: distanciaMaxima
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951572, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_Name
@@ -111268,12 +111342,12 @@ PrefabInstance:
     - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -51.84956
+      value: -47.35
       objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.87759
+      value: -4.4
       objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
