@@ -42,7 +42,7 @@ public class CollectMirror : MonoBehaviour
 
     if (mirrorCount >= mirrorsNeeded)
     {
-        SceneManager.LoadScene("Fase2pt2");
+        SceneManager.LoadScene("Cuts5");
     }
 }
 
