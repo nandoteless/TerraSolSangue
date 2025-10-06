@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using System.Collections;
+using UnityEngine;
+
 public class ColetaItem : MonoBehaviour
 {
     public enum TipoItem 
@@ -17,6 +20,9 @@ public class ColetaItem : MonoBehaviour
     public Sprite spritePadrao;
     public Sprite spriteDestacado;
 
+    [Header("Referência do Jogador")]
+    public Animator jogadorAnimator; // referência pro Animator do jogador
+
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -24,6 +30,14 @@ public class ColetaItem : MonoBehaviour
         if (spriteRenderer != null && spritePadrao != null)
         {
             spriteRenderer.sprite = spritePadrao;
+        }
+
+        // Tenta encontrar o jogador automaticamente pela tag
+        if (jogadorAnimator == null)
+        {
+            GameObject jogador = GameObject.FindGameObjectWithTag("Player");
+            if (jogador != null)
+                jogadorAnimator = jogador.GetComponent<Animator>();
         }
     }
 
@@ -39,7 +53,6 @@ public class ColetaItem : MonoBehaviour
         }
     }
 
-    // Método para trocar de volta para o sprite padrão
     public void ItemPadrao()
     {
         if (spriteRenderer != null && spritePadrao != null)
@@ -57,7 +70,29 @@ public class ColetaItem : MonoBehaviour
         if (GameManager.instancia.PossoColetarItem(tipoItem))
         {
             GameManager.instancia.ColetaItem(tipoItem, valorItem);
+
+            // 🔥 Dispara a animação de coleta
+            if (jogadorAnimator != null)
+            {
+                jogadorAnimator.ResetTrigger("Idle");
+                jogadorAnimator.SetTrigger("ColetarMadeira");
+
+                // 🔁 Força o retorno pro Idle depois da animação
+                StartCoroutine(VoltarIdle());
+            }
+
             Destroy(gameObject);
+        }
+    }
+
+    // 🔄 Garante o retorno ao estado Idle depois de 0.8 segundos
+    private IEnumerator VoltarIdle()
+    {
+        yield return new WaitForSeconds(0.8f); // duração da animação de coleta
+        if (jogadorAnimator != null)
+        {
+            jogadorAnimator.ResetTrigger("ColetarMadeira");
+            jogadorAnimator.SetTrigger("Idle");
         }
     }
 }

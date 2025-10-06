@@ -7,6 +7,7 @@ using FMODUnity;
 
 public class MiraEAtirarCursor : MonoBehaviour
 {
+    [Header("UI")]
     public Slider slider;
     public float tempoCarregamento = 3f;
     public TextMeshProUGUI textoInimigos;
@@ -21,8 +22,17 @@ public class MiraEAtirarCursor : MonoBehaviour
     [Header("FMOD")]
     [SerializeField] private EventReference somCarregar;
     [SerializeField] private EventReference somAtirar;
-
     private bool somCarregadoTocado = false;
+
+    [Header("Animações")]
+    public Animator animator;
+    public string animIdle = "Idle";       // Nome da animação Idle
+    public string animMirando = "mirando"; // Nome da animação de mira (opcional)
+    public string anim;
+
+    [Header("Animator Parameters")]
+    public string boolCarregando = "IsCarregando";  // Boolean do Animator
+    public string triggerAtirar = "Atirar";         // Trigger do Animator
 
     void Update()
     {
@@ -32,14 +42,13 @@ public class MiraEAtirarCursor : MonoBehaviour
         {
             inimigoAlvo = hit.collider.GetComponent<Inimigo>();
 
+            // Segura botão direito para mirar
             if (Input.GetMouseButton(1))
             {
                 if (!slider.gameObject.activeSelf)
-                {
                     slider.gameObject.SetActive(true);
-                }
 
-                // AQUI O AUDIO DE RECARREGAR
+                // Áudio de recarregar (uma vez só)
                 if (!somCarregadoTocado)
                 {
                     RuntimeManager.PlayOneShot(somCarregar, transform.position);
@@ -47,6 +56,10 @@ public class MiraEAtirarCursor : MonoBehaviour
                 }
 
                 estaCarregando = true;
+
+                // Toca animação de mira/carregamento
+                if (animator != null)
+                    animator.SetBool(boolCarregando, true);
             }
             else
             {
@@ -60,6 +73,7 @@ public class MiraEAtirarCursor : MonoBehaviour
                 podeAtirar = slider.value >= 0.9f;
             }
 
+            // Botão esquerdo dispara o ataque
             if (Input.GetMouseButtonDown(0) && podeAtirar)
             {
                 Atirar();
@@ -74,6 +88,9 @@ public class MiraEAtirarCursor : MonoBehaviour
 
     void Atirar()
     {
+        if (animator != null)
+            animator.SetTrigger(triggerAtirar); // dispara animação de ataque
+
         if (inimigoAlvo != null)
         {
             inimigoAlvo.TomarDano();
@@ -92,5 +109,9 @@ public class MiraEAtirarCursor : MonoBehaviour
         slider.gameObject.SetActive(false);
         podeAtirar = false;
         somCarregadoTocado = false;
+
+        // Desliga animação de mira/carregamento
+        if (animator != null)
+            animator.SetBool(boolCarregando, false);
     }
 }
