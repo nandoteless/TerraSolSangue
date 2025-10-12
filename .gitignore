@@ -83,3 +83,6 @@ crashlytics-build.properties
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+projeto_unity/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudio.bundle/Contents/Info.plist
+projeto_unity/Assets/Plugins/FMOD/platforms/mac/lib/fmodstudioL.bundle/Contents/Info.plist
+projeto_unity/Assets/Plugins/FMOD/platforms/mac/lib/resonanceaudio.bundle/Contents/Info.plist
