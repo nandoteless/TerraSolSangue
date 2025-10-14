@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Collections;
 using TMPro;
 
 public class PlayerVida : MonoBehaviour
@@ -19,8 +18,11 @@ public class PlayerVida : MonoBehaviour
     public int guaranaTotal = 5;
 
     [Header("Feedback de Dano")]
-    public GameObject efeitoDano;   
+    public GameObject efeitoDano;
     public float tempoAtivo = 0.5f;
+
+    [Header("Som de Mordida")]
+    public AudioSource somMordida; // 🎧 Adicione o som de mordida aqui no Inspector
 
     private HUD_Coleta hud;
     private DesbloqueioDeFase desbloqueio;
@@ -56,7 +58,15 @@ public class PlayerVida : MonoBehaviour
 
     private IEnumerator AtivarEfeitoDano()
     {
+        // 🔥 Ativa o efeito visual
         efeitoDano.SetActive(true);
+
+        // 🦷 Toca o som de mordida (se estiver configurado)
+        if (somMordida != null)
+        {
+            somMordida.Play();
+        }
+
         yield return new WaitForSeconds(tempoAtivo);
         efeitoDano.SetActive(false);
     }

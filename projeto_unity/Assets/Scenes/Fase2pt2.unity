@@ -963,7 +963,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -2373,7 +2373,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -88370,7 +88370,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 7
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -88401,7 +88401,7 @@ MonoBehaviour:
       Data4: 1533009460
     Path: event:/SFX/Arbusto
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -91344,7 +91344,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 7
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -92754,7 +92754,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -93022,7 +93022,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -93264,7 +93264,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -93295,7 +93295,7 @@ MonoBehaviour:
       Data4: 1533009460
     Path: event:/SFX/Arbusto
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -94207,7 +94207,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -94238,7 +94238,7 @@ MonoBehaviour:
       Data4: 1533009460
     Path: event:/SFX/Arbusto
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -105555,7 +105555,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -107487,6 +107487,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c5cd8703-0d46-4e3d-89a5-44ca2ce4e99a
     m_ActionName: Player/Machado
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a139da78-7c10-4378-aade-66da68e6e99b
+    m_ActionName: Player/Atacar[/Keyboard/f]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -108595,6 +108599,7 @@ GameObject:
   - component: {fileID: 1828206263}
   - component: {fileID: 1828206262}
   - component: {fileID: 1828206273}
+  - component: {fileID: 1828206274}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -108841,6 +108846,7 @@ MonoBehaviour:
   guaranaTotal: 5
   efeitoDano: {fileID: 1813321865}
   tempoAtivo: 0.5
+  somMordida: {fileID: 0}
 --- !u!114 &1828206270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108951,6 +108957,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dano: 10
   intervaloDano: 5
+--- !u!82 &1828206274
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828206261}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1840708539
 GameObject:
   m_ObjectHideFlags: 0
@@ -109409,7 +109511,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -110246,7 +110348,7 @@ MonoBehaviour:
       Data4: 1401479247
     Path: "event:/SFX/Intera\xE7\xE3o"
   Event: 
-  EventPlayTrigger: 2
+  EventPlayTrigger: 9
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
