@@ -2,18 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using System.Collections;
-using UnityEngine;
 
 public class ColetaItem : MonoBehaviour
 {
-    public enum TipoItem 
+    public enum TipoItem
     {
         PauBrasil,
     }
 
-    public TipoItem tipoItem; 
-    public int valorItem = 1; 
+    public TipoItem tipoItem;
+    public int valorItem = 1;
 
     private SpriteRenderer spriteRenderer;
 
@@ -22,6 +20,8 @@ public class ColetaItem : MonoBehaviour
 
     [Header("Referência do Jogador")]
     public Animator jogadorAnimator; // referência pro Animator do jogador
+    private Transform jogadorTransform; // para saber a posição e flipar
+    private bool olhandoDireita = true; // controle de direção atual
 
     void Awake()
     {
@@ -32,12 +32,20 @@ public class ColetaItem : MonoBehaviour
             spriteRenderer.sprite = spritePadrao;
         }
 
-        // Tenta encontrar o jogador automaticamente pela tag
+        // 🔎 Encontra o jogador automaticamente
         if (jogadorAnimator == null)
         {
             GameObject jogador = GameObject.FindGameObjectWithTag("Player");
             if (jogador != null)
+            {
                 jogadorAnimator = jogador.GetComponent<Animator>();
+                jogadorTransform = jogador.transform;
+            }
+        }
+
+        if (jogadorAnimator == null)
+        {
+            Debug.LogError("⚠️ Nenhum Animator do jogador encontrado! Verifique a tag 'Player' e o componente Animator.");
         }
     }
 
@@ -49,7 +57,7 @@ public class ColetaItem : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Não foi possível trocar o sprite. Verifique se o SpriteRenderer e o alternateSprite estão atribuídos.");
+            Debug.LogWarning("Não foi possível trocar o sprite. Verifique se o SpriteRenderer e o spriteDestacado estão atribuídos.");
         }
     }
 
@@ -61,7 +69,7 @@ public class ColetaItem : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Não foi possível trocar o sprite. Verifique se o SpriteRenderer e o defaultSprite estão atribuídos.");
+            Debug.LogWarning("Não foi possível trocar o sprite. Verifique se o SpriteRenderer e o spritePadrao estão atribuídos.");
         }
     }
 
@@ -71,29 +79,58 @@ public class ColetaItem : MonoBehaviour
         {
             GameManager.instancia.ColetaItem(tipoItem, valorItem);
 
-            // 🔥 Dispara a animação de coleta
+            // 🧭 Verifica a direção e vira o jogador antes da animação
+            if (jogadorTransform != null)
+                AjustarDirecaoDoJogador();
+
+            // 🎬 Dispara a animação de coleta
             if (jogadorAnimator != null)
             {
-                jogadorAnimator.ResetTrigger("Idle");
+                Debug.Log("🎬 Acionando trigger 'ColetarMadeira'");
+                jogadorAnimator.ResetTrigger("idle");
                 jogadorAnimator.SetTrigger("ColetarMadeira");
-
-                // 🔁 Força o retorno pro Idle depois da animação
                 StartCoroutine(VoltarIdle());
+            }
+            else
+            {
+                Debug.LogWarning("❌ JogadorAnimator está nulo!");
             }
 
             Destroy(gameObject);
         }
     }
 
-    // 🔄 Garante o retorno ao estado Idle depois de 0.8 segundos
+    // ⏳ Retorna pro estado Idle depois de 0.8 segundos (tempo da animação)
     private IEnumerator VoltarIdle()
     {
-        yield return new WaitForSeconds(0.8f); // duração da animação de coleta
+        yield return new WaitForSeconds(0.8f);
         if (jogadorAnimator != null)
         {
             jogadorAnimator.ResetTrigger("ColetarMadeira");
-            jogadorAnimator.SetTrigger("Idle");
+            jogadorAnimator.SetTrigger("idle");
         }
+    }
+
+    // === FUNÇÃO DE FLIP DO JOGADOR ===
+    private void AjustarDirecaoDoJogador()
+    {
+        if (jogadorTransform == null) return;
+
+        // Vira o jogador para o item antes de animar
+        bool itemADireita = transform.position.x > jogadorTransform.position.x;
+
+        if (itemADireita && !olhandoDireita)
+            VirarJogador(true);
+        else if (!itemADireita && olhandoDireita)
+            VirarJogador(false);
+    }
+
+    private void VirarJogador(bool olharDireita)
+    {
+        olhandoDireita = olharDireita;
+        Vector3 escala = jogadorTransform.localScale;
+        escala.x = Mathf.Abs(escala.x) * (olharDireita ? 1 : -1);
+        jogadorTransform.localScale = escala;
     }
 }
 

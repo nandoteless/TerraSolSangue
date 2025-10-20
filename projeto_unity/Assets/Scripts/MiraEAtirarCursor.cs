@@ -27,16 +27,31 @@ public class MiraEAtirarCursor : MonoBehaviour
     [Header("Animações")]
     public Animator animator;
     public string animIdle = "Idle";       // Nome da animação Idle
-    public string animMirando = "mirando"; // Nome da animação de mira (opcional)
+    public string animMirando = "mirando"; // Nome da animação de mira
     public string anim;
 
     [Header("Animator Parameters")]
     public string boolCarregando = "IsCarregando";  // Boolean do Animator
     public string triggerAtirar = "Atirar";         // Trigger do Animator
 
+    [Header("Flip")]
+    public bool olhandoDireita = true; // controle de direção
+
     void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        // === FLIP DO PERSONAGEM ===
+        Vector3 posMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        if (posMouse.x < transform.position.x && olhandoDireita)
+        {
+            Virar(false);
+        }
+        else if (posMouse.x > transform.position.x && !olhandoDireita)
+        {
+            Virar(true);
+        }
+
+        // === LÓGICA DE MIRA E TIRO ===
+        RaycastHit2D hit = Physics2D.Raycast(posMouse, Vector2.zero);
 
         if (hit.collider != null && hit.collider.CompareTag("cobra"))
         {
@@ -113,5 +128,14 @@ public class MiraEAtirarCursor : MonoBehaviour
         // Desliga animação de mira/carregamento
         if (animator != null)
             animator.SetBool(boolCarregando, false);
+    }
+
+    // === FUNÇÃO DE FLIP ===
+    void Virar(bool olharDireita)
+    {
+        olhandoDireita = olharDireita;
+        Vector3 escala = transform.localScale;
+        escala.x = Mathf.Abs(escala.x) * (olharDireita ? 1 : -1);
+        transform.localScale = escala;
     }
 }
