@@ -4,8 +4,6 @@ using UnityEngine;
 
 
 
-using UnityEngine;
-
 public class ColetaComida : MonoBehaviour
 {
     private HUD_Coleta hud;
