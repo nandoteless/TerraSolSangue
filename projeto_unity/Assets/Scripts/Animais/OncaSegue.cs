@@ -6,51 +6,33 @@ using UnityEngine;
 
 public class OncaSegue : MonoBehaviour
 {
-    public float distanciaMaxima = 5f; 
-    public float velocidade = 2f; 
+    public float distanciaMaxima = 5f;
+    public float velocidade = 2f;
+    public float danoPlayer = 25f;
 
     private bool seguir = false;
-    private Rigidbody2D rb;
-    private Transform player;
+    public GameObject playerObj;
+    private Transform playerTransform;
+    private PlayerVida playerVida;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0;
-
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-        if (playerObj != null)
-        {
-            player = playerObj.transform;
-        }
-        else
-        {
-            Debug.LogError("Nenhum objeto com a tag 'Player' foi encontrado!");
-        }
-
+        playerTransform = playerObj.transform;
+        playerVida = playerObj.GetComponent<PlayerVida>();
         IniciarSeguir();
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        if (seguir && player != null)
+        if (Vector3.Distance(transform.position, playerTransform.position) <= distanciaMaxima)
         {
-            float distancia = Vector2.Distance(transform.position, player.position);
+            float step = velocidade * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, playerTransform.position, step);
 
-            if (distancia <= distanciaMaxima)
+            if (Vector3.Distance(transform.position, playerTransform.position) < 0.001f)
             {
-                Vector2 direction = (player.position - transform.position).normalized;
-                Vector2 newPosition = (Vector2)transform.position + direction * velocidade * Time.fixedDeltaTime;
-                rb.MovePosition(newPosition);
+                playerVida.ReduzirVida(danoPlayer);
             }
-            else
-            {
-                rb.velocity = Vector2.zero;
-            }
-        }
-        else
-        {
-            rb.velocity = Vector2.zero;
         }
     }
 
@@ -59,7 +41,6 @@ public class OncaSegue : MonoBehaviour
     public void PararSeguir()
     {
         seguir = false;
-        rb.velocity = Vector2.zero;
     }
 }
 
