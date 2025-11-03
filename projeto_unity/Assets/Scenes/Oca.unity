@@ -63913,6 +63913,7 @@ GameObject:
   - component: {fileID: 2123825339}
   - component: {fileID: 2123825338}
   - component: {fileID: 2123825342}
+  - component: {fileID: 2123825343}
   m_Layer: 0
   m_Name: Square
   m_TagString: Bau
@@ -64047,3 +64048,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!111 &2123825343
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123825337}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4c15ab6f3a8659545bcf463193bcf58d, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
