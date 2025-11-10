@@ -92185,6 +92185,37 @@ Transform:
   m_Father: {fileID: 2020396828}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &808374454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 808374455}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &808374455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808374454}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 66, y: 3.5435188, z: -0.2617594}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &828777287
 GameObject:
   m_ObjectHideFlags: 0
@@ -107448,7 +107479,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1707141645}
-  - component: {fileID: 1707141644}
   - component: {fileID: 1707141643}
   m_Layer: 0
   m_Name: InputManager
@@ -107485,7 +107515,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1707141644}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: MoveEvent
         m_Mode: 0
@@ -107501,7 +107531,7 @@ MonoBehaviour:
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1707141644}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: InteractEvent
         m_Mode: 0
@@ -107517,7 +107547,7 @@ MonoBehaviour:
     m_ActionName: Player/Interact[/Keyboard/e]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1707141644}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: CollectEvent
         m_Mode: 0
@@ -107533,7 +107563,7 @@ MonoBehaviour:
     m_ActionName: Player/Collect[/Keyboard/f]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1707141644}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: CancelInteractEvent
         m_Mode: 0
@@ -107560,18 +107590,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1707141644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1707141642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e27620b50eb09a84697a34a37a279355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1707141645
 Transform:
   m_ObjectHideFlags: 0
@@ -108946,7 +108964,7 @@ MonoBehaviour:
   mov: {x: 0, y: 0}
   anim: {fileID: 1828206267}
   playerSounds: {fileID: 1090814924}
-  npc: {fileID: 0}
+  npc: {fileID: 808374455}
 --- !u!212 &1828206271
 SpriteRenderer:
   m_ObjectHideFlags: 0

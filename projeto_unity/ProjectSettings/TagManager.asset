@@ -16,6 +16,7 @@ TagManager:
   - musica
   - OcaCaciqur
   - Bau
+  - NPC
   layers:
   - Default
   - TransparentFX
