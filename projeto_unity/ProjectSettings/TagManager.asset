@@ -17,6 +17,7 @@ TagManager:
   - OcaCaciqur
   - Bau
   - NPC
+  - CraftTable
   layers:
   - Default
   - TransparentFX
