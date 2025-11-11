@@ -55,12 +55,12 @@ public class PlayerMove : MonoBehaviour
     {
         if (!context.performed) return;
         
-        if (colidiuCraftTable)
+        if (colidiuCraftTable && !canvasCraftTable.activeSelf)
         {
             canvasCraftTable.SetActive(true);
             return;
         } 
-        else 
+        else if (canvasCraftTable.activeSelf)
         {
             canvasCraftTable.SetActive(false);
         }
