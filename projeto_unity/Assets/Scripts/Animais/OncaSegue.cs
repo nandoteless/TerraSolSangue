@@ -31,7 +31,7 @@ public class OncaSegue : MonoBehaviour
 
             if (Vector3.Distance(transform.position, playerTransform.position) < 0.001f)
             {
-                playerVida.ReduzirVida(danoPlayer);
+                playerVida.ReduzirVida(danoPlayer); 
             }
         }
     }
