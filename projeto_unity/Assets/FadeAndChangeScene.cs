@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FadeAndChangeScene : MonoBehaviour
 {
-    public string nextSceneName;       // Nome da próxima cena
+    public string nextSceneName;       // Nome da prï¿½xima cena
     public float fadeDuration = 1f;    // Tempo do fade (segundos)
 
     private bool isFading = false;

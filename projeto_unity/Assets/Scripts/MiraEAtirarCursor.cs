@@ -39,18 +39,8 @@ public class MiraEAtirarCursor : MonoBehaviour
 
     void Update()
     {
-        // === FLIP DO PERSONAGEM ===
-        Vector3 posMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (posMouse.x < transform.position.x && olhandoDireita)
-        {
-            Virar(false);
-        }
-        else if (posMouse.x > transform.position.x && !olhandoDireita)
-        {
-            Virar(true);
-        }
-
         // === LÓGICA DE MIRA E TIRO ===
+        Vector3 posMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(posMouse, Vector2.zero);
 
         if (hit.collider != null && hit.collider.CompareTag("cobra"))
@@ -60,6 +50,14 @@ public class MiraEAtirarCursor : MonoBehaviour
             // Segura botão direito para mirar
             if (Input.GetMouseButton(1))
             {
+                if (posMouse.x < transform.position.x && olhandoDireita)
+                {
+                    Virar(false);
+                }
+                else if (posMouse.x > transform.position.x && !olhandoDireita)
+                {
+                    Virar(true);
+                }
                 if (!slider.gameObject.activeSelf)
                     slider.gameObject.SetActive(true);
 

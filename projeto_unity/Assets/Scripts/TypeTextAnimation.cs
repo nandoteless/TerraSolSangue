@@ -1,47 +1,57 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
 
 public class TypeTextAnimation : MonoBehaviour
 {
-
     public Action TypeFinished;
 
+    [Header("Typing Settings")]
     public float typeDelay = 0.05f;
     public TextMeshProUGUI textObject;
-
     public string fullText;
 
-    Coroutine coroutine;
+    [Header("Sound")]
+    public AudioSource audioSource;   
+    public AudioClip typeSound;       
 
-    void Start() {
+    private Coroutine coroutine;
 
-    }
+    public void StartTyping()
+    {
+        if (coroutine != null)
+            StopCoroutine(coroutine);
 
-    public void StartTyping() {
         coroutine = StartCoroutine(TypeText());
     }
 
-    IEnumerator TypeText() {
-
+    IEnumerator TypeText()
+    {
         textObject.text = fullText;
         textObject.maxVisibleCharacters = 0;
-        for(int i = 0; i <= textObject.text.Length; i++) {
+
+        for (int i = 0; i <= textObject.text.Length; i++)
+        {
             textObject.maxVisibleCharacters = i;
+
+            // 🔊 Tocar som a cada letra
+            if (typeSound != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(typeSound);
+            }
+
             yield return new WaitForSeconds(typeDelay);
         }
 
         TypeFinished?.Invoke();
-
     }
 
-    public void Skip() {
+    public void Skip()
+    {
+        if (coroutine != null)
+            StopCoroutine(coroutine);
 
-        StopCoroutine(coroutine);
         textObject.maxVisibleCharacters = textObject.text.Length;
-
     }
-
 }

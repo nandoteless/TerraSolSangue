@@ -159,7 +159,7 @@ MonoBehaviour:
   audioSource: {fileID: 40274727}
   blipSound: {fileID: 8300000, guid: 41eac73b1184d6a459376870b75515a7, type: 3}
   pitchVariation: 0.1
-  volume: 0.6
+  volume: 0.8
 --- !u!4 &40274726
 Transform:
   m_ObjectHideFlags: 0
@@ -794,7 +794,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 1
+  - 0.8
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
