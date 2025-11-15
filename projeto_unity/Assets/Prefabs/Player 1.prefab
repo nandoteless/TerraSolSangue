@@ -63,8 +63,6 @@ GameObject:
   - component: {fileID: 6538412717341955981}
   - component: {fileID: 6538412717341955978}
   - component: {fileID: 6538412717341955979}
-  - component: {fileID: 6538412717341955976}
-  - component: {fileID: 6538412717341955977}
   - component: {fileID: 6538412717341955990}
   - component: {fileID: 6538412717341955991}
   - component: {fileID: 6538412717341955988}
@@ -180,39 +178,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.12922144, y: 0.06252217}
   m_Size: {x: 6.168916, y: 12.252625}
   m_Direction: 0
---- !u!114 &6538412717341955976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6538412717341955989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e87cd3baed1e0204c82a26cdeb26c971, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pullKey: 101
-  draggingSound:
-    Guid:
-      Data1: -207859401
-      Data2: 1124970814
-      Data3: -268891993
-      Data4: 1434772164
-    Path: event:/SFX/sliding-chair-47711_DLgPlXOY
---- !u!114 &6538412717341955977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6538412717341955989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb6b9d650843ac541a6108ff70d3fa9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mirrorCountTMP: {fileID: 0}
 --- !u!95 &6538412717341955990
 Animator:
   serializedVersion: 5
