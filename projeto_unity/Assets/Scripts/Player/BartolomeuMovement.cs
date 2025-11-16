@@ -34,7 +34,7 @@ public class BartolomeuMovement : MonoBehaviour
 
     private void PlayFootstep()
     {
-        playerSounds.PlayFootsteps(); // Certifique-se de que esse método está configurado corretamente
+        playerSounds.PlayFootsteps();
     }
     public void MoveEvent(InputAction.CallbackContext context)
     {
