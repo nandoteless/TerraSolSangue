@@ -1449,6 +1449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pullKey: 101
+  anim: {fileID: 0}
   draggingSound:
     Guid:
       Data1: 434518536
@@ -1588,6 +1589,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: c5cd8703-0d46-4e3d-89a5-44ca2ce4e99a
     m_ActionName: Player/Machado
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a139da78-7c10-4378-aade-66da68e6e99b
+    m_ActionName: Player/Atacar[/Keyboard/f]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

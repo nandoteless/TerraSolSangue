@@ -372,6 +372,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6538412717341955981, guid: 1c731b3c39e8b504a88eefaea4499f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 215a4ce7c64a67b42a9fba314255a47a,
+        type: 3}
     - target: {fileID: 6538412717341955988, guid: 1c731b3c39e8b504a88eefaea4499f30,
         type: 3}
       propertyPath: m_DefaultActionMap
@@ -2126,7 +2132,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16.875, y: 21.09375}
+    oldSize: {x: 12.418181, y: 18.618181}
     newSize: {x: 10.8, y: 13.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2152,7 +2158,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16.875, y: 21.09375}
+    oldSize: {x: 12.418181, y: 18.618181}
     newSize: {x: 10.8, y: 13.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2215,7 +2221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd480bbe47ed75544b8585600f75406e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaSlider: {fileID: 0}
+  vidaSlider: {fileID: 1320022990}
   vidaMaxima: 100
   guaranaTMP: {fileID: 0}
   guaranaTotal: 5
@@ -2263,7 +2269,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: b2eab657792369e428a4cada951975f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5b053256b60f87643b4013e7d912a2d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2282,8 +2288,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035572522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.72, y: -2.38, z: 0}
-  m_LocalScale: {x: 0.14, y: 0.14, z: 1}
+  m_LocalPosition: {x: -5.72, y: -2.2, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1680905074}

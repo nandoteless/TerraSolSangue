@@ -11,6 +11,9 @@ public class PullObject : MonoBehaviour
     private GameObject objectToPull;
     private bool isPulling = false;
 
+    [Header("Animator")]
+    public Animator anim;   // <-- ANIMATOR ADICIONADO
+
     [Header("FMOD")]
     [SerializeField] private EventReference draggingSound; // Som de arrastar do FMOD
     private EventInstance draggingInstance;
@@ -57,6 +60,14 @@ public class PullObject : MonoBehaviour
         if (objectToPull != null && !isPulling)
         {
             isPulling = true;
+
+            // --- ATIVAR ANIMAÇÃO ---
+            if (anim != null)
+            {
+                anim.ResetTrigger("Idle");
+                anim.SetTrigger("Pull");
+            }
+
             StartDraggingSound();
         }
     }
@@ -66,6 +77,14 @@ public class PullObject : MonoBehaviour
         if (isPulling)
         {
             isPulling = false;
+
+            // --- VOLTAR À ANIMAÇÃO IDLE ---
+            if (anim != null)
+            {
+                anim.ResetTrigger("Pull");
+                anim.SetTrigger("Idle");
+            }
+
             StopDraggingSound();
         }
     }
