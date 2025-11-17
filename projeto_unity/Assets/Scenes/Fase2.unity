@@ -1593,6 +1593,34 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: a139da78-7c10-4378-aade-66da68e6e99b
     m_ActionName: Player/Atacar[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 956155257}
+        m_TargetAssemblyTypeName: PullObject, Assembly-CSharp
+        m_MethodName: StartPull
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 956155257}
+        m_TargetAssemblyTypeName: PullObject, Assembly-CSharp
+        m_MethodName: StopPull
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8181d279-6678-4109-98fb-1e9af587c060
+    m_ActionName: Player/Pull[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
