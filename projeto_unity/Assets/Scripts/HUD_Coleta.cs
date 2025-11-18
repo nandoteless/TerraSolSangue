@@ -16,10 +16,10 @@ public class HUD_Coleta : MonoBehaviour
     public void AtualizarHUD()
     {
         if (textoComida != null)
-            textoComida.text = comidaColetada + "/4";
+            textoComida.text = comidaColetada + "/8";
         if (textoOnca != null)
-            textoOnca.text = oncaColetada + "/3";
+            textoOnca.text = oncaColetada + "/1";
         if (textoGuarana != null)
-            textoGuarana.text = guaranaColetado + "/3";
+            textoGuarana.text = guaranaColetado + "/5";
     }
 }

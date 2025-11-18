@@ -86564,7 +86564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &121237835
 RectTransform:
   m_ObjectHideFlags: 0
@@ -98656,19 +98656,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482a8d208dd3acf4ca2885e4b792f472, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  som:
-    Guid:
-      Data1: -605010486
-      Data2: 1195058658
-      Data3: 379048617
-      Data4: 371729371
-    Path: event:/SFX/Murmurro
   speed: 5
   rb: {fileID: 1196875843}
   mov: {x: 0, y: 0}
   anim: {fileID: 1196875842}
   playerSounds: {fileID: 1273387277}
-  canvasCraftTable: {fileID: 209160716}
 --- !u!212 &1196875846
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98729,7 +98721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196875836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.6, y: -12, z: 0}
+  m_LocalPosition: {x: -7.8, y: -16.1, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -104952,6 +104944,8 @@ MonoBehaviour:
   typeDelay: 0.05
   textObject: {fileID: 0}
   fullText: 
+  audioSource: {fileID: 0}
+  typeSound: {fileID: 0}
 --- !u!4 &1852778904
 Transform:
   m_ObjectHideFlags: 0

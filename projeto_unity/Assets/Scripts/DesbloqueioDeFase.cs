@@ -22,7 +22,6 @@ public class DesbloqueioDeFase : MonoBehaviour
     {
         // Verifica se todas as condições foram cumpridas
         if (comidasColetadas >= comidasNecessarias &&
-            guaranasColetados >= guaranasNecessarios &&
             inimigosDerrotados >= inimigosNecessarios)
         {
             DesbloquearProximaFase();

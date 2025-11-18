@@ -11,7 +11,7 @@ public class MatarOncaPorTecla : MonoBehaviour
     public GameObject objetoSubstituto;  // O que aparece no lugar da onça
 
     [Header("Configuração")]
-    public float distanciaMaxima = 3f;   // Distância máxima para acionar
+    public float distanciaMaxima = 5f;   // Distância máxima para acionar
 
     private Transform player;
 

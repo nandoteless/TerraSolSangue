@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 326800078}
-  nomeDaProximaCena: 
+  nomeDaProximaCena: Fase3pt2
 --- !u!328 &326800078
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -230,7 +230,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326800076}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 670970d3484f0f94db5c477378c83fa7, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 299b6cb267614cc439a702722e969802, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1286795110}
@@ -303,6 +303,10 @@ MonoBehaviour:
   fullText: "Os portugueses ganharam a confian\xE7a de cacique ap\xF3s a troca, mas
     a cobi\xE7a sempre ser\xE1 um veneno..."
   textComponent: {fileID: 1387871300}
+  audioSource: {fileID: 0}
+  blipSound: {fileID: 0}
+  pitchVariation: 0.1
+  volume: 0.6
 --- !u!4 &1130587384
 Transform:
   m_ObjectHideFlags: 0
