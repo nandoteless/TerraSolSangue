@@ -734,7 +734,7 @@ GameObject:
   - component: {fileID: 56401418}
   - component: {fileID: 56401417}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (5)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86283,7 +86283,7 @@ GameObject:
   - component: {fileID: 93014999}
   - component: {fileID: 93014998}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (17)
+  m_Name: arvore da folha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86418,7 +86418,7 @@ GameObject:
   - component: {fileID: 96678177}
   - component: {fileID: 96678176}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (19)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86692,7 +86692,7 @@ GameObject:
   - component: {fileID: 143315915}
   - component: {fileID: 143315914}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (20)
+  m_Name: arvore da folha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86936,7 +86936,7 @@ GameObject:
   - component: {fileID: 149129219}
   - component: {fileID: 149129218}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (23)
+  m_Name: ARVOREDAFOLHA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87695,7 +87695,7 @@ GameObject:
   - component: {fileID: 193697693}
   - component: {fileID: 193697692}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (13)
+  m_Name: arvore da folha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88083,7 +88083,7 @@ GameObject:
   - component: {fileID: 218248302}
   - component: {fileID: 218248301}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (18)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88305,7 +88305,7 @@ GameObject:
   - component: {fileID: 233685512}
   - component: {fileID: 233685511}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (21)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88650,7 +88650,7 @@ GameObject:
   - component: {fileID: 271083750}
   - component: {fileID: 271083749}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (8)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88922,7 +88922,7 @@ GameObject:
   - component: {fileID: 283351122}
   - component: {fileID: 283351121}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (1)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89045,7 +89045,7 @@ GameObject:
   - component: {fileID: 292000042}
   - component: {fileID: 292000041}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (18)
+  m_Name: arvore da folha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89162,7 +89162,7 @@ GameObject:
   - component: {fileID: 321507764}
   - component: {fileID: 321507763}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (8)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89416,7 +89416,7 @@ GameObject:
   - component: {fileID: 333949994}
   - component: {fileID: 333949993}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (26)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89709,7 +89709,7 @@ GameObject:
   - component: {fileID: 365507437}
   - component: {fileID: 365507436}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (10)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89856,7 +89856,7 @@ GameObject:
   - component: {fileID: 378785701}
   - component: {fileID: 378785700}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (2)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -90740,7 +90740,7 @@ GameObject:
   - component: {fileID: 418827166}
   - component: {fileID: 418827165}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (7)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91406,7 +91406,7 @@ GameObject:
   - component: {fileID: 474462322}
   - component: {fileID: 474462321}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (4)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91601,7 +91601,7 @@ GameObject:
   - component: {fileID: 512069911}
   - component: {fileID: 512069910}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (26)
+  m_Name: ARVOREDAFOLHA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92621,7 +92621,7 @@ GameObject:
   - component: {fileID: 612270403}
   - component: {fileID: 612270402}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (5)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93003,7 +93003,7 @@ GameObject:
   - component: {fileID: 636699424}
   - component: {fileID: 636699423}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (1)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93225,7 +93225,7 @@ GameObject:
   - component: {fileID: 651615231}
   - component: {fileID: 651615230}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (12)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93336,7 +93336,7 @@ GameObject:
   - component: {fileID: 653274031}
   - component: {fileID: 653274030}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (24)
+  m_Name: ARVOREDAFOLHA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94725,7 +94725,7 @@ GameObject:
   - component: {fileID: 814673097}
   - component: {fileID: 814673096}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (11)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94920,7 +94920,7 @@ GameObject:
   - component: {fileID: 843256434}
   - component: {fileID: 843256433}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (3)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95031,7 +95031,7 @@ GameObject:
   - component: {fileID: 846742196}
   - component: {fileID: 846742195}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (25)
+  m_Name: ARVOREDAFOLHA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96143,7 +96143,7 @@ GameObject:
   - component: {fileID: 987542844}
   - component: {fileID: 987542843}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (22)
+  m_Name: ARVOREDAFOLHA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96409,7 +96409,7 @@ GameObject:
   - component: {fileID: 1037303352}
   - component: {fileID: 1037303351}
   m_Layer: 0
-  m_Name: Cave_Decorations_0 (5)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96507,7 +96507,7 @@ GameObject:
   - component: {fileID: 1040041396}
   - component: {fileID: 1040041395}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (3)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96907,7 +96907,7 @@ GameObject:
   - component: {fileID: 1051657376}
   - component: {fileID: 1051657375}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (9)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97569,7 +97569,7 @@ GameObject:
   - component: {fileID: 1102994867}
   - component: {fileID: 1102994866}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (5)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97791,7 +97791,7 @@ GameObject:
   - component: {fileID: 1114199060}
   - component: {fileID: 1114199059}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (22)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98045,7 +98045,7 @@ GameObject:
   - component: {fileID: 1155042504}
   - component: {fileID: 1155042503}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98194,7 +98194,7 @@ GameObject:
   - component: {fileID: 1167188423}
   - component: {fileID: 1167188422}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (6)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99278,7 +99278,7 @@ GameObject:
   - component: {fileID: 1254167836}
   - component: {fileID: 1254167835}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (15)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99927,7 +99927,7 @@ GameObject:
   - component: {fileID: 1341398856}
   - component: {fileID: 1341398855}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (11)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100038,7 +100038,7 @@ GameObject:
   - component: {fileID: 1349520548}
   - component: {fileID: 1349520547}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (6)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100344,7 +100344,7 @@ GameObject:
   - component: {fileID: 1356894722}
   - component: {fileID: 1356894721}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (4)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100532,7 +100532,7 @@ GameObject:
   - component: {fileID: 1409393448}
   - component: {fileID: 1409393447}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (14)
+  m_Name: arvore da folha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100844,7 +100844,7 @@ GameObject:
   - component: {fileID: 1424973520}
   - component: {fileID: 1424973519}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (9)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100955,7 +100955,7 @@ GameObject:
   - component: {fileID: 1448194836}
   - component: {fileID: 1448194835}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (10)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101066,7 +101066,7 @@ GameObject:
   - component: {fileID: 1449342223}
   - component: {fileID: 1449342222}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (25)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101288,7 +101288,7 @@ GameObject:
   - component: {fileID: 1468485375}
   - component: {fileID: 1468485374}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (7)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101986,7 +101986,7 @@ GameObject:
   - component: {fileID: 1539427393}
   - component: {fileID: 1539427392}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (16)
+  m_Name: arvore da folha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102097,7 +102097,7 @@ GameObject:
   - component: {fileID: 1548733915}
   - component: {fileID: 1548733914}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (19)
+  m_Name: arvore da folha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102265,7 +102265,7 @@ GameObject:
   - component: {fileID: 1585318636}
   - component: {fileID: 1585318635}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (12)
+  m_Name: arvoredafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102376,7 +102376,7 @@ GameObject:
   - component: {fileID: 1614240278}
   - component: {fileID: 1614240277}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (14)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102647,7 +102647,7 @@ GameObject:
   - component: {fileID: 1625099860}
   - component: {fileID: 1625099859}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (16)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102993,6 +102993,7 @@ MonoBehaviour:
   comidaColetada: 0
   oncaColetada: 0
   guaranaColetado: 0
+  nomeDaProximaCena: 
 --- !u!1 &1673375304
 GameObject:
   m_ObjectHideFlags: 0
@@ -103005,7 +103006,7 @@ GameObject:
   - component: {fileID: 1673375307}
   - component: {fileID: 1673375306}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (20)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103122,7 +103123,7 @@ GameObject:
   - component: {fileID: 1694329829}
   - component: {fileID: 1694329828}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (11)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103452,7 +103453,7 @@ GameObject:
   - component: {fileID: 1709157540}
   - component: {fileID: 1709157539}
   m_Layer: 0
-  m_Name: Cave_Decorations_0 (4)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103694,7 +103695,7 @@ GameObject:
   - component: {fileID: 1729260821}
   - component: {fileID: 1729260820}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (12)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104035,7 +104036,7 @@ GameObject:
   - component: {fileID: 1775204732}
   - component: {fileID: 1775204731}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (10)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104146,7 +104147,7 @@ GameObject:
   - component: {fileID: 1782569218}
   - component: {fileID: 1782569217}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (21)
+  m_Name: arvore da folha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104497,7 +104498,7 @@ GameObject:
   - component: {fileID: 1816222509}
   - component: {fileID: 1816222508}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (23)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104781,7 +104782,7 @@ GameObject:
   - component: {fileID: 1842084521}
   - component: {fileID: 1842084520}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (14)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104973,7 +104974,7 @@ GameObject:
   - component: {fileID: 1855730215}
   - component: {fileID: 1855730214}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (17)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105084,7 +105085,7 @@ GameObject:
   - component: {fileID: 1862893485}
   - component: {fileID: 1862893484}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (6)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105195,7 +105196,7 @@ GameObject:
   - component: {fileID: 1865763110}
   - component: {fileID: 1865763109}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (13)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113321,7 +113322,7 @@ GameObject:
   - component: {fileID: 1952664486}
   - component: {fileID: 1952664485}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (24)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113720,7 +113721,7 @@ GameObject:
   - component: {fileID: 1999145998}
   - component: {fileID: 1999145997}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (2)
+  m_Name: arvoresdafolha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114287,7 +114288,7 @@ GameObject:
   - component: {fileID: 2038221978}
   - component: {fileID: 2038221977}
   m_Layer: 0
-  m_Name: Big_Fruit_Tree_1 (13)
+  m_Name: MADEIRA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114398,7 +114399,7 @@ GameObject:
   - component: {fileID: 2042817430}
   - component: {fileID: 2042817429}
   m_Layer: 0
-  m_Name: Spruce_Tree_Small_1 (15)
+  m_Name: arvore da folha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114902,7 +114903,7 @@ GameObject:
   - component: {fileID: 2081065112}
   - component: {fileID: 2081065111}
   m_Layer: 0
-  m_Name: Cave_Decorations_1 (15)
+  m_Name: PEDRAS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
