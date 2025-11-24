@@ -18,6 +18,8 @@ TagManager:
   - Bau
   - NPC
   - CraftTable
+  - inimigo
+  - Inimigo
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - inimigo
   - 
   - 
   - 

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DanoAoPlayer : MonoBehaviour
 {
-    public float dano = 25f;          // quanto dano o player leva
+    public float dano = 1f;          // quanto dano o player leva
     public float intervaloDano = 1f;  // tempo entre danos
 
     private float tempoUltimoDano = 0f;
@@ -23,7 +23,7 @@ public class DanoAoPlayer : MonoBehaviour
     void OnCollisionStay2D(Collision2D collision)
     {
         // Se encostar em inimigo (tag "Inimigo") e já passou o intervalo
-        if (collision.gameObject.CompareTag("onca") && Time.time - tempoUltimoDano >= intervaloDano)
+        if (collision.gameObject.CompareTag("inimigo") && Time.time - tempoUltimoDano >= intervaloDano)
         {
             if (playerVida != null)
             {
@@ -36,7 +36,7 @@ public class DanoAoPlayer : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
         // Também funciona se inimigo usar trigger
-        if (other.CompareTag("onca") && Time.time - tempoUltimoDano >= intervaloDano)
+        if (other.CompareTag("inimigo") && Time.time - tempoUltimoDano >= intervaloDano)
         {
             if (playerVida != null)
             {
