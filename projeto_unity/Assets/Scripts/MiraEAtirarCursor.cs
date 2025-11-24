@@ -1,9 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using FMODUnity;
+
 
 public class MiraEAtirarCursor : MonoBehaviour
 {
@@ -14,15 +14,18 @@ public class MiraEAtirarCursor : MonoBehaviour
     public int inimigosDerrotados = 0;
     public int totalInimigos = 3;
 
+
     private bool estaCarregando = false;
     private float tempoAtual = 0f;
     private bool podeAtirar = false;
     private Inimigo inimigoAlvo;
 
+
     [Header("FMOD")]
     [SerializeField] private EventReference somCarregar;
     [SerializeField] private EventReference somAtirar;
     private bool somCarregadoTocado = false;
+
 
     [Header("Animações")]
     public Animator animator;
@@ -30,12 +33,15 @@ public class MiraEAtirarCursor : MonoBehaviour
     public string animMirando = "mirando"; // Nome da animação de mira
     public string anim;
 
+
     [Header("Animator Parameters")]
     public string boolCarregando = "IsCarregando";  // Boolean do Animator
     public string triggerAtirar = "Atirar";         // Trigger do Animator
 
+
     [Header("Flip")]
     public bool olhandoDireita = true; // controle de direção
+
 
     void Update()
     {
@@ -43,9 +49,11 @@ public class MiraEAtirarCursor : MonoBehaviour
         Vector3 posMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(posMouse, Vector2.zero);
 
+
         if (hit.collider != null && hit.collider.CompareTag("cobra"))
         {
             inimigoAlvo = hit.collider.GetComponent<Inimigo>();
+
 
             // Segura botão direito para mirar
             if (Input.GetMouseButton(1))
@@ -61,6 +69,7 @@ public class MiraEAtirarCursor : MonoBehaviour
                 if (!slider.gameObject.activeSelf)
                     slider.gameObject.SetActive(true);
 
+
                 // Áudio de recarregar (uma vez só)
                 if (!somCarregadoTocado)
                 {
@@ -68,7 +77,9 @@ public class MiraEAtirarCursor : MonoBehaviour
                     somCarregadoTocado = true;
                 }
 
+
                 estaCarregando = true;
+
 
                 // Toca animação de mira/carregamento
                 if (animator != null)
@@ -79,12 +90,14 @@ public class MiraEAtirarCursor : MonoBehaviour
                 ResetarCarregamento();
             }
 
+
             if (estaCarregando)
             {
                 tempoAtual += Time.deltaTime;
                 slider.value = Mathf.Clamp01(tempoAtual / tempoCarregamento);
                 podeAtirar = slider.value >= 0.9f;
             }
+
 
             // Botão esquerdo dispara o ataque
             if (Input.GetMouseButtonDown(0) && podeAtirar)
@@ -99,10 +112,12 @@ public class MiraEAtirarCursor : MonoBehaviour
         }
     }
 
+
     void Atirar()
     {
         if (animator != null)
             animator.SetTrigger(triggerAtirar); // dispara animação de ataque
+
 
         if (inimigoAlvo != null)
         {
@@ -114,6 +129,7 @@ public class MiraEAtirarCursor : MonoBehaviour
         }
     }
 
+
     void ResetarCarregamento()
     {
         estaCarregando = false;
@@ -123,10 +139,12 @@ public class MiraEAtirarCursor : MonoBehaviour
         podeAtirar = false;
         somCarregadoTocado = false;
 
+
         // Desliga animação de mira/carregamento
         if (animator != null)
             animator.SetBool(boolCarregando, false);
     }
+
 
     // === FUNÇÃO DE FLIP ===
     void Virar(bool olharDireita)
@@ -137,3 +155,6 @@ public class MiraEAtirarCursor : MonoBehaviour
         transform.localScale = escala;
     }
 }
+
+
+

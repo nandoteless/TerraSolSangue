@@ -62,4 +62,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase3pt2.unity
     guid: 52642bb5132ac564dad18d47cdb9b9bd
+  - enabled: 1
+    path: Assets/Scenes/Endof.unity
+    guid: 3c633be9535a65546aafa509b394a932
+  - enabled: 1
+    path: Assets/Scenes/Cuts7.unity
+    guid: 8330be05799b2b2489de37cebc939538
+  - enabled: 1
+    path: Assets/Scenes/FaseFinal.unity
+    guid: 574072d63c7dab948a3f30a1f26a6ad5
   m_configObjects: {}
