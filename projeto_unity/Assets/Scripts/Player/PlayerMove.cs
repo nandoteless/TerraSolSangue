@@ -56,15 +56,9 @@ public class PlayerMove : MonoBehaviour
 
     public void InteractEvent(InputAction.CallbackContext context)
     {
-        if (!context.performed) return;
-
-
         if (npc != null)
         {
-            if (Vector2.Distance(transform.position, npc.position) < 2f)
-            {  
-                dialogueSystem.StartDialogue();
-            }    
+            dialogueSystem.StartDialogue();
         }
        
        

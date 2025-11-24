@@ -610,6 +610,7 @@ GameObject:
   - component: {fileID: 1362597127}
   - component: {fileID: 1362597126}
   - component: {fileID: 1362597125}
+  - component: {fileID: 1362597128}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -683,6 +684,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1362597128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362597124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1770267198
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +738,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770267198}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 40c2a92487311214baaa8d44cf89aa13, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 93aa3d05db980a44a973b611ee2da476, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1362597126}

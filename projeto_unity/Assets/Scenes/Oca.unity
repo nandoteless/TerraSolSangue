@@ -1616,6 +1616,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1247923983147738853, guid: c4d77ba9654445141a71406be6fd4329,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1247923983147738855, guid: c4d77ba9654445141a71406be6fd4329,
         type: 3}
       propertyPath: m_Name
@@ -62795,6 +62800,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6538412715409684954, guid: 1c731b3c39e8b504a88eefaea4499f30,
+        type: 3}
+      propertyPath: _footsteps.Path
+      value: event:/Footsteps/Footsteps
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538412715409684954, guid: 1c731b3c39e8b504a88eefaea4499f30,
+        type: 3}
+      propertyPath: _footsteps.Guid.Data1
+      value: -1243087815
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538412715409684954, guid: 1c731b3c39e8b504a88eefaea4499f30,
+        type: 3}
+      propertyPath: _footsteps.Guid.Data2
+      value: 1175762510
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538412715409684954, guid: 1c731b3c39e8b504a88eefaea4499f30,
+        type: 3}
+      propertyPath: _footsteps.Guid.Data3
+      value: 539640982
+      objectReference: {fileID: 0}
+    - target: {fileID: 6538412715409684954, guid: 1c731b3c39e8b504a88eefaea4499f30,
+        type: 3}
+      propertyPath: _footsteps.Guid.Data4
+      value: 1906983463
+      objectReference: {fileID: 0}
     - target: {fileID: 6538412717341955980, guid: 1c731b3c39e8b504a88eefaea4499f30,
         type: 3}
       propertyPath: m_RootOrder
