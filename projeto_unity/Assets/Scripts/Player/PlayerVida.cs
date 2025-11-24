@@ -22,7 +22,7 @@ public class PlayerVida : MonoBehaviour
     public float tempoAtivo = 0.5f;
 
     [Header("Som de Mordida")]
-    public AudioSource somMordida; // 🎧 Adicione o som de mordida aqui no Inspector
+    public AudioSource somMordida;
 
     private HUD_Coleta hud;
     private DesbloqueioDeFase desbloqueio;

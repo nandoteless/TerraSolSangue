@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DanoAoPlayer : MonoBehaviour
 {
-    public float dano = 1f;          // quanto dano o player leva
+    public float dano = 25f;          // quanto dano o player leva
     public float intervaloDano = 1f;  // tempo entre danos
 
     private float tempoUltimoDano = 0f;
