@@ -3,47 +3,74 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
-    // Referências aos objetos de texto para cada tipo de item
+    // 🔢 Referências na HUD
+    [Header("Contadores de Itens")]
     public TextMeshProUGUI pauBrasilCounterText;
-
+    public TextMeshProUGUI cipoCounterText;   // ✅ novo
+    public TextMeshProUGUI pedraCounterText;  // ✅ novo
 
     void Awake()
     {
         if (instance == null)
-        {
             instance = this;
-        }
         else
-        {
             Destroy(gameObject);
-        }
     }
 
-    // Método atualizado para receber as contagens coletadas e os totais requeridos
-    public void UpdateItemCounts(Dictionary<ColetaItem.TipoItem, int> collectedCounts, Dictionary<ColetaItem.TipoItem, int> requiredCounts)
+    // 📌 Atualiza os textos da HUD com os valores coletados e os valores necessários
+    public void UpdateItemCounts(
+        Dictionary<ColetaItem.TipoItem, int> collectedCounts,
+        Dictionary<ColetaItem.TipoItem, int> requiredCounts)
     {
-        // Atualiza o texto para cada tipo de item individual, incluindo o total requerido
-        if (pauBrasilCounterText != null && collectedCounts.ContainsKey(ColetaItem.TipoItem.PauBrasil) && requiredCounts.ContainsKey(ColetaItem.TipoItem.PauBrasil))
+        // --- PAU BRASIL ---
+        if (pauBrasilCounterText != null &&
+            collectedCounts.ContainsKey(ColetaItem.TipoItem.PauBrasil))
         {
-            pauBrasilCounterText.text = collectedCounts[ColetaItem.TipoItem.PauBrasil].ToString() + "/" + requiredCounts[ColetaItem.TipoItem.PauBrasil].ToString();
+            pauBrasilCounterText.text =
+                collectedCounts[ColetaItem.TipoItem.PauBrasil] + "/" +
+                requiredCounts[ColetaItem.TipoItem.PauBrasil];
+        }
+
+        // --- CIPÓ ---
+        if (cipoCounterText != null &&
+            collectedCounts.ContainsKey(ColetaItem.TipoItem.Cipo))
+        {
+            cipoCounterText.text =
+                collectedCounts[ColetaItem.TipoItem.Cipo] + "/" +
+                requiredCounts[ColetaItem.TipoItem.Cipo];
+        }
+
+        // --- PEDRA ---
+        if (pedraCounterText != null &&
+            collectedCounts.ContainsKey(ColetaItem.TipoItem.Pedra))
+        {
+            pedraCounterText.text =
+                collectedCounts[ColetaItem.TipoItem.Pedra] + "/" +
+                requiredCounts[ColetaItem.TipoItem.Pedra];
         }
     }
 
     void Start()
     {
-        // Garante que a HUD seja inicializada corretamente ao iniciar a cena
         if (GameManager.instancia != null)
         {
-            UpdateItemCounts(GameManager.instancia.itensColetados, GameManager.instancia.totalItensPorTipo);
+            UpdateItemCounts(
+                GameManager.instancia.itensColetados,
+                GameManager.instancia.totalItensPorTipo
+            );
         }
         else
         {
-            // Caso o GameManager ainda não esteja pronto, inicialize com zeros
-            UpdateItemCounts(new Dictionary<ColetaItem.TipoItem, int>(), new Dictionary<ColetaItem.TipoItem, int>());
+            UpdateItemCounts(new Dictionary<ColetaItem.TipoItem, int>(),
+                             new Dictionary<ColetaItem.TipoItem, int>());
         }
     }
 }

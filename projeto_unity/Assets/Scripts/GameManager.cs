@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public Dictionary<ColetaItem.TipoItem, int> totalItensPorTipo;
 
     [Header("Referência da Vara (para desbloqueio)")]
-    public GameObject varaParaDesbloquear; // <<< arraste a vara aqui no inspector
+    public GameObject varaParaDesbloquear;
 
     void Awake()
     {
@@ -85,7 +85,6 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Todos os objetivos de coleta alcançados! Vitória!");
 
-            // 🔓 Desbloqueia a vara
             if (varaParaDesbloquear != null)
             {
                 varaParaDesbloquear.SetActive(true);
@@ -122,7 +121,6 @@ public class GameManager : MonoBehaviour
         return true;
     }
 
-    // ✅ Método usado pela Vara para verificar se já pode trocar de cena
     public bool ObjetivosConcluidos()
     {
         foreach (var objetivo in totalItensPorTipo)

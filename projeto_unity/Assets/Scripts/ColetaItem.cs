@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class ColetaItem : MonoBehaviour
 {
     public enum TipoItem
     {
         PauBrasil,
+        Cipo,     // ✅ Novo item
+        Pedra     // ✅ Novo item
     }
 
     public TipoItem tipoItem;
@@ -19,9 +22,9 @@ public class ColetaItem : MonoBehaviour
     public Sprite spriteDestacado;
 
     [Header("Referência do Jogador")]
-    public Animator jogadorAnimator; // referência pro Animator do jogador
-    private Transform jogadorTransform; // para saber a posição e flipar
-    private bool olhandoDireita = true; // controle de direção atual
+    public Animator jogadorAnimator;
+    private Transform jogadorTransform;
+    private bool olhandoDireita = true;
 
     void Awake()
     {
@@ -32,7 +35,7 @@ public class ColetaItem : MonoBehaviour
             spriteRenderer.sprite = spritePadrao;
         }
 
-        // 🔎 Encontra o jogador automaticamente
+        // 🔎 Localiza automaticamente o jogador
         if (jogadorAnimator == null)
         {
             GameObject jogador = GameObject.FindGameObjectWithTag("Player");
@@ -52,25 +55,17 @@ public class ColetaItem : MonoBehaviour
     public void DestacaItem()
     {
         if (spriteRenderer != null && spriteDestacado != null)
-        {
             spriteRenderer.sprite = spriteDestacado;
-        }
         else
-        {
-            Debug.LogWarning("Não foi possível trocar o sprite. Verifique se o SpriteRenderer e o spriteDestacado estão atribuídos.");
-        }
+            Debug.LogWarning("Não foi possível trocar o sprite para destacado.");
     }
 
     public void ItemPadrao()
     {
         if (spriteRenderer != null && spritePadrao != null)
-        {
             spriteRenderer.sprite = spritePadrao;
-        }
         else
-        {
-            Debug.LogWarning("Não foi possível trocar o sprite. Verifique se o SpriteRenderer e o spritePadrao estão atribuídos.");
-        }
+            Debug.LogWarning("Não foi possível trocar o sprite para padrão.");
     }
 
     public void Coleta()
@@ -79,7 +74,7 @@ public class ColetaItem : MonoBehaviour
         {
             GameManager.instancia.ColetaItem(tipoItem, valorItem);
 
-            // 🧭 Verifica a direção e vira o jogador antes da animação
+            // 🧭 Vira o jogador para o item antes da animação
             if (jogadorTransform != null)
                 AjustarDirecaoDoJogador();
 
@@ -100,10 +95,10 @@ public class ColetaItem : MonoBehaviour
         }
     }
 
-    // ⏳ Retorna pro estado Idle depois de 0.8 segundos (tempo da animação)
     private IEnumerator VoltarIdle()
     {
         yield return new WaitForSeconds(0.8f);
+
         if (jogadorAnimator != null)
         {
             jogadorAnimator.ResetTrigger("ColetarMadeira");
@@ -111,12 +106,10 @@ public class ColetaItem : MonoBehaviour
         }
     }
 
-    // === FUNÇÃO DE FLIP DO JOGADOR ===
     private void AjustarDirecaoDoJogador()
     {
         if (jogadorTransform == null) return;
 
-        // Vira o jogador para o item antes de animar
         bool itemADireita = transform.position.x > jogadorTransform.position.x;
 
         if (itemADireita && !olhandoDireita)
@@ -128,9 +121,9 @@ public class ColetaItem : MonoBehaviour
     private void VirarJogador(bool olharDireita)
     {
         olhandoDireita = olharDireita;
+
         Vector3 escala = jogadorTransform.localScale;
         escala.x = Mathf.Abs(escala.x) * (olharDireita ? 1 : -1);
         jogadorTransform.localScale = escala;
     }
 }
-
