@@ -6,75 +6,69 @@ using UnityEngine.InputSystem;
 
 public class MatarOncaPorTecla : MonoBehaviour
 {
-    [Header("Referências")]
-    public GameObject onca;              // Onça que será destruída
-    public GameObject objetoSubstituto;  // O que aparece no lugar da onça
-
-    [Header("Configuração")]
-    public float distanciaMaxima = 5f;   // Distância máxima para acionar
+   [Header("Configuração")]
+    public float distanciaMaxima = 5f;
+    public GameObject objetoSubstituto;  // O que aparece depois que a onça morre
 
     private Transform player;
 
     void Start()
     {
-        // Acha o player pela tag
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+
         if (playerObj != null)
-        {
             player = playerObj.transform;
-        }
     }
 
-    // Método chamado pelo Input System (PlayerInput → Action → "Attack")
+    // Chamado pelo Input System (ataque)
     public void OnAttack(InputAction.CallbackContext context)
     {
-        if (context.performed) // Só executa quando o botão é pressionado
-        {
+        if (context.performed)
             AtacarOnca();
-        }
     }
 
-    // Método público para UI
-    public void AtacarOnca()
+    void AtacarOnca()
     {
-        if (player == null || onca == null) return;
+        GameObject oncaMaisProxima = null;
+        float menorDistancia = Mathf.Infinity;
 
-        float distancia = Vector2.Distance(player.position, onca.transform.position);
+        GameObject[] oncas = GameObject.FindGameObjectsWithTag("onca");
 
-        if (distancia <= distanciaMaxima)
+        foreach (GameObject o in oncas)
         {
-            Substituir();
+            float distancia = Vector2.Distance(player.position, o.transform.position);
+
+            if (distancia < menorDistancia)
+            {
+                menorDistancia = distancia;
+                oncaMaisProxima = o;
+            }
+        }
+
+        if (oncaMaisProxima != null && menorDistancia <= distanciaMaxima)
+        {
+            SubstituirOnca(oncaMaisProxima);
         }
         else
         {
-            Debug.Log("Muito longe da onça para atacar!");
+            Debug.Log("Nenhuma onça está perto o suficiente para atacar.");
         }
     }
 
-    private void Substituir()
+    void SubstituirOnca(GameObject oncaAlvo)
     {
-        if (onca == null) return;
+        OncaSegue script = oncaAlvo.GetComponent<OncaSegue>();
+        if (script != null)
+            script.PararSeguir();
 
-        // Para o script de seguir, se existir
-        OncaSegue scriptSegue = onca.GetComponent<OncaSegue>();
-        if (scriptSegue != null)
-        {
-            scriptSegue.PararSeguir();
-        }
+        Vector3 posicao = oncaAlvo.transform.position;
+        Quaternion rotacao = oncaAlvo.transform.rotation;
 
-        // Guarda a posição e rotação
-        Vector3 posicao = onca.transform.position;
-        Quaternion rotacao = onca.transform.rotation;
+        Destroy(oncaAlvo);
 
-        // Destroi a onça
-        Destroy(onca);
-
-        // Instancia o substituto
         if (objetoSubstituto != null)
-        {
             Instantiate(objetoSubstituto, posicao, rotacao);
-        }
 
-        Debug.Log("Onça eliminada e substituída!");
+        Debug.Log("Onça eliminada!");
     }
 }
