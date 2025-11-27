@@ -300,8 +300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.05
-  fullText: "Os portugueses ganharam a confian\xE7a de cacique ap\xF3s a troca, mas
-    a cobi\xE7a sempre ser\xE1 um veneno..."
+  fullText: 'Enquantro seus triupalntes lutavam com os indigenas na vila, Bartolomeu
+    pegou seu maior desejo: Jacira'
   textComponent: {fileID: 1387871300}
   audioSource: {fileID: 0}
   blipSound: {fileID: 0}
@@ -607,7 +607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1402885123
 RectTransform:
   m_ObjectHideFlags: 0
