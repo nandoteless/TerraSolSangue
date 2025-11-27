@@ -88042,6 +88042,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862741168}
     m_Modifications:
+    - target: {fileID: -7420434653432460271, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1016543884324960830, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: distanciaMaxima
@@ -93192,6 +93197,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862741168}
     m_Modifications:
+    - target: {fileID: -7420434653432460271, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1016543884324960830, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: distanciaMaxima
@@ -93266,6 +93276,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862741168}
     m_Modifications:
+    - target: {fileID: -7420434653432460271, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1016543884324960830, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: velocidade
@@ -107263,6 +107278,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862741168}
     m_Modifications:
+    - target: {fileID: -7420434653432460271, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a4437b601c213b44fa8bd10a01ee2a7a, type: 2}
     - target: {fileID: 1016543884324960830, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: distanciaMaxima
@@ -109019,6 +109039,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862741168}
     m_Modifications:
+    - target: {fileID: -7420434653432460271, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9201d0466715acd439f04dccee730e87, type: 2}
     - target: {fileID: 1016543884324960830, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: playerObj
@@ -109049,6 +109074,16 @@ PrefabInstance:
       propertyPath: distanciaMaxima
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6659255719690951569, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659255719690951569, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.41
+      objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951572, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
       propertyPath: m_Name
@@ -109058,6 +109093,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6659255719690951574, guid: ac2ff2a192194e84fabd88ad5f8777bf,
         type: 3}
@@ -109118,7 +109163,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a9518cf3ed7e58448852fa4d4456cf10,
+      objectReference: {fileID: 21300000, guid: 48a52009c1dffed478cc292ed0380944,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac2ff2a192194e84fabd88ad5f8777bf, type: 3}
@@ -109496,6 +109541,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 413fae8dcba71914f9450452e2da5114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &1888842129
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888842127}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1907121319
 GameObject:
   m_ObjectHideFlags: 0
