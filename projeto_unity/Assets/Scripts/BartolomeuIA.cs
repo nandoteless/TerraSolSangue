@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using System.Collections;
 
 public class BartolomeuIA : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class BartolomeuIA : MonoBehaviour
 
         float distancia = Vector2.Distance(transform.position, player.position);
 
-        // Flip horizontal (corrigido para considerar orientação padrão do sprite)
+        // Flip do inimigo
         FlipInimigo();
 
         // Seguir jogador
@@ -51,6 +52,10 @@ public class BartolomeuIA : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
 
+            // ❗ corrigido: desliga o bool andando para liberar o ataque
+            if (anim != null)
+                anim.SetBool("andando", false);
+
             if (podeAtacar)
                 StartCoroutine(Atacar());
         }
@@ -58,15 +63,10 @@ public class BartolomeuIA : MonoBehaviour
 
     void FlipInimigo()
     {
-        // 1 => player à direita, -1 => player à esquerda
         int direçãoRelativa = player.position.x > transform.position.x ? 1 : -1;
-
-        // Se o sprite padrão (escala X positiva) olha para a direita, usamos direçãoRelativa.
-        // Caso contrário, invertemos (porque escala positiva corresponde a olhar para a esquerda).
         int multiplicador = defaultFacingRight ? direçãoRelativa : -direçãoRelativa;
 
         float novoX = Mathf.Abs(escalaOriginal.x) * multiplicador;
-
         transform.localScale = new Vector3(novoX, escalaOriginal.y, escalaOriginal.z);
     }
 
@@ -86,6 +86,7 @@ public class BartolomeuIA : MonoBehaviour
         if (anim != null)
             anim.SetTrigger("ataque");
 
+        // espera o momento real do golpe
         yield return new WaitForSeconds(0.25f);
 
         float distancia = Vector2.Distance(transform.position, player.position);

@@ -1362,6 +1362,7 @@ GameObject:
   - component: {fileID: 1383159819}
   - component: {fileID: 1383159828}
   - component: {fileID: 1383159827}
+  - component: {fileID: 1383159829}
   m_Layer: 0
   m_Name: Bartolomeu
   m_TagString: inimigo
@@ -1515,6 +1516,27 @@ MonoBehaviour:
   dano: 25
   tempoEntreAtaques: 1
   defaultFacingRight: 0
+--- !u!95 &1383159829
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383159817}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce8e67fa8614adc46bf27a022d14a971, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1389423285
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,7 +2421,7 @@ Animator:
   m_GameObject: {fileID: 1663089032}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d069462833b726242b50b32bc4636a9d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
