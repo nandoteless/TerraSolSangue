@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+
 public class PlayerVida : MonoBehaviour
 {
     [Header("Vida")]
@@ -23,6 +24,10 @@ public class PlayerVida : MonoBehaviour
 
     [Header("Som de Mordida")]
     public AudioSource somMordida;
+
+    [Header("Cena ao Morrer")]
+    [Tooltip("Nome da cena para carregar quando a vida chegar a zero.")]
+    public string cenaGameOver = "GameOver";   // <- coloque aqui o nome da cena
 
     private HUD_Coleta hud;
     private DesbloqueioDeFase desbloqueio;
@@ -53,19 +58,16 @@ public class PlayerVida : MonoBehaviour
             StartCoroutine(AtivarEfeitoDano());
         }
 
-        if (vidaAtual <= 0) ReiniciarCena();
+        if (vidaAtual <= 0)
+            CarregarCenaGameOver();
     }
 
     private IEnumerator AtivarEfeitoDano()
     {
-        // 🔥 Ativa o efeito visual
         efeitoDano.SetActive(true);
 
-        // 🦷 Toca o som de mordida (se estiver configurado)
         if (somMordida != null)
-        {
             somMordida.Play();
-        }
 
         yield return new WaitForSeconds(tempoAtivo);
         efeitoDano.SetActive(false);
@@ -78,9 +80,9 @@ public class PlayerVida : MonoBehaviour
         if (vidaSlider != null) vidaSlider.value = vidaAtual;
     }
 
-    void ReiniciarCena()
+    void CarregarCenaGameOver()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Endof");
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -98,8 +100,8 @@ public class PlayerVida : MonoBehaviour
             AumentarVida(25f);
             AdicionarGuarana();
 
-            // Atualiza desbloqueio de fase
-            if (desbloqueio != null) desbloqueio.AdicionarGuarana();
+            if (desbloqueio != null) 
+                desbloqueio.AdicionarGuarana();
 
             Destroy(collision.gameObject);
         }
@@ -112,7 +114,6 @@ public class PlayerVida : MonoBehaviour
             guaranaContagem++;
             AtualizarTextoGuarana();
 
-            // Atualiza HUD
             if (hud != null)
             {
                 hud.guaranaColetado = guaranaContagem;

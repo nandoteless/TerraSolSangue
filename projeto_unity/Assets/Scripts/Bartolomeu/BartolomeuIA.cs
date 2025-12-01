@@ -2,6 +2,9 @@ using System.Collections;
 using UnityEngine;
 using System.Collections;
 
+using System.Collections;
+using UnityEngine;
+
 public class BartolomeuIA : MonoBehaviour
 {
     [Header("Movimentação")]
@@ -40,6 +43,13 @@ public class BartolomeuIA : MonoBehaviour
 
         float distancia = Vector2.Distance(transform.position, player.position);
 
+        // ---- ATAQUE POR TECLA J ----
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            anim.SetTrigger("Ataque");
+        }
+        // ------------------------------
+
         // Flip do inimigo
         FlipInimigo();
 
@@ -52,10 +62,11 @@ public class BartolomeuIA : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
 
-            // ❗ corrigido: desliga o bool andando para liberar o ataque
+            // Desativa animação de andar
             if (anim != null)
                 anim.SetBool("andando", false);
 
+            // Ataque automático
             if (podeAtacar)
                 StartCoroutine(Atacar());
         }
@@ -84,7 +95,7 @@ public class BartolomeuIA : MonoBehaviour
         podeAtacar = false;
 
         if (anim != null)
-            anim.SetTrigger("ataque");
+            anim.SetTrigger("Ataque");
 
         // espera o momento real do golpe
         yield return new WaitForSeconds(0.25f);
@@ -101,3 +112,4 @@ public class BartolomeuIA : MonoBehaviour
         podeAtacar = true;
     }
 }
+

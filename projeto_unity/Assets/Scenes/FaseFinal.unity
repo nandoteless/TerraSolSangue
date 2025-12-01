@@ -2223,6 +2223,7 @@ MonoBehaviour:
   efeitoDano: {fileID: 0}
   tempoAtivo: 0.5
   somMordida: {fileID: 0}
+  cenaGameOver: GameOver
 --- !u!212 &1663089038
 SpriteRenderer:
   m_ObjectHideFlags: 0
