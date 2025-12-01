@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2929370292353768165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -39.4, y: -15.3, z: 0.33605438}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -127,5 +127,5 @@ MonoBehaviour:
   tipoItem: 2
   valorItem: 1
   spritePadrao: {fileID: -609426133, guid: d6212d460f9976548b8df1857bb12a2b, type: 3}
-  spriteDestacado: {fileID: 0}
+  spriteDestacado: {fileID: 1192763456, guid: ca78981054ae06240890183171fcc1da, type: 3}
   jogadorAnimator: {fileID: 0}
