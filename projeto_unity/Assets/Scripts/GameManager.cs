@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
 
     public void ColetaItem(ColetaItem.TipoItem tipo, int valor)
     {
+        Debug.Log($"GameManager.ColetaItem: uiManager {uiManager}");
         if (itensColetados.ContainsKey(tipo))
         {
             itensColetados[tipo] += valor;
@@ -63,6 +64,7 @@ public class GameManager : MonoBehaviour
 
         if (uiManager != null)
         {
+            Debug.Log("GameManager.ColetaItem: if (uiManager != null)");
             uiManager.UpdateItemCounts(itensColetados, totalItensPorTipo);
         }
 

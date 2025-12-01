@@ -22,7 +22,7 @@ public class ColetaItem : MonoBehaviour
     public Sprite spriteDestacado;
 
     [Header("Referência do Jogador")]
-    public Animator jogadorAnimator;
+    public Animator jogadorAnimator = null;
     private Transform jogadorTransform;
     private bool olhandoDireita = true;
 
@@ -35,8 +35,9 @@ public class ColetaItem : MonoBehaviour
             spriteRenderer.sprite = spritePadrao;
         }
 
+        // Removido por DMVS porque essa animação só existe se for coletar Pau Brasil
         // 🔎 Localiza automaticamente o jogador
-        if (jogadorAnimator == null)
+        /*if (jogadorAnimator == null)
         {
             GameObject jogador = GameObject.FindGameObjectWithTag("Player");
             if (jogador != null)
@@ -49,7 +50,7 @@ public class ColetaItem : MonoBehaviour
         if (jogadorAnimator == null)
         {
             Debug.LogError("⚠️ Nenhum Animator do jogador encontrado! Verifique a tag 'Player' e o componente Animator.");
-        }
+        }*/
     }
 
     public void DestacaItem()
@@ -78,7 +79,7 @@ public class ColetaItem : MonoBehaviour
             if (jogadorTransform != null)
                 AjustarDirecaoDoJogador();
 
-            // 🎬 Dispara a animação de coleta
+            // 🎬 Dispara a animação de coleta caso haja animação para o item
             if (jogadorAnimator != null)
             {
                 Debug.Log("🎬 Acionando trigger 'ColetarMadeira'");
@@ -86,10 +87,11 @@ public class ColetaItem : MonoBehaviour
                 jogadorAnimator.SetTrigger("ColetarMadeira");
                 StartCoroutine(VoltarIdle());
             }
-            else
-            {
-                Debug.LogWarning("❌ JogadorAnimator está nulo!");
-            }
+            // Comentado por DMVS porque tem itens que não possuem animação
+            // else
+            // {
+            //     Debug.LogWarning("❌ JogadorAnimator está nulo!");
+            // }
 
             Destroy(gameObject);
         }

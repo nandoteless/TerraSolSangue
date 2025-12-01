@@ -62,7 +62,7 @@ public class PlayerMove : MonoBehaviour
         }
        
        
-        if (colidiuCraftTable != null && canvasCraftTable && !canvasCraftTable.activeSelf)
+        if (colidiuCraftTable && canvasCraftTable != null && !canvasCraftTable.activeSelf)
         {
             canvasCraftTable.SetActive(true);
             return;
