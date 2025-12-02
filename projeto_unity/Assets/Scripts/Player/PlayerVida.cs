@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+// 1. IMPORTANTE: Adicionamos esta linha para gerenciar cenas
+using UnityEngine.SceneManagement; 
 
 public class PlayerVida : MonoBehaviour
 {
@@ -42,17 +44,29 @@ public class PlayerVida : MonoBehaviour
     public void ReduzirVida(float quantidade)
     {
         vidaAtual -= quantidade;
-        vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
+        vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima); // Garante que a vida não fique negativa (ex: -10)
+        
         if (vidaSlider != null) vidaSlider.value = vidaAtual;
 
-        if (efeitoDano != null)
+        // Ativa o efeito visual de dano se o jogador ainda estiver vivo
+        if (vidaAtual > 0 && efeitoDano != null)
         {
             StopAllCoroutines();
             StartCoroutine(AtivarEfeitoDano());
         }
 
-        // VIDA ZERO → agora NÃO FAZ NADA (sem troca de cena)
-        // if (vidaAtual <= 0) { ... }
+        // 2. Lógica de Morte e Reinício
+        if (vidaAtual <= 0)
+        {
+            ReiniciarCena();
+        }
+    }
+
+    // Função dedicada para reiniciar a fase atual
+    void ReiniciarCena()
+    {
+        // Pega o nome da cena que está ativa no momento e a carrega novamente
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private IEnumerator AtivarEfeitoDano()
