@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using TMPro;
-
 
 public class PlayerVida : MonoBehaviour
 {
@@ -25,10 +23,6 @@ public class PlayerVida : MonoBehaviour
     [Header("Som de Mordida")]
     public AudioSource somMordida;
 
-    [Header("Cena ao Morrer")]
-    [Tooltip("Nome da cena para carregar quando a vida chegar a zero.")]
-    public string cenaGameOver = "GameOver";   // <- coloque aqui o nome da cena
-
     private HUD_Coleta hud;
     private DesbloqueioDeFase desbloqueio;
 
@@ -41,7 +35,6 @@ public class PlayerVida : MonoBehaviour
         if (efeitoDano != null) efeitoDano.SetActive(false);
         AtualizarTextoGuarana();
 
-        // Referências
         hud = FindObjectOfType<HUD_Coleta>();
         desbloqueio = FindObjectOfType<DesbloqueioDeFase>();
     }
@@ -58,8 +51,8 @@ public class PlayerVida : MonoBehaviour
             StartCoroutine(AtivarEfeitoDano());
         }
 
-        if (vidaAtual <= 0)
-            CarregarCenaGameOver();
+        // VIDA ZERO → agora NÃO FAZ NADA (sem troca de cena)
+        // if (vidaAtual <= 0) { ... }
     }
 
     private IEnumerator AtivarEfeitoDano()
@@ -80,11 +73,6 @@ public class PlayerVida : MonoBehaviour
         if (vidaSlider != null) vidaSlider.value = vidaAtual;
     }
 
-    void CarregarCenaGameOver()
-    {
-        SceneManager.LoadScene("Endof");
-    }
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("cobra") || other.CompareTag("onca"))
@@ -100,7 +88,7 @@ public class PlayerVida : MonoBehaviour
             AumentarVida(25f);
             AdicionarGuarana();
 
-            if (desbloqueio != null) 
+            if (desbloqueio != null)
                 desbloqueio.AdicionarGuarana();
 
             Destroy(collision.gameObject);
