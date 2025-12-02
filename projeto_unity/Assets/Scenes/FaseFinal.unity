@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   proximaCena: Endof
-  tempo: 3
+  tempo: 10
 --- !u!1 &482056627
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,6 +2208,7 @@ MonoBehaviour:
   efeitoDano: {fileID: 0}
   tempoAtivo: 0.5
   somMordida: {fileID: 0}
+  nomeDaFaseFinal: FaseFinal
 --- !u!212 &1663089038
 SpriteRenderer:
   m_ObjectHideFlags: 0

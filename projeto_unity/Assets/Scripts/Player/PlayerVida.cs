@@ -1,10 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 // 1. IMPORTANTE: Adicionamos esta linha para gerenciar cenas
 using UnityEngine.SceneManagement; 
+
 
 public class PlayerVida : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class PlayerVida : MonoBehaviour
 
     private HUD_Coleta hud;
     private DesbloqueioDeFase desbloqueio;
+    public string nomeDaFaseFinal = "FaseFinal";
 
     void Start()
     {
@@ -58,7 +60,7 @@ public class PlayerVida : MonoBehaviour
         // 2. Lógica de Morte e Reinício
         if (vidaAtual <= 0)
         {
-            ReiniciarCena();
+            //carregar cena chamada endof;
         }
     }
 
