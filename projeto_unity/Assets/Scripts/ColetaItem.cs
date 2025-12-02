@@ -35,23 +35,6 @@ public class ColetaItem : MonoBehaviour
             spriteRenderer.sprite = spritePadrao;
         }
 
-        // Removido por DMVS porque essa animação só existe se for coletar Pau Brasil
-        // Nesse caso ela deve ser preenchida via Inspector
-        // 🔎 Localiza automaticamente o jogador
-        /*if (jogadorAnimator == null)
-        {
-            GameObject jogador = GameObject.FindGameObjectWithTag("Player");
-            if (jogador != null)
-            {
-                jogadorAnimator = jogador.GetComponent<Animator>();
-                jogadorTransform = jogador.transform;
-            }
-        }
-
-        if (jogadorAnimator == null)
-        {
-            Debug.LogError("⚠️ Nenhum Animator do jogador encontrado! Verifique a tag 'Player' e o componente Animator.");
-        }*/
     }
 
     public void DestacaItem()
@@ -83,32 +66,15 @@ public class ColetaItem : MonoBehaviour
             // 🎬 Dispara a animação de coleta caso haja animação para o item
             if (jogadorAnimator != null)
             {
-                Debug.Log("🎬 Acionando trigger 'ColetarMadeira'");
-                // jogadorAnimator.ResetTrigger("idle");
+                // DMVS - simplificado
                 jogadorAnimator.SetTrigger("ColetarMadeira");
-                // StartCoroutine(VoltarIdle());
             }
-            // Comentado por DMVS porque tem itens que não possuem animação
-            // else
-            // {
-            //     Debug.LogWarning("❌ JogadorAnimator está nulo!");
-            // }
-
+            
             Destroy(gameObject);
         }
     }
 
-    // private IEnumerator VoltarIdle()
-    // {
-    //     yield return new WaitForSeconds(0.8f);
-
-    //     if (jogadorAnimator != null)
-    //     {
-    //         jogadorAnimator.ResetTrigger("ColetarMadeira");
-    //         jogadorAnimator.SetTrigger("idle");
-    //     }
-    // }
-
+    
     private void AjustarDirecaoDoJogador()
     {
         if (jogadorTransform == null) return;
