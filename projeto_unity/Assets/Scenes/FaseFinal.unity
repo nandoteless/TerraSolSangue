@@ -2274,7 +2274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7863c7eff3a2249499ce10f94a54a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dano: 25
+  dano: 35
   intervaloDano: 1
 --- !u!114 &1663089041
 MonoBehaviour:
