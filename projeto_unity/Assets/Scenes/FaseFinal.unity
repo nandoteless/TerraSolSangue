@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   proximaCena: Endof
-  tempo: 10
+  tempo: 3
 --- !u!1 &482056627
 GameObject:
   m_ObjectHideFlags: 0
