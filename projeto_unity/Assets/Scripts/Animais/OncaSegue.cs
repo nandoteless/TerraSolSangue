@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-using UnityEngine;
-
 public class OncaSegue : MonoBehaviour
 {
     public float distanciaMaxima = 5f;

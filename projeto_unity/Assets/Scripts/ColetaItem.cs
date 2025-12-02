@@ -36,6 +36,7 @@ public class ColetaItem : MonoBehaviour
         }
 
         // Removido por DMVS porque essa animação só existe se for coletar Pau Brasil
+        // Nesse caso ela deve ser preenchida via Inspector
         // 🔎 Localiza automaticamente o jogador
         /*if (jogadorAnimator == null)
         {
@@ -83,9 +84,9 @@ public class ColetaItem : MonoBehaviour
             if (jogadorAnimator != null)
             {
                 Debug.Log("🎬 Acionando trigger 'ColetarMadeira'");
-                jogadorAnimator.ResetTrigger("idle");
+                // jogadorAnimator.ResetTrigger("idle");
                 jogadorAnimator.SetTrigger("ColetarMadeira");
-                StartCoroutine(VoltarIdle());
+                // StartCoroutine(VoltarIdle());
             }
             // Comentado por DMVS porque tem itens que não possuem animação
             // else
@@ -97,16 +98,16 @@ public class ColetaItem : MonoBehaviour
         }
     }
 
-    private IEnumerator VoltarIdle()
-    {
-        yield return new WaitForSeconds(0.8f);
+    // private IEnumerator VoltarIdle()
+    // {
+    //     yield return new WaitForSeconds(0.8f);
 
-        if (jogadorAnimator != null)
-        {
-            jogadorAnimator.ResetTrigger("ColetarMadeira");
-            jogadorAnimator.SetTrigger("idle");
-        }
-    }
+    //     if (jogadorAnimator != null)
+    //     {
+    //         jogadorAnimator.ResetTrigger("ColetarMadeira");
+    //         jogadorAnimator.SetTrigger("idle");
+    //     }
+    // }
 
     private void AjustarDirecaoDoJogador()
     {

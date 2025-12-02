@@ -3,10 +3,6 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 
-using System.Collections.Generic;
-using UnityEngine;
-using TMPro;
-
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance;

@@ -12,8 +12,13 @@ public class CraftingManager : MonoBehaviour
     public string[] recipes;
     public Item[] recipeResults;
     public Slot resultSlot;
+    public int totalItens;
+    private int currentItensCrafted;
 
-
+    void Start() 
+    {
+        currentItensCrafted = 0;
+    }
     void Update() 
     {
         if (Input.GetMouseButtonUp(0))
@@ -77,6 +82,15 @@ public class CraftingManager : MonoBehaviour
                 resultSlot.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                 resultSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = recipeResults[i].GetComponent<Image>().sprite;
                 resultSlot.item = recipeResults[i];
+                // ao acertar incrementa total de acertos
+                currentItensCrafted++;
+                // verifica se atingiu a quantidade total de itens
+                if (currentItensCrafted >= totalItens)
+                {
+                    // verificar se o que fazer
+                    Debug.Log("******************** Conseguiu armas - ver o que fazer ********************");
+                }
+                
             }
         }
     }
