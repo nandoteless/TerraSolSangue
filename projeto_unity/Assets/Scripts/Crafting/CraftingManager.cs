@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem; // Necessário
 
 public class CraftingManager : MonoBehaviour
 {
@@ -12,69 +13,98 @@ public class CraftingManager : MonoBehaviour
     public string[] recipes;
     public Item[] recipeResults;
     public Slot resultSlot;
-    public int totalItens;
-    private int currentItensCrafted;
 
-    void Start() 
-    {
-        currentItensCrafted = 0;
-    }
+    // Variável para guardar a posição atual do toque ou do mouse
+    private Vector2 currentInputPosition;
+
     void Update() 
     {
-        if (Input.GetMouseButtonUp(0))
+        // LÓGICA DE ARRASTAR VISUALMENTE
+        // Se estamos segurando um item, o cursor deve seguir o dedo/mouse
+        if (currentItem != null)
         {
-            // verifica se estamos segurando um item
-            if (currentItem != null)
+            // Atualiza a posição da imagem do cursor para onde o dedo está
+            customCursor.transform.position = currentInputPosition;
+        }
+    }
+
+    // ---------------------------------------------------------
+    // EVENTO 1: Ligue isso na Action de "Position" (Value - Vector2)
+    // Isso atualiza a variável sempre que o dedo se move na tela
+    // ---------------------------------------------------------
+    public void OnPointerMove(InputAction.CallbackContext context)
+    {
+        // Lê a posição da tela (Vector2)
+        currentInputPosition = context.ReadValue<Vector2>();
+    }
+
+    // ---------------------------------------------------------
+    // EVENTO 2: Ligue isso na Action de "Press/Click" (Button)
+    // Isso detecta quando você levanta o dedo
+    // ---------------------------------------------------------
+    public void OnPointerUp(InputAction.CallbackContext context)
+    {
+        // 'Canceled' significa que o botão foi solto ou o dedo saiu da tela
+        if (context.canceled)
+        {
+            TryDropItem();
+        }
+    }
+
+    private void TryDropItem()
+    {
+        if (currentItem != null)
+        {
+            // Desativa o cursor visual
+            customCursor.gameObject.SetActive(false);
+
+            Slot nearestSlot = null;
+            float shortestDistance = float.MaxValue;
+
+            // Usa a posição armazenada do toque (currentInputPosition)
+            foreach (Slot slot in craftingSlot)
             {
-                // aqui soltamos o item
-                customCursor.gameObject.SetActive(false);
-                // aqui vamos encontrar o slot mais próximo para incluir o item pela distância
-                Slot nearestSlot = null;
-                float shortestDistance = float.MaxValue;
-                foreach (Slot slot in craftingSlot)
+                float dist = Vector2.Distance(currentInputPosition, slot.transform.position);
+                if (dist < shortestDistance)
                 {
-                    float dist = Vector2.Distance(Input.mousePosition, slot.transform.position);
-                    if (dist < shortestDistance)
-                    {
-                        shortestDistance = dist;
-                        nearestSlot = slot;
-                    }
+                    shortestDistance = dist;
+                    nearestSlot = slot;
                 }
-                // agora vamos adicionar o elemento ao slot, alterando a imagem do filho e ativando ele 
+            }
+
+            // Se encontrou um slot e ele está próximo o suficiente (opcional: definir uma distância mínima)
+            if (nearestSlot != null)
+            {
                 nearestSlot.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                 nearestSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = currentItem.GetComponent<Image>().sprite;
                 nearestSlot.item = currentItem;
-                // agora vamos preencher a lista de itens, que será utilizada para fazer o crafting
+                
                 itemList[nearestSlot.index] = currentItem;
-                // aqui limpamos a variável que contém o item que estamos segurando
+                
                 currentItem = null;
-                // chamamos a função para verificar a receita
                 CheckForCreatedRecipes();
+            }
+            else 
+            {
+                // Opcional: Se soltar no nada, reseta o currentItem para não travar
+                currentItem = null;
             }
         }
     }
 
+    // O resto do código permanece igual...
     void CheckForCreatedRecipes()
     {
-        // inicializamos as variáveis
-         resultSlot.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        resultSlot.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         resultSlot.item = null;
         string currentRecipeString = "";
 
-        // aqui vamos preenchendo de acordo com os itens da lista
         foreach(Item item in itemList)
         {
-            if (item != null)
-            {
-                currentRecipeString += item.itemName;
-            }
-            else // caso não tenha item na posição da lista preenchemos com null
-            {
-                currentRecipeString += "null";
-            }
+            if (item != null) currentRecipeString += item.itemName;
+            else currentRecipeString += "null";
         }
 
-        // agora vamos verificar se a string da receita montada é igual a alguma das strings cadastradas
         for (int i=0; i<recipes.Length; i++)
         {
             if (recipes[i] == currentRecipeString)
@@ -82,15 +112,6 @@ public class CraftingManager : MonoBehaviour
                 resultSlot.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                 resultSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = recipeResults[i].GetComponent<Image>().sprite;
                 resultSlot.item = recipeResults[i];
-                // ao acertar incrementa total de acertos
-                currentItensCrafted++;
-                // verifica se atingiu a quantidade total de itens
-                if (currentItensCrafted >= totalItens)
-                {
-                    // verificar se o que fazer
-                    Debug.Log("******************** Conseguiu armas - ver o que fazer ********************");
-                }
-                
             }
         }
     }
@@ -103,13 +124,17 @@ public class CraftingManager : MonoBehaviour
         CheckForCreatedRecipes();
     }
 
+    // Este método é chamado pelo EventTrigger no item da UI quando você toca nele para começar a arrastar
     public void OnMouseDownItem(Item item)
     {
-        if (currentItem  == null)
+        if (currentItem == null)
         {
             currentItem = item;
             customCursor.gameObject.SetActive(true);
             customCursor.sprite = currentItem.GetComponent<Image>().sprite;
+            
+            // Já atualiza a posição imediatamente para o item não "pular" visualmente
+            customCursor.transform.position = currentInputPosition;
         }
     }
 }

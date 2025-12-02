@@ -12,11 +12,21 @@ public class PlayerAtaque : MonoBehaviour
 
     public InputActionReference comandoAtacar;
 
-    private Animator anim;  // <---- adicionar isso
+    private Animator anim;
+
+    // ---- ADIÇÃO PARA O SOM ----
+    public AudioClip somLanca; 
+    private AudioSource audioSource;
+    // ---------------------------
 
     private void Awake()
     {
-        anim = GetComponent<Animator>(); // <---- pegar animator do player
+        anim = GetComponent<Animator>();
+
+        // ---- Pega ou cria um AudioSource automaticamente ----
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -38,10 +48,12 @@ public class PlayerAtaque : MonoBehaviour
 
         tempoProximoAtaque = Time.time + tempoEntreAtaques;
 
-        // 🔥 ATIVA A ANIMAÇÃO DE ATAQUE
         anim.SetTrigger("Atacando");
 
-        // ---------------- Lógica de Dano ---------------- //
+        // ---- SOM DA LANÇA TOCANDO AQUI ----
+        if (somLanca != null)
+            audioSource.PlayOneShot(somLanca);
+        // -----------------------------------
 
         Collider2D[] objetosAtingidos = Physics2D.OverlapCircleAll(pontoDeAtaque.position, raioDeAtaque);
 

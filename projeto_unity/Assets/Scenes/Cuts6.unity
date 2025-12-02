@@ -307,7 +307,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   blipSound: {fileID: 0}
   pitchVariation: 0.1
-  volume: 0.6
+  volume: 0
 --- !u!4 &1130587384
 Transform:
   m_ObjectHideFlags: 0

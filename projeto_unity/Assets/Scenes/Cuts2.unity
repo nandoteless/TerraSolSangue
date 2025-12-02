@@ -487,7 +487,7 @@ MonoBehaviour:
   audioSource: {fileID: 1307607957}
   blipSound: {fileID: 8300000, guid: 41eac73b1184d6a459376870b75515a7, type: 3}
   pitchVariation: 0.1
-  volume: 0.6
+  volume: 0
 --- !u!4 &1307607956
 Transform:
   m_ObjectHideFlags: 0

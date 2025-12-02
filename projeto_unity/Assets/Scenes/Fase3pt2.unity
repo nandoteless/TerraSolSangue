@@ -91410,7 +91410,6 @@ MonoBehaviour:
   - {fileID: 3928710395717124406, guid: 96557c68ca3689845962ed17da016d7e, type: 3}
   - {fileID: 3928710395717124406, guid: 0118806a6f446f6439dd84ac16b7a31e, type: 3}
   resultSlot: {fileID: 1848064560}
-  totalItens: 3
 --- !u!4 &447163131
 Transform:
   m_ObjectHideFlags: 0
@@ -99677,6 +99676,38 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 8b587054-8f58-4c6f-89e7-28fb586371ee
     m_ActionName: Player/Dash[/Keyboard/shift]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 447163130}
+        m_TargetAssemblyTypeName: CraftingManager, Assembly-CSharp
+        m_MethodName: OnPointerMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7febd5a3-5220-4310-94e7-cc2b3ce5014f
+    m_ActionName: Player/PointPosition[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 447163130}
+        m_TargetAssemblyTypeName: CraftingManager, Assembly-CSharp
+        m_MethodName: OnPointerUp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8c279caf-b0d4-46fd-90c4-1846182447cc
+    m_ActionName: Player/Click[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
