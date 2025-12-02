@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   talkScript:
   - name: Jacira
-    text: FALA 1
+    text: "Irapu\xE3, voc\xEA tem certeza que deseja responder a esse ataque?"
   - name: "Irapu\xE3"
-    text: FALA 2
+    text: "N\xE3o tem outra escolha."
   - name: Jacira
-    text: FALA 3
+    text: "Ent\xE3o \xE9 melhor que construa armas para preparar a tribo."
+  - name: Jacira
+    text: Construa um arco e dois tacapes. com isso teremos mais chances.
   - name: "Irapu\xE3"
-    text: FALA 4
+    text: "Pode deixar, farei o que \xE9 necess\xE1rio."

@@ -632,7 +632,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Ap\xF3s a amea\xE7a iminente de Bartolomeu com a tribo e ap\xF3s a morte
     do Cacique Moacir, Irapu\xE3, como novo l\xEDder, tomou uma decis\xE3o necess\xE1ria:
-    responder o ataque."
+    responder ao ataque."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ffac7f55c5645774aba70a0debb57aa5, type: 2}
   m_sharedMaterial: {fileID: -7766785352265501460, guid: ffac7f55c5645774aba70a0debb57aa5,
@@ -91410,6 +91410,8 @@ MonoBehaviour:
   - {fileID: 3928710395717124406, guid: 96557c68ca3689845962ed17da016d7e, type: 3}
   - {fileID: 3928710395717124406, guid: 0118806a6f446f6439dd84ac16b7a31e, type: 3}
   resultSlot: {fileID: 1848064560}
+  itemSlotPrevious: {fileID: 0}
+  totalItensForCrafting: 3
 --- !u!4 &447163131
 Transform:
   m_ObjectHideFlags: 0
@@ -103716,6 +103718,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0820ef6edf27c11419b9705bdf6401db, type: 3}
+--- !u!1 &1580001596 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7299644392756473042, guid: 0820ef6edf27c11419b9705bdf6401db,
+    type: 3}
+  m_PrefabInstance: {fileID: 1580001595}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1580001597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580001596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d4893732f0e8bf49806a28a3aac8104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTime: 2
+  sceneToLoad: Cuts7
 --- !u!1 &1585318633
 GameObject:
   m_ObjectHideFlags: 0
@@ -114390,12 +114412,12 @@ PrefabInstance:
     - target: {fileID: 2929370292353768166, guid: 86c4eed2aac62644aa95c3c9626e9971,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.760912
+      value: 19.33
       objectReference: {fileID: 0}
     - target: {fileID: 2929370292353768166, guid: 86c4eed2aac62644aa95c3c9626e9971,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.499386
+      value: -11.24
       objectReference: {fileID: 0}
     - target: {fileID: 2929370292353768166, guid: 86c4eed2aac62644aa95c3c9626e9971,
         type: 3}

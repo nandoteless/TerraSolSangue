@@ -13,9 +13,19 @@ public class CraftingManager : MonoBehaviour
     public string[] recipes;
     public Item[] recipeResults;
     public Slot resultSlot;
+    public Item itemSlotPrevious = null;
+
+    private int currentItens;
+
+    public int totalItensForCrafting;
 
     // Variável para guardar a posição atual do toque ou do mouse
     private Vector2 currentInputPosition;
+
+    void Start() 
+    {
+        currentItens = 0;
+    }
 
     void Update() 
     {
@@ -112,10 +122,32 @@ public class CraftingManager : MonoBehaviour
                 resultSlot.gameObject.transform.GetChild(0).gameObject.SetActive(true);
                 resultSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = recipeResults[i].GetComponent<Image>().sprite;
                 resultSlot.item = recipeResults[i];
+                
+                if (itemSlotPrevious != null && itemSlotPrevious != resultSlot.item) 
+                {
+                    AddItemCrafted();
+                }
+                
+                if (itemSlotPrevious == null) 
+                {
+                    AddItemCrafted();
+                    itemSlotPrevious = resultSlot.item;
+                } 
+                
             }
         }
     }
 
+    void AddItemCrafted()
+    {
+        Debug.Log("AddItemCrafted");
+        currentItens++;
+        if (currentItens >= totalItensForCrafting)
+        {
+            Debug.Log("Terminou. Vai carregar cena final");
+            GameManager.instancia.LoadNextScene();
+        }
+    }
     public void OnClickSlot(Slot slot)
     {
         slot.item = null;

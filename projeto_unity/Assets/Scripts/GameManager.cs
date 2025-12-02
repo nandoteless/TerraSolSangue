@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     [Header("Referência da Vara (para desbloqueio)")]
     public GameObject varaParaDesbloquear;
 
+    private SceneLoaderWithTimer sceneLoaderWithTimer = null;
+
     void Awake()
     {
         if (instancia == null)
@@ -34,7 +36,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         
-        objetivoFaseConcluido = false;
+        objetivoFaseConcluido = true;
         
         itensColetados = new Dictionary<ColetaItem.TipoItem, int>();
         foreach (ColetaItem.TipoItem tipo in System.Enum.GetValues(typeof(ColetaItem.TipoItem)))
@@ -51,6 +53,11 @@ public class GameManager : MonoBehaviour
                 totalItensPorTipo.Add(tipo, 0);
             }
         }
+    }
+
+    void Start()
+    {
+        sceneLoaderWithTimer = GetComponent<SceneLoaderWithTimer>();
     }
 
     public void ColetaItem(ColetaItem.TipoItem tipo, int valor)
@@ -136,5 +143,13 @@ public class GameManager : MonoBehaviour
         }
 
         return totalItensPorTipo.Any(objetivo => objetivo.Value > 0);
+    }
+
+    public void LoadNextScene() 
+    {
+        if (sceneLoaderWithTimer != null)
+        {
+            sceneLoaderWithTimer.StartNewScene();
+        }
     }
 }
