@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2929370292353768160}
   - component: {fileID: 2929370292353768167}
   - component: {fileID: 4720063065328702461}
+  - component: {fileID: 5161910692136806747}
   m_Layer: 0
   m_Name: Pedra
   m_TagString: Untagged
@@ -129,3 +130,34 @@ MonoBehaviour:
   spritePadrao: {fileID: -609426133, guid: d6212d460f9976548b8df1857bb12a2b, type: 3}
   spriteDestacado: {fileID: 1192763456, guid: ca78981054ae06240890183171fcc1da, type: 3}
   jogadorAnimator: {fileID: 0}
+--- !u!114 &5161910692136806747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2929370292353768165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 876970315
+      Data2: 1188863040
+      Data3: -476472150
+      Data4: 1401479247
+    Path: "event:/SFX/Intera\xE7\xE3o"
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
