@@ -500,7 +500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &45525556
 RectTransform:
   m_ObjectHideFlags: 0
@@ -105610,6 +105610,7 @@ MonoBehaviour:
   itemGoals:
   - tipoItem: 0
     total: 4
+  objetivoFaseConcluido: 0
   varaParaDesbloquear: {fileID: 0}
 --- !u!4 &1545298605
 Transform:
@@ -108364,6 +108365,7 @@ MonoBehaviour:
   efeitoDano: {fileID: 1813321865}
   tempoAtivo: 0.5
   somMordida: {fileID: 1828206274}
+  cenaGameOver: GameOver
 --- !u!114 &1828206270
 MonoBehaviour:
   m_ObjectHideFlags: 0
