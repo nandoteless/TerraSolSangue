@@ -87992,11 +87992,11 @@ RectTransform:
   m_Father: {fileID: 2104218809}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -710.6, y: 294}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -686, y: 327}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &255633571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95829,11 +95829,11 @@ RectTransform:
   m_Father: {fileID: 2104218809}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -707.9573, y: 228}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -689.64276, y: 268.54254}
   m_SizeDelta: {x: 112.5709, y: 115.0851}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1203200270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108365,7 +108365,6 @@ MonoBehaviour:
   efeitoDano: {fileID: 1813321865}
   tempoAtivo: 0.5
   somMordida: {fileID: 1828206274}
-  cenaGameOver: GameOver
 --- !u!114 &1828206270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110127,11 +110126,11 @@ RectTransform:
   m_Father: {fileID: 255633570}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 185, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 134.99988, y: -24.999939}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1937705157
 MonoBehaviour:
   m_ObjectHideFlags: 0
