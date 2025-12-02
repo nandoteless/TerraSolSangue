@@ -300,8 +300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.05
-  fullText: 'Enquantro seus triupalntes lutavam com os indigenas na vila, Bartolomeu
-    pegou seu maior desejo: Jacira'
+  fullText: 'Enquanto os tripulantes lutavam com os indigenas na vila, Bartolomeu
+    roubava seu maior desejo desde que chegou ali: Jacira'
   textComponent: {fileID: 1387871300}
   audioSource: {fileID: 0}
   blipSound: {fileID: 0}
