@@ -154,11 +154,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 22856592
-      Data2: 1180716612
-      Data3: 1136663441
-      Data4: -525750586
-    Path: "event:/BG/Floresta_P\xE1ssaros"
+      Data1: 1287466642
+      Data2: 1131673520
+      Data3: 187391125
+      Data4: -1227060298
+    Path: event:/BG/OcaBG
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2

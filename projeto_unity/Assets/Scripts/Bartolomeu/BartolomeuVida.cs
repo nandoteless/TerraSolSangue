@@ -4,17 +4,20 @@ using UnityEngine.UI;
 public class BartolomeuVida : MonoBehaviour
 {
     [Header("UI")]
-    public Slider barraVida; // Arraste o Slider (World Space) aqui
-
+    public Slider barraVida;
     [Header("Atributos")]
     public float vidaMaxima = 150f;
     public float vidaAtual;
 
+    // Variáveis internas
+    private Animator animator;
+    private Rigidbody2D rb;
+
     void Start()
     {
         vidaAtual = vidaMaxima;
+        animator = GetComponent<Animator>();
 
-        // Configuração inicial da Barra de Vida
         if (barraVida != null)
         {
             barraVida.maxValue = vidaMaxima;
@@ -24,14 +27,13 @@ public class BartolomeuVida : MonoBehaviour
 
     public void ReduzirVida(float dano)
     {
+        if (vidaAtual <= 0) return;
+
         vidaAtual -= dano;
         vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
 
-        // Atualiza a barra visualmente
         if (barraVida != null)
-        {
             barraVida.value = vidaAtual;
-        }
 
         if (vidaAtual <= 0)
             Morrer();
@@ -39,14 +41,7 @@ public class BartolomeuVida : MonoBehaviour
 
     void Morrer()
     {
-        // Desativa a barra de vida para ela sumir junto com a "morte" lógica
         if (barraVida != null) barraVida.gameObject.SetActive(false);
-
-        // Desativa a IA
-        if (GetComponent<BartolomeuIA>() != null)
-            GetComponent<BartolomeuIA>().enabled = false;
-            
-        // Destrói o objeto após 2 segundos
-        Destroy(gameObject, 2f);
+        if (GetComponent<BartolomeuIA>() != null) GetComponent<BartolomeuIA>().enabled = false;
     }
 }

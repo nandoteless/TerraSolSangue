@@ -1377,7 +1377,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barraVida: {fileID: 482056628}
-  vidaMaxima: 150
+  vidaMaxima: 200
   vidaAtual: 0
 --- !u!114 &1383159828
 MonoBehaviour:
@@ -1482,7 +1482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 1.5
   distanciaParaAtacar: 1.5
-  dano: 25
+  dano: 35
   tempoEntreAtaques: 1
   defaultFacingRight: 0
 --- !u!95 &1383159829
@@ -1769,11 +1769,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _footsteps:
     Guid:
-      Data1: 1162472379
-      Data2: 1188656888
-      Data3: 2085171644
-      Data4: -1117207993
-    Path: event:/Footsteps/Footsteps 2
+      Data1: -1243087815
+      Data2: 1175762510
+      Data3: 539640982
+      Data4: 1906983463
+    Path: event:/Footsteps/Footsteps
 --- !u!4 &1530627876
 Transform:
   m_ObjectHideFlags: 0
@@ -2804,14 +2804,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
+  CollisionTag: inimigo
   EventReference:
     Guid:
-      Data1: 1688957284
-      Data2: 1199704657
-      Data3: -1290724940
-      Data4: 504979703
-    Path: event:/BG/MarGaivotas
+      Data1: 1483178753
+      Data2: 1292829653
+      Data3: 497876669
+      Data4: 2087349882
+    Path: event:/BG/Five%20Armies
   Event: 
   EventPlayTrigger: 1
   EventStopTrigger: 2
