@@ -30,7 +30,6 @@ public class UIManager : MonoBehaviour
         Dictionary<ColetaItem.TipoItem, int> collectedCounts,
         Dictionary<ColetaItem.TipoItem, int> requiredCounts)
     {
-        Debug.Log("UpdateItemCounts");
         // --- PAU BRASIL ---
         if (pauBrasilCounterText != null &&
             collectedCounts.ContainsKey(ColetaItem.TipoItem.PauBrasil))
@@ -44,7 +43,6 @@ public class UIManager : MonoBehaviour
         if (cipoCounterText != null &&
             collectedCounts.ContainsKey(ColetaItem.TipoItem.Cipo))
         {
-            Debug.Log("CIPÓ");
             cipoCounterText.text =
                 collectedCounts[ColetaItem.TipoItem.Cipo] + "/" +
                 requiredCounts[ColetaItem.TipoItem.Cipo];

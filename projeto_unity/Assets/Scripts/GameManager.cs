@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public List<ObjetivoItem> itemGoals;
     public Dictionary<ColetaItem.TipoItem, int> itensColetados;
     public Dictionary<ColetaItem.TipoItem, int> totalItensPorTipo;
+    public bool objetivoFaseConcluido;
 
     [Header("Referência da Vara (para desbloqueio)")]
     public GameObject varaParaDesbloquear;
@@ -32,7 +33,9 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+        
+        objetivoFaseConcluido = false;
+        
         itensColetados = new Dictionary<ColetaItem.TipoItem, int>();
         foreach (ColetaItem.TipoItem tipo in System.Enum.GetValues(typeof(ColetaItem.TipoItem)))
         {
@@ -52,7 +55,6 @@ public class GameManager : MonoBehaviour
 
     public void ColetaItem(ColetaItem.TipoItem tipo, int valor)
     {
-        Debug.Log($"GameManager.ColetaItem: uiManager {uiManager}");
         if (itensColetados.ContainsKey(tipo))
         {
             itensColetados[tipo] += valor;
@@ -64,7 +66,6 @@ public class GameManager : MonoBehaviour
 
         if (uiManager != null)
         {
-            Debug.Log("GameManager.ColetaItem: if (uiManager != null)");
             uiManager.UpdateItemCounts(itensColetados, totalItensPorTipo);
         }
 
@@ -86,6 +87,7 @@ public class GameManager : MonoBehaviour
         if (objetivosConcluidos && totalItensPorTipo.Any(objetivo => objetivo.Value > 0))
         {
             Debug.Log("Todos os objetivos de coleta alcançados! Vitória!");
+            objetivoFaseConcluido = true;
 
             if (varaParaDesbloquear != null)
             {

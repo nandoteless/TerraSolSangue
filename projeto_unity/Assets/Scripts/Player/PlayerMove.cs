@@ -61,15 +61,19 @@ public class PlayerMove : MonoBehaviour
             dialogueSystem.StartDialogue();
         }
        
-       
-        if (colidiuCraftTable && canvasCraftTable != null && !canvasCraftTable.activeSelf)
+        // DMVS Verifica se já pode realizar o CRAFTING
+        if (GameManager.instancia.objetivoFaseConcluido)
         {
-            canvasCraftTable.SetActive(true);
-            return;
-        }
-        else if (canvasCraftTable != null && canvasCraftTable.activeSelf)
-        {
-            canvasCraftTable.SetActive(false);
+            // DMVS somente vai funcionar se canvasCraftTable for preenchido na Inspector, ou seja, somente na Fase3Pt2
+            if (colidiuCraftTable && canvasCraftTable != null && !canvasCraftTable.activeSelf)
+            {
+                canvasCraftTable.SetActive(true);
+                return;
+            }
+            else if (canvasCraftTable != null && canvasCraftTable.activeSelf)
+            {
+                canvasCraftTable.SetActive(false);
+            }
         }
     }
 
