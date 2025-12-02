@@ -630,9 +630,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ap\xF3s a amea\xE7a imenete de Bartolomeu com a tribo, e ap\xF3s a morte
-    do Cacique Moacir, Irapu\xE3 com o novo lider tomou uma decis\xE3o necess\xE1ria:
-    corresponder o ataque."
+  m_text: "Ap\xF3s a amea\xE7a eminente de Bartolomeu com a tribo e ap\xF3s a morte
+    do Cacique Moacir, Irapu\xE3, como novo l\xEDder, tomou uma decis\xE3o necess\xE1ria:
+    responder o ataque."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ffac7f55c5645774aba70a0debb57aa5, type: 2}
   m_sharedMaterial: {fileID: -7766785352265501460, guid: ffac7f55c5645774aba70a0debb57aa5,
@@ -91172,16 +91172,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929370292353768166, guid: 86c4eed2aac62644aa95c3c9626e9971,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929370292353768166, guid: 86c4eed2aac62644aa95c3c9626e9971,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929370292353768166, guid: 86c4eed2aac62644aa95c3c9626e9971,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.899628
       objectReference: {fileID: 0}
@@ -103374,7 +103364,7 @@ PrefabInstance:
     - target: {fileID: 7299644392756473045, guid: 0820ef6edf27c11419b9705bdf6401db,
         type: 3}
       propertyPath: itemGoals.Array.data[2].total
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7299644392756473045, guid: 0820ef6edf27c11419b9705bdf6401db,
         type: 3}
